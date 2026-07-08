@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-brand: #0090d8;
+  --color-brand-deep: #006ca6;
+  --color-brand-soft: #e3f3fb;
+  --color-leaf: #48c030;
+  --color-leaf-deep: #2e8a1d;
+  --color-leaf-soft: #ecf8e6;
+  --color-ink: #07222f;
+  --color-ink-2: #0b2e3f;
+  --color-ink-3: #123a4e;
+  --color-mist: #f4f9fc;
+  --color-line: #dbe7ee;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-marquee: marquee 46s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
+
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1180px;
+  padding-inline: 1.25rem;
+  @variant sm {
+    padding-inline: 2rem;
+  }
+}
+
+@utility display-font {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-brand);
+}
+
+@utility ink-panel {
+  background:
+    radial-gradient(900px 480px at 85% -10%, rgba(0, 144, 216, 0.3), transparent 60%),
+    radial-gradient(700px 420px at -10% 110%, rgba(72, 192, 48, 0.16), transparent 55%),
+    linear-gradient(180deg, #07222f 0%, #0b2e3f 100%);
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent 88%);
+}
+
+@utility gradient-text {
+  background: linear-gradient(92deg, #35b6f2 0%, #7ed957 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
