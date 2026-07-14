@@ -1,246 +1,230 @@
 import type { Metadata } from "next";
-import { BadgeCheck, Cog, Hammer } from "lucide-react";
-import { PrimaryButton, GhostButton } from "@/components/Buttons";
-import { CtaBand } from "@/components/CtaBand";
-import { Figure17 } from "@/components/Figure17";
+import {
+  Banknote,
+  Building2,
+  Cog,
+  Factory,
+  FlaskConical,
+  Rocket,
+  Users,
+} from "lucide-react";
 import { FigureFrame } from "@/components/FigureFrame";
-import { PageHero } from "@/components/PageHero";
-import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, Prose } from "@/components/Section";
+import { NextChapter } from "@/components/NextChapter";
 import { OpportunityStats } from "@/components/OpportunityStats";
+import { PageHero } from "@/components/PageHero";
+import { Stagger, StaggerItem } from "@/components/Reveal";
+import { Section, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Opportunity & Finance",
   description:
-    "A USD 100+ billion opportunity: from productive continuity to scalable impact across approximately eighty countries.",
+    "From vision to implementation — a significant global opportunity, partnership-driven implementation, and investment in productive communities.",
 };
 
-const model = [
-  {
-    title: "Regional Processing Centers",
-    body: "RPCs support coordination, regeneration, servicing, training, quality assurance, logistics management, and ecosystem development — connecting local deployment with broader operational networks while contributing to workforce development, enterprise creation, local manufacturing participation, and regional capability building.",
-  },
-  {
-    title: "Circular Regeneration",
-    body: "A circular-regeneration approach designed to support recovery, reuse, regeneration, and redeployment. Rather than treating resources as disposable, the platform seeks to maintain materials within productive circulation — supporting operational continuity, resource efficiency, environmental responsibility, and long-term ecosystem sustainability.",
-  },
-  {
-    title: "Progressive Scaling",
-    body: "Implementation may begin through pilots, demonstrations, validation programs, and early deployments before expanding toward broader operational ecosystems. Scaling is viewed not as a single event, but as a structured process of capability development and ecosystem expansion.",
-  },
-  {
-    title: "Partnerships for Impact",
-    body: "Successful implementation will depend upon partnerships among governments, investors, manufacturers, development institutions, universities, humanitarian organizations, local enterprises, and communities — supporting local ownership, capability development, and shared value creation.",
-  },
+const pathway = [
+  { icon: Cog, label: "Engineering Refinement" },
+  { icon: FlaskConical, label: "Operational Validation" },
+  { icon: Rocket, label: "Pilot Deployment" },
+  { icon: Users, label: "Strategic Partnerships" },
+  { icon: Building2, label: "Regional Expansion" },
+  { icon: Factory, label: "Scalable Replication" },
 ];
 
-const validation = [
-  {
-    icon: BadgeCheck,
-    text: "Technical review and positive assessment by an established multinational infrastructure-development organization",
-  },
-  {
-    icon: Cog,
-    text: "Collaboration with a seasoned multi-patent engineer with extensive experience in product design, manufacturing systems, and practical deployment",
-  },
-  {
-    icon: Hammer,
-    text: "Prototype development activities have commenced as part of preparation for pilot deployment and operational validation",
-  },
+const investment = [
+  "Technology development",
+  "Manufacturing capability",
+  "Prototype validation",
+  "Pilot deployment",
+  "Regional processing capacity",
+  "Local workforce development",
+  "Monitoring systems",
+  "Community implementation",
 ];
-
-const stairOffsets = ["lg:mr-[16%]", "lg:mx-[8%]", "lg:ml-[16%]"];
 
 export default function OpportunityPage() {
   return (
     <>
       <PageHero
-        eyebrow="Opportunity & Finance"
-        title="From Productive Continuity to Scalable Impact"
-        lede="HydroSol was conceived not only as a productive-energy platform, but also as a scalable framework capable of supporting productive continuity across diverse communities, sectors, and geographies."
+        eyebrow="Chapter 05 · The HydroSol Journey"
+        title="Opportunity & Finance"
+        subtitle="From Vision to Implementation"
       />
 
       <Section>
-        <Reveal>
-          <p className="mx-auto max-w-2xl text-center text-[16.5px] leading-[1.8] text-ink/75">
-            The opportunity extends beyond energy generation. It includes livelihoods,
-            enterprise development, local manufacturing, economic participation,
-            infrastructure access, resilience, and sustainable development. HydroSol seeks
-            to contribute to these outcomes through a distributed productive-energy
-            ecosystem designed for practical deployment and progressive growth.
+        <Prose>
+          <p>
+            The vision of the Smart Productive Village is both ambitious and practical.
+            Its purpose is not to remain a concept but to become a validated and scalable
+            development model capable of supporting productive communities across diverse
+            regions of the world.
           </p>
-        </Reveal>
-        <div className="mt-12">
-          <Reveal>
-            <OpportunityStats />
-          </Reveal>
+          <p>HydroSol therefore enters its next phase with a clear objective:</p>
+        </Prose>
+        <PullQuote
+          lines={[
+            "To translate engineering innovation into measurable social, economic,",
+            "and environmental impact through responsible implementation,",
+            "validation, and partnership.",
+          ]}
+        />
+      </Section>
+
+      <Section tint eyebrow="A Significant Global Opportunity" title="One of the Largest Productive Infrastructure Opportunities of the Twenty-First Century">
+        <Prose>
+          <p>
+            Across Africa, South Asia, Latin America, the Caribbean, and other parts of
+            the Global South, an estimated <strong>2.3 billion people</strong> continue
+            to seek reliable productive infrastructure capable of supporting households,
+            agriculture, education, healthcare, water systems, and local enterprise.
+          </p>
+          <p>
+            The productive infrastructure ecosystem serving these communities represents
+            a market opportunity exceeding <strong>US$100 billion</strong> — spanning
+            productive energy, manufacturing, agriculture, mobility, water systems,
+            healthcare, education, digital services, and local enterprise development.
+          </p>
+        </Prose>
+        <div className="mx-auto mt-12 max-w-4xl">
+          <OpportunityStats />
         </div>
-        <div className="mt-12 grid gap-x-10 gap-y-6 text-[16.5px] leading-[1.8] text-ink/75 sm:grid-cols-2 [&_strong]:font-semibold [&_strong]:text-ink">
-          <Reveal>
+        <Prose>
+          <p>
+            HydroSol seeks to participate responsibly within this opportunity by{" "}
+            <strong>
+              enabling productive communities rather than merely supplying equipment.
+            </strong>
+          </p>
+        </Prose>
+      </Section>
+
+      <Section eyebrow="Building Through Partnership" title="No Single Institution Can Transform Communities Alone">
+        <div className="mt-4 grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <Prose>
             <p>
-              Across approximately eighty countries, more than 2.3 billion people continue
-              to experience limitations in productive-energy access, productive
-              infrastructure, and economic opportunity. These challenges affect households,
-              farms, enterprises, healthcare facilities, educational institutions,
-              cooperatives, transport systems, and local economies.
+              HydroSol embraces collaboration as a fundamental operating principle. As
+              illustrated in the Partnership Ecosystem, HydroSol brings together
+              governments, development finance institutions, universities, engineering
+              and manufacturing partners, humanitarian organizations, private-sector
+              innovators, investors, and local communities within a shared implementation
+              framework.
             </p>
-          </Reveal>
-          <Reveal delay={0.1}>
             <p>
-              The combined opportunity across clean cooking, productive agriculture, water
-              systems, SMEs, mobility, local manufacturing, community services, and
-              supporting infrastructure <strong>exceeds USD 100 billion</strong> — driven
-              by growing demand for productive-energy services, expanding development
-              initiatives, infrastructure modernization efforts, and increasing emphasis on
-              resilience and sustainability.
+              Each partner contributes unique expertise, resources, and experience —
+              creating stronger pathways for implementation while fostering local
+              ownership, long-term sustainability, and measurable community impact.
             </p>
-          </Reveal>
-        </div>
-        <div className="mt-12 grid gap-10 lg:grid-cols-2">
+          </Prose>
           <FigureFrame
-            src="/figures/fig06-scale-of-opportunity.jpeg"
-            alt="Infographic: the scale of the opportunity"
-            caption="A massive development need. A transformational market opportunity."
+            src="/figures/hs2-06-partnership-ecosystem.jpg"
+            alt="The HydroSol Partnership Ecosystem — governments, universities, manufacturers, investors, NGOs, development finance institutions, communities, and engineering partners"
+            caption="The Partnership Ecosystem — shared implementation, local ownership, and measurable community impact."
             width={1432}
-            height={955}
-            priority
-          />
-          <FigureFrame
-            src="/figures/fig15-why-now.jpeg"
-            alt="Infographic: why now — six converging forces"
-            caption="Why now — six converging forces creating unprecedented opportunity for productive-energy solutions."
-            width={1432}
-            height={955}
+            height={784}
           />
         </div>
       </Section>
 
-      <Section eyebrow="Implementation" title="The HydroSol Implementation Model" tint>
+      <Section tint eyebrow="The Next Phase" title="From Conceptual Development Toward Practical Implementation">
         <Prose>
           <p>
-            HydroSol is designed as an operational ecosystem rather than a standalone
-            technology deployment. Its implementation model combines distributed
-            deployment, circular resource management, Regional Processing Centers,
-            strategic partnerships, and progressive scaling pathways into a coordinated
-            framework capable of supporting long-term growth.
+            The HydroSol journey now moves from conceptual development toward practical
+            implementation. The implementation pathway illustrates how each stage builds
+            upon the previous one — transforming vision into measurable community impact
+            through responsible, collaborative implementation.
           </p>
         </Prose>
-        <Stagger className="mt-10 grid gap-5 md:grid-cols-2">
-          {model.map((m, i) => (
-            <StaggerItem key={m.title}>
-              <div className="hairline-card h-full p-7 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(7,34,47,0.1)] sm:p-8">
-                <span className="display-font text-[13px] font-bold text-brand">
-                  {String(i + 1).padStart(2, "0")}
+        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {pathway.map((p, i) => (
+            <StaggerItem key={p.label}>
+              <div className="hairline-card group flex h-full items-center gap-4 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(18,59,109,0.1)] sm:p-6">
+                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <p.icon className="size-5" />
                 </span>
-                <h3 className="display-font mt-2 text-[19px] font-bold text-ink">
-                  {m.title}
-                </h3>
-                <p className="mt-3 text-[14.5px] leading-relaxed text-ink/65">{m.body}</p>
+                <div>
+                  <p className="display-font text-[12px] font-bold tracking-wider text-brand/50">
+                    STAGE {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <p className="text-[15px] font-semibold leading-snug text-navy">
+                    {p.label}
+                  </p>
+                </div>
               </div>
             </StaggerItem>
           ))}
         </Stagger>
-        <div className="mt-10 grid gap-10 lg:grid-cols-2">
+        <div className="mx-auto mt-12 max-w-2xl">
           <FigureFrame
-            src="/figures/fig09-rpc-ecosystem.jpeg"
-            alt="Infographic: the Regional Processing Center ecosystem"
-            caption="The RPC ecosystem — one hub, many communities, shared prosperity."
-            width={1432}
-            height={955}
-          />
-          <FigureFrame
-            src="/figures/fig11-circular-regeneration.png"
-            alt="Infographic: the circular regeneration ecosystem"
-            caption="Circular regeneration — keeping resources, value, and opportunity circulating within communities."
-            width={1254}
-            height={1254}
+            src="/figures/hs2-07-implementation-pathway.jpg"
+            alt="The Implementation Pathway — vision, prototype, validation, pilot, regional deployment, replication, and global impact"
+            caption="The Implementation Pathway — from vision to global impact. One journey, many partners, limitless impact."
+            width={1024}
+            height={1536}
           />
         </div>
       </Section>
 
-      <Section eyebrow="From Vision to Action" title="Validation & Technical Development">
+      <Section eyebrow="Investment for Productive Communities" title="Capital That Supports Lasting Productive Impact">
         <Prose>
           <p>
-            HydroSol now moves from framework development toward implementation. The
-            priority is to translate concepts into measurable outcomes through pilot
-            deployment, operational validation, strategic partnerships, RPC development,
-            regional expansion, and international replication.
+            HydroSol seeks investment that supports lasting productive impact. Capital
+            contributes not only to technology development but to the full foundation of
+            community implementation.
           </p>
         </Prose>
-        <Stagger className="mt-10 space-y-4">
-          {validation.map((v, i) => (
-            <StaggerItem key={v.text} className={stairOffsets[i]}>
-              <div className="hairline-card group flex items-center gap-4 p-5 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(7,34,47,0.1)] sm:p-6">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
-                  <v.icon className="size-5" />
-                </span>
-                <p className="text-[15px] leading-relaxed text-ink/75">{v.text}</p>
-              </div>
+        <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
+          {investment.map((item) => (
+            <StaggerItem key={item}>
+              <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-white px-4 py-2 text-[13.5px] font-semibold text-navy">
+                <Banknote className="size-4 text-leaf-deep" aria-hidden />
+                {item}
+              </span>
             </StaggerItem>
           ))}
         </Stagger>
-      </Section>
-
-      <Section
-        eyebrow="The Vision at Village Scale"
-        title="Smart Productive Villages (Kushet)"
-        tint
-      >
         <Prose>
           <p>
-            HydroSol envisions the emergence of productive, resilient, and increasingly
-            self-sustaining communities built around local participation and productive
-            continuity. At the village level, a community of approximately 500 households
-            (kushet) may become a focal point for productive-energy services, agriculture,
-            water systems, enterprise development, education, healthcare support, and
-            local economic activity.
-          </p>
-          <p>
-            As productive opportunities increase, communities may be better positioned to
-            reduce pressure on fragile ecosystems, improve land management practices,
-            support afforestation and environmental restoration efforts, strengthen
-            agricultural productivity, and enhance long-term resilience.
-          </p>
-          <p>
-            The objective is not simply energy deployment. The objective is to support
-            thriving communities in which people are increasingly able to{" "}
-            <strong>create opportunity where they live</strong> rather than being
-            compelled to leave in search of it — in partnership with governments,
-            communities, development institutions, universities, humanitarian
-            organizations, and the private sector, supporting progress toward the
-            Sustainable Development Goals and more prosperous futures.
-          </p>
-        </Prose>
-        <div className="mt-12">
-          <Figure17 />
-        </div>
-      </Section>
-
-      <Section eyebrow="Coalition" title="Coalition for Productive Communities">
-        <Prose>
-          <p>
-            HydroSol invites participation from organizations and individuals who share an
-            interest in productive-energy solutions, economic participation, community
-            development, and sustainable prosperity. Progress at scale requires
-            collaboration.
-          </p>
-          <p>
-            The opportunity is not simply to deploy technology. The opportunity is to help
-            create conditions through which communities can strengthen livelihoods, expand
-            opportunity, and pursue long-term prosperity.
+            <strong>
+              Investment therefore becomes an investment in productive communities rather
+              than simply in infrastructure.
+            </strong>
           </p>
         </Prose>
       </Section>
 
-      <CtaBand
-        title="Join the HydroSol Community"
-        lede="Investors, governments, institutions, manufacturers, researchers, and community organizations — the coalition is forming."
-      >
-        <PrimaryButton href="/join">Join the HydroSol Community</PrimaryButton>
-        <GhostButton href="/contact" onDark>
-          Contact HydroSol
-        </GhostButton>
-      </CtaBand>
+      <Section tint eyebrow="An Invitation to a Shared Future" title="When Innovation Serves Humanity">
+        <Prose>
+          <p>
+            HydroSol believes that the world&rsquo;s greatest opportunities emerge when
+            innovation serves humanity.
+          </p>
+        </Prose>
+        <PullQuote
+          lines={[
+            "The demand is substantial.",
+            "The need remains urgent.",
+            "The opportunity has the potential to be transformative.",
+          ]}
+        />
+        <Prose>
+          <p>
+            HydroSol therefore invites governments, investors, engineering firms,
+            manufacturers, universities, development institutions, humanitarian
+            organizations, and community leaders to participate in building productive
+            communities together.
+          </p>
+          <p>
+            By combining engineering innovation with practical implementation, rigorous
+            validation, and collaborative partnership, HydroSol seeks to demonstrate how
+            productive energy can contribute to sustainable development at community
+            scale.
+          </p>
+        </Prose>
+      </Section>
+
+      <NextChapter
+        current="05"
+        note="The journey has now moved from concept toward implementation. The next chapter extends an open invitation to those who wish to help shape that future."
+      />
     </>
   );
 }

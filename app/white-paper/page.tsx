@@ -7,7 +7,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Section, Prose } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "White Paper & Publications",
+  title: "Executive White Paper",
   description:
     "Public access to the HydroSol Executive White Paper — the platform’s vision, productive-continuity framework, architecture, implementation philosophy, and long-term development objectives.",
 };
@@ -24,7 +24,8 @@ export default function WhitePaperPage() {
     <>
       <PageHero
         eyebrow="Publications"
-        title="HydroSol Publications"
+        title="Executive White Paper"
+        subtitle="The Complete HydroSol Framework"
         lede="HydroSol is supported by a comprehensive body of doctrine, architecture, operational, and implementation documentation developed through technical studies, program development activities, and deployment planning efforts."
       />
 
@@ -48,7 +49,7 @@ export default function WhitePaperPage() {
               <a
                 href="/HydroSol-Executive-White-Paper.pdf"
                 download
-                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-brand px-7 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-brand-deep hover:shadow-[0_10px_30px_rgba(0,144,216,0.4)]"
+                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-brand px-7 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)]"
               >
                 <Download className="size-5 transition-transform group-hover:translate-y-0.5" />
                 Download the White Paper

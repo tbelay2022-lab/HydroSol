@@ -1,60 +1,62 @@
 import type { Metadata } from "next";
 import {
-  Atom,
-  Briefcase,
+  Award,
+  Bus,
+  Droplets,
+  FlaskConical,
   GraduationCap,
-  KeyRound,
-  Network,
-  Recycle,
-  Rocket,
-  ScanEye,
-  ShieldCheck,
-  Star,
-  TrendingUp,
+  Handshake,
+  HeartPulse,
+  Home,
+  Sprout,
+  Store,
 } from "lucide-react";
-import { PrimaryButton } from "@/components/Buttons";
-import { CtaBand } from "@/components/CtaBand";
 import { FigureFrame } from "@/components/FigureFrame";
+import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
-import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, Prose, PullQuote } from "@/components/Section";
+import { Stagger, StaggerItem } from "@/components/Reveal";
+import { Section, SubHeading, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "The HydroSol Platform",
   description:
-    "An integrated productive-energy ecosystem combining energy generation, safety systems, resource logistics, governance mechanisms, regenerative pathways, and distributed infrastructure.",
+    "Productive energy for productive communities — an implementation framework that integrates productive energy with the wider systems that sustain community development.",
 };
 
-const components = [
+const reinforce = [
+  "Reliable energy strengthens food production.",
+  "Food production supports local enterprise.",
+  "Local enterprise creates employment.",
+  "Employment strengthens household income.",
+  "Improved incomes support education and healthcare.",
+  "Healthier and more productive communities become increasingly resilient.",
+];
+
+const applications = [
+  { label: "Household Energy Services", icon: Home },
+  { label: "Agricultural Production & Processing", icon: Sprout },
+  { label: "Water Access", icon: Droplets },
+  { label: "Healthcare", icon: HeartPulse },
+  { label: "Education", icon: GraduationCap },
+  { label: "Productive Mobility", icon: Bus },
+  { label: "Small & Medium Enterprises", icon: Store },
+];
+
+const validation = [
   {
-    icon: Atom,
-    title: "Hydrogen Generation Core",
-    body: "Hydrogen generation provides the productive-energy foundation of the platform. Hydrogen itself is not the objective — it is the enabling capability through which HydroSol supports productive-energy services, integrated with operational safeguards, resource circulation, governance systems, and distributed deployment architectures.",
+    icon: FlaskConical,
+    title: "Prototype Development",
+    body: "Progressing through disciplined prototype development and engineering refinement.",
   },
   {
-    icon: Recycle,
-    title: "Cartridge Ecosystem",
-    body: "A cartridge-based ecosystem designed to support deployment, operation, servicing, recovery, regeneration, and redeployment. Rather than treating resources as disposable, HydroSol seeks to maintain them within productive circulation for as long as practical — supporting local servicing, resource recovery, and future scalability.",
+    icon: Award,
+    title: "Operational Validation",
+    body: "Rigorous testing, validation, and continuous improvement at every stage.",
   },
   {
-    icon: ShieldCheck,
-    title: "Safety Architecture",
-    body: "Safety is integrated throughout the platform — multiple layers of prevention, monitoring, protection, and operational safeguards designed to support responsible deployment. Safety is not treated as a separate feature; it is embedded within the platform architecture itself.",
-  },
-  {
-    icon: ScanEye,
-    title: "Digital Governance & Verification",
-    body: "Monitoring, reporting, verification, and operational-learning mechanisms designed to support transparency, accountability, and continuous improvement — the foundation for scaling deployment while maintaining operational visibility and stakeholder confidence.",
-  },
-  {
-    icon: Network,
-    title: "Distributed Infrastructure",
-    body: "Designed for distributed deployment: beginning with individual users and progressively expanding toward households, enterprises, communities, clusters, and regional ecosystems — strengthening resilience while enabling local participation and operational flexibility.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Progressive Deployment",
-    body: "Systems may begin with simple operation and evolve toward increasingly coordinated, automated, and networked architectures as deployment requirements mature. The platform is designed to grow with communities, institutions, enterprises, and regional implementation programs.",
+    icon: Handshake,
+    title: "Strategic Partnerships",
+    body: "Collaboration with experienced professionals and institutions as an essential component of responsible innovation.",
   },
 ];
 
@@ -62,140 +64,209 @@ export default function PlatformPage() {
   return (
     <>
       <PageHero
-        eyebrow="The HydroSol Platform"
-        title="An Integrated Productive-Energy Ecosystem"
-        lede="HydroSol responds to the challenges outlined in The Quest through an integrated productive-energy platform designed to support Productive Continuity."
+        eyebrow="Chapter 03 · The HydroSol Journey"
+        title="The HydroSol Platform"
+        subtitle="Productive Energy for Productive Communities"
       />
 
       <Section>
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div className="max-w-xl space-y-5 text-[16.5px] leading-[1.8] text-ink/75 [&_strong]:font-semibold [&_strong]:text-ink">
-            <p>
-              Rather than focusing on a single technology, HydroSol combines energy
-              generation, safety systems, resource logistics, governance mechanisms,
-              regenerative pathways, and distributed infrastructure into a unified
-              operational ecosystem. Each component performs a specific role. Together
-              they support the broader objective of enabling productive activity across
-              households, enterprises, institutions, and communities.
-            </p>
-            <p>
-              HydroSol is designed as a{" "}
-              <strong>platform rather than a standalone product</strong>. The platform
-              integrates multiple operational components that work together to support
-              reliable productive-energy services and long-term operational continuity —
-              moving beyond isolated energy solutions toward a coordinated ecosystem
-              capable of supporting productive activity, local participation, and
-              progressive expansion.
-            </p>
-          </div>
+        <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
-            src="/figures/fig04-consumed-vs-productive.jpeg"
-            alt="Infographic: consumed energy versus productive energy"
-            caption="Consumed energy vs productive energy — energy is more valuable when it creates value."
-            width={1432}
-            height={955}
+            src="/figures/hs2-03-platform.jpg"
+            alt="The HydroSol Platform — an integrative productive energy framework connecting homes, agriculture, water, healthcare, education, mobility, and SMEs"
+            caption="One platform. Many applications. Stronger communities. Greater impact."
+            width={1402}
+            height={1122}
             priority
           />
         </div>
+        <Prose>
+          <p>
+            The HydroSol Productive Energy Platform was developed from a simple but
+            important observation. Communities require more than energy alone.{" "}
+            <strong>They require energy that enables productivity.</strong>
+          </p>
+          <p>
+            Throughout the world, energy has traditionally been measured by the amount
+            consumed. While consumption remains important, long-term development
+            increasingly depends upon how energy contributes to livelihoods, local
+            enterprise, food production, education, healthcare, water services, and
+            community resilience.
+          </p>
+          <p>
+            HydroSol therefore introduces the concept of{" "}
+            <strong>Productive Energy</strong> — energy designed to support economic
+            activity and strengthen communities rather than merely providing electricity
+            or heat.
+          </p>
+        </Prose>
+
+        <SubHeading>The Convergence of Many Disciplines</SubHeading>
+        <Prose>
+          <p>
+            HydroSol is not the product of a single scientific discipline. It is the
+            convergence of chemistry, engineering, digital technologies, environmental
+            science, economics, governance, and community development into one integrated
+            operational platform. This interdisciplinary foundation enables HydroSol to
+            move beyond energy generation and support resilient infrastructure,
+            productive livelihoods, and sustainable regional development.
+          </p>
+        </Prose>
       </Section>
 
-      <Section eyebrow="The Architecture" title="Platform Components" tint>
-        <Stagger className="mt-12 grid gap-5 md:grid-cols-2">
-          {components.map((c, i) => (
-            <StaggerItem key={c.title}>
-              <div className="hairline-card group h-full p-7 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_44px_rgba(7,34,47,0.1)] sm:p-8">
-                <div className="flex items-center justify-between">
-                  <span className="grid size-12 place-items-center rounded-2xl bg-brand-soft text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
-                    <c.icon className="size-6" />
-                  </span>
-                  <span className="display-font text-[13px] font-bold text-ink/25">
+      <Section tint eyebrow="An Integrative Framework" title="More Than Another Energy Technology">
+        <Prose>
+          <p>
+            The HydroSol Productive Energy Platform is not presented simply as another
+            energy technology. It is an <strong>implementation framework</strong> that
+            seeks to integrate productive energy with the wider systems that sustain
+            community development.
+          </p>
+          <p>
+            Within this framework, productive energy supports multiple sectors
+            simultaneously — including households, agriculture, small enterprises,
+            healthcare facilities, schools, water systems, and productive mobility.
+            Instead of viewing these sectors independently, the platform recognizes that
+            they reinforce one another.
+          </p>
+        </Prose>
+        <div className="mx-auto mt-10 max-w-4xl">
+          <Stagger className="grid gap-3 sm:grid-cols-2">
+            {reinforce.map((r, i) => (
+              <StaggerItem key={r}>
+                <div className="flex h-full items-center gap-4 rounded-xl border border-line bg-white px-5 py-4">
+                  <span className="display-font grid size-8 shrink-0 place-items-center rounded-full bg-brand-soft text-[12.5px] font-bold text-brand">
                     {String(i + 1).padStart(2, "0")}
                   </span>
+                  <p className="text-[15px] leading-snug text-body">{r}</p>
                 </div>
-                <h3 className="display-font mt-5 text-[19px] font-bold text-ink">
-                  {c.title}
+              </StaggerItem>
+            ))}
+          </Stagger>
+          <p className="mt-7 text-center text-[16px] font-medium italic text-brand">
+            This systems perspective forms the foundation of the HydroSol Platform.
+          </p>
+        </div>
+      </Section>
+
+      <Section eyebrow="Distributed Rather Than Centralized" title="Energy Where Productive Activities Occur">
+        <Prose>
+          <p>
+            Many communities beyond the last mile require solutions that can operate
+            close to where people live and work. HydroSol therefore adopts a{" "}
+            <strong>distributed deployment philosophy.</strong>
+          </p>
+          <p>
+            Instead of depending exclusively upon large centralized infrastructure,
+            productive energy can be deployed where productive activities occur — within
+            homes, farms, workshops, cooperatives, schools, clinics, and community
+            enterprises. This approach supports local participation while reducing
+            dependence upon long-distance infrastructure for every productive activity.
+          </p>
+          <p>
+            Distributed deployment also enables gradual expansion as communities grow and
+            their productive needs evolve.
+          </p>
+        </Prose>
+      </Section>
+
+      <Section tint eyebrow="A Platform for Multiple Applications" title="One Common Operational Framework">
+        <Prose>
+          <p>
+            The HydroSol Platform is designed to support a broad range of productive
+            activities through a common operational framework.
+          </p>
+        </Prose>
+        <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
+          {applications.map((a) => (
+            <StaggerItem key={a.label}>
+              <span className="inline-flex items-center gap-2.5 rounded-full border border-brand/25 bg-white px-4 py-2.5 text-[13.5px] font-semibold text-navy">
+                <a.icon className="size-4 text-brand" />
+                {a.label}
+              </span>
+            </StaggerItem>
+          ))}
+        </Stagger>
+        <Prose>
+          <p>
+            Each application benefits individually. More importantly,{" "}
+            <strong>
+              they become stronger when deployed together within the same community.
+            </strong>{" "}
+            HydroSol therefore serves not as a collection of independent applications but
+            as a coordinated platform through which productive energy contributes to
+            broader development outcomes.
+          </p>
+        </Prose>
+      </Section>
+
+      <Section eyebrow="Validation Through Partnership" title="Innovation Supported by Engineering Discipline">
+        <Prose>
+          <p>
+            HydroSol recognizes that innovation achieves its greatest value when
+            supported by collaboration, engineering discipline, and practical validation.
+            Accordingly, the program is progressing through prototype development,
+            engineering refinement, operational validation, and strategic partnerships.
+          </p>
+        </Prose>
+        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-3">
+          {validation.map((v) => (
+            <StaggerItem key={v.title}>
+              <div className="hairline-card group h-full p-6 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]">
+                <span className="grid size-11 place-items-center rounded-xl bg-leaf-soft text-leaf-deep transition-colors group-hover:bg-leaf group-hover:text-white">
+                  <v.icon className="size-5" />
+                </span>
+                <h3 className="display-font mt-5 text-[17px] font-bold text-navy">
+                  {v.title}
                 </h3>
-                <p className="mt-3 text-[14.5px] leading-relaxed text-ink/65">{c.body}</p>
+                <p className="mt-2 text-[14.5px] leading-relaxed text-body/90">{v.body}</p>
               </div>
             </StaggerItem>
           ))}
         </Stagger>
-        <Reveal>
-          <div className="ink-panel relative mt-8 overflow-hidden rounded-3xl px-7 py-10 text-white sm:px-10 sm:py-12">
-            <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
-            <div
-              className="pointer-events-none absolute -right-10 -top-14 select-none opacity-[0.05]"
-              aria-hidden
-            >
-              <Star className="size-64" strokeWidth={0.75} />
-            </div>
-            <div className="relative">
-              <p className="eyebrow !text-leaf">Central Actors</p>
-              <h3 className="display-font mt-3 max-w-2xl text-balance text-2xl font-bold leading-snug sm:text-3xl">
-                Women and youth are not secondary beneficiaries of HydroSol —{" "}
-                <span className="gradient-text">they are central actors.</span>
-              </h3>
-              <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/70">
-                Central to deployment, servicing, distribution, local enterprise
-                creation, training, productive use, and ecosystem growth. HydroSol
-                therefore supports five pathways:
-              </p>
-              <div className="mt-7 flex flex-wrap gap-2.5">
-                {[
-                  { label: "Employment", icon: Briefcase },
-                  { label: "Skills Development", icon: GraduationCap },
-                  { label: "Entrepreneurship", icon: Rocket },
-                  { label: "Leadership", icon: Star },
-                  { label: "Local Ownership", icon: KeyRound },
-                ].map((p) => (
-                  <span
-                    key={p.label}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-4 py-2.5 text-[13.5px] font-semibold text-white backdrop-blur-sm"
-                  >
-                    <p.icon className="size-4 text-leaf" />
-                    {p.label}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Reveal>
+        <Prose>
+          <p>
+            The HydroSol program has also benefited from the confidence and practical
+            engineering contributions of experienced professionals — including the Chief
+            Executive Officer of a multinational engineering company, a seasoned
+            mechanical engineer and holder of multiple patents in power technologies.
+            Their participation strengthens the program&rsquo;s engineering pathway while
+            reinforcing HydroSol&rsquo;s commitment to rigorous testing, validation, and
+            continuous improvement. HydroSol views such collaboration as an essential
+            component of responsible innovation.
+          </p>
+        </Prose>
       </Section>
 
-      <Section eyebrow="Ownership Model" title="Community Ownership & Distributed Capability">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <FigureFrame
-            src="/figures/fig07-community-ownership.png"
-            alt="Infographic: community ownership and distributed capability"
-            caption="Distributing capability, expanding participation, strengthening resilience."
-            width={1432}
-            height={955}
-          />
-          <FigureFrame
-            src="/figures/fig08-operational-architecture.png"
-            alt="Infographic: HydroSol distributed operational architecture"
-            caption="Distributed operational architecture — modular systems, local deployment, circular flows, coordinated impact."
-            width={1432}
-            height={955}
-          />
-        </div>
-      </Section>
-
-      <Section tint>
+      <Section tint eyebrow="Our Philosophy" title="Building Communities Rather Than Installing Technology">
+        <Prose>
+          <p>
+            Technology alone does not transform communities. Transformation occurs when
+            technology enables people to become more productive, more resilient, and
+            better connected to opportunity.
+          </p>
+        </Prose>
         <PullQuote
           lines={[
-            "Hydrogen is not the destination.",
-            "Productive continuity is the destination.",
+            "HydroSol measures success not by the number of systems deployed,",
+            "but by the communities strengthened through productive energy.",
           ]}
         />
+        <Prose>
+          <p>
+            The HydroSol Platform becomes most meaningful when productive energy is
+            translated into everyday community life. The next chapter demonstrates how
+            individual applications become an integrated productive community — and how
+            these systems ultimately converge within the vision of the{" "}
+            <strong>Smart Productive Village (Kushet).</strong>
+          </p>
+        </Prose>
       </Section>
 
-      <CtaBand
-        title="See where the platform creates productive continuity"
-        lede="From clean cooking and agriculture to healthcare, education, and mobility."
-      >
-        <PrimaryButton href="/applications">Explore Applications</PrimaryButton>
-      </CtaBand>
+      <NextChapter
+        current="03"
+        note="Rather than examining individual technical applications in isolation, we now explore how productive energy supports interconnected community systems."
+      />
     </>
   );
 }

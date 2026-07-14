@@ -1,259 +1,258 @@
 import type { Metadata } from "next";
-import { PrimaryButton } from "@/components/Buttons";
-import { CtaBand } from "@/components/CtaBand";
+import {
+  Globe2,
+  Landmark,
+  Leaf,
+  Sprout,
+  TrendingUp,
+  Zap,
+} from "lucide-react";
 import { FigureFrame } from "@/components/FigureFrame";
+import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, Prose, PullQuote } from "@/components/Section";
+import { Section, SubHeading, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "The Quest",
   description:
-    "The productive-continuity question: can energy continuously support productive activity and long-term development?",
+    "Humanity's continuing search for sustainable development — decades of progress, the gap that remains, and the need for an integrative framework.",
 };
 
-const cascade = [
-  "When continuity is interrupted, productivity declines.",
-  "When productivity declines, opportunity contracts.",
-  "When opportunity contracts, vulnerability increases.",
+const fronts = [
+  {
+    icon: Zap,
+    title: "Energy Programs",
+    body: "Seek to expand electricity access through grid extension, renewable energy, mini-grids, and decentralized solutions.",
+  },
+  {
+    icon: Sprout,
+    title: "Agricultural Initiatives",
+    body: "Promote improved farming methods, irrigation, mechanization, storage, and food security.",
+  },
+  {
+    icon: Leaf,
+    title: "Environmental Programs",
+    body: "Encourage afforestation, ecosystem restoration, sustainable resource management, carbon reduction, and climate adaptation.",
+  },
+  {
+    icon: Landmark,
+    title: "Infrastructure Investments",
+    body: "Improve transportation, communications, healthcare facilities, schools, and public services.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Economic Development",
+    body: "Strengthen entrepreneurship, financial inclusion, local manufacturing, skills development, and employment opportunities.",
+  },
+  {
+    icon: Globe2,
+    title: "International Frameworks",
+    body: "Including the Sustainable Development Goals — encouraging integrated approaches that seek inclusive, resilient, and environmentally responsible development.",
+  },
 ];
 
-const stairOffsets = ["lg:mr-[16%]", "lg:mx-[8%]", "lg:ml-[16%]"];
+const alone = [
+  "Energy access alone may not create sustainable livelihoods.",
+  "Agricultural improvements alone may not overcome infrastructure limitations.",
+  "Environmental restoration alone may not generate local economic opportunity.",
+];
+
+const connected = [
+  "Reliable energy strengthens agriculture.",
+  "Agriculture supports local enterprise.",
+  "Enterprise generates employment.",
+  "Employment improves education and healthcare access.",
+  "Healthy ecosystems strengthen water security and long-term resilience.",
+  "Infrastructure enables all of these systems to function together.",
+];
 
 export default function QuestPage() {
   return (
     <>
       <PageHero
-        eyebrow="The Quest"
-        title="The Productive-Continuity Question"
-        lede="Across many regions of the world, communities continue to face interconnected challenges involving poverty, infrastructure limitations, environmental stress, constrained economic opportunity, and unreliable energy services."
+        eyebrow="Chapter 02 · The HydroSol Journey"
+        title="The Quest"
+        subtitle="Humanity's Continuing Search for Sustainable Development"
       />
 
       <Section>
-        <div className="max-w-3xl">
-          <Prose>
-            <p>
-              These challenges are often addressed individually. In practice, however,
-              they frequently reinforce one another. Interruptions in energy services can
-              affect agriculture, water access, enterprise operation, mobility, healthcare
-              delivery, education, and broader economic participation.
-            </p>
-          </Prose>
-        </div>
-
-        <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <Reveal>
-            <div className="relative pl-6 sm:pl-8">
-              <span
-                className="absolute bottom-1 left-0 top-1 w-[3px] rounded-full bg-gradient-to-b from-brand to-leaf"
-                aria-hidden
-              />
-              <p className="eyebrow !text-brand">The Central Question</p>
-              <p className="display-font mt-4 text-[28px] font-bold leading-[1.15] text-ink sm:text-[34px]">
-                Can energy continuously support productive activity and{" "}
-                <span className="gradient-text">long-term development?</span>
-              </p>
-              <p className="mt-6 flex items-center gap-3 text-[14.5px] text-ink/55">
-                <span
-                  className="h-px w-8 shrink-0 bg-gradient-to-r from-brand to-leaf"
-                  aria-hidden
-                />
-                This question forms the foundation of the HydroSol mission.
-              </p>
-            </div>
-          </Reveal>
-
+        <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
-            src="/figures/fig01-poverty-cycle.jpeg"
-            alt="Infographic: the poverty–deforestation cycle and the opportunity pathway HydroSol seeks to enable"
-            caption="The poverty–deforestation cycle — and the pathway HydroSol seeks to open through productive continuity."
-            width={1433}
-            height={786}
+            src="/figures/hs2-02-humanitys-quest.jpg"
+            alt="Humanity's Quest — a global journey toward sustainable development: a worldwide commitment, global progress, the remaining gap, and the need for integration"
+            caption="Humanity's quest — from individual solutions to connected systems. From progress to prosperity for all."
+            width={1432}
+            height={955}
             priority
           />
         </div>
-      </Section>
-
-      <Section eyebrow="The Concept" title="Productive Continuity" tint>
         <Prose>
           <p>
-            Productive Continuity is the ability of households, farms, enterprises,
-            institutions, and communities to continuously create value through reliable
-            access to productive-energy services.
+            The challenges facing communities across the world have never gone unnoticed.
+            For decades, governments, universities, research institutions, development
+            finance institutions, entrepreneurs, humanitarian organizations, the private
+            sector, and the United Nations system have invested enormous effort in
+            improving lives through science, technology, policy, and international
+            cooperation.
           </p>
           <p>
-            Cooking, agriculture, water systems, mobility, enterprise operation,
-            healthcare delivery, education services, and local economic participation all
-            depend upon continuity.
+            These collective efforts have produced significant achievements. Millions of
+            people have gained access to electricity, healthcare, education, clean water,
+            improved agriculture, communications, and economic opportunity. International
+            agreements and global initiatives have also strengthened environmental
+            protection, climate action, and sustainable development.
+          </p>
+          <p>
+            These accomplishments deserve recognition. The HydroSol journey begins by{" "}
+            <strong>acknowledging and respecting this remarkable body of work.</strong>
           </p>
         </Prose>
-        <Stagger className="mt-10 space-y-4">
-          {cascade.map((line, i) => (
-            <StaggerItem key={line} className={stairOffsets[i]}>
-              <div className="hairline-card group flex items-center gap-4 p-5 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(7,34,47,0.1)] sm:p-6">
-                <span className="display-font grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-[15px] font-bold text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
-                  {i + 1}
+      </Section>
+
+      <Section
+        tint
+        eyebrow="Progress Across Multiple Fronts"
+        title="Initiatives That Continue to Shape a More Sustainable Future"
+      >
+        <Prose>
+          <p>
+            Around the world, numerous initiatives continue to address important
+            development priorities.
+          </p>
+        </Prose>
+        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {fronts.map((f) => (
+            <StaggerItem key={f.title}>
+              <div className="hairline-card group h-full p-6 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]">
+                <span className="grid size-11 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <f.icon className="size-5" />
                 </span>
-                <p className="text-[15.5px] font-semibold leading-snug text-ink sm:text-[16.5px]">
-                  {line}
-                </p>
+                <h3 className="display-font mt-5 text-[17px] font-bold text-navy">
+                  {f.title}
+                </h3>
+                <p className="mt-2 text-[14.5px] leading-relaxed text-body/90">{f.body}</p>
               </div>
             </StaggerItem>
           ))}
         </Stagger>
         <Prose>
           <p>
-            HydroSol seeks to support Productive Continuity through productive-energy
-            systems designed for underserved and last-mile environments.
+            Together, these efforts have transformed countless communities and continue
+            to shape a more sustainable future.
           </p>
         </Prose>
       </Section>
 
-      <Section eyebrow="Beyond Access" title="Why Energy Access Alone Is Not Enough">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <div>
-            <Prose>
-              <p>
-                Energy access remains important. However, energy access alone does not
-                automatically create prosperity. Communities may gain access to energy
-                while continuing to experience poverty, unemployment, limited enterprise
-                growth, infrastructure constraints, and restricted economic participation.
-              </p>
-              <p>
-                The challenge therefore extends beyond energy availability. The challenge
-                is whether energy contributes to productive activity, local capability,
-                enterprise creation, and long-term economic participation.
-              </p>
-              <p>
-                <strong>HydroSol focuses on productive outcomes</strong> rather than
-                energy consumption alone.
-              </p>
-            </Prose>
-          </div>
-          <FigureFrame
-            src="/figures/fig03-poverty-to-prosperity.jpeg"
-            alt="Infographic: from cycles of scarcity to cycles of prosperity"
-            caption="From cycles of scarcity to cycles of prosperity — how HydroSol makes the shift possible."
-            width={1432}
-            height={955}
-          />
-        </div>
-      </Section>
-
-      <Section eyebrow="The Philosophy" title="Last-Mile-First" tint>
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <FigureFrame
-            src="/figures/fig02-last-mile-first.jpeg"
-            alt="Infographic: the Last Mile First approach"
-            caption="Last Mile First — starting where the need is greatest, building from the ground up."
-            width={1432}
-            height={955}
-          />
-          <div>
-            <Prose>
-              <p>
-                HydroSol adopts a Last-Mile-First approach, prioritizing communities that
-                are often the last to receive reliable infrastructure, productive-energy
-                services, investment, and economic opportunity.
-              </p>
-              <p>
-                These environments frequently experience the greatest interruptions to
-                productive activity and therefore face some of the greatest barriers to
-                economic participation and development.
-              </p>
-              <p>
-                By beginning where needs are greatest, HydroSol seeks to support
-                productive continuity, local capability, and inclusive development from
-                the ground up.
-              </p>
-            </Prose>
-          </div>
-        </div>
-      </Section>
-
-      <Section eyebrow="The Scale" title="The Global South Challenge">
-        <div className="mt-4 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div className="max-w-xl space-y-5 text-[16.5px] leading-[1.8] text-ink/75">
-            <p>
-              Across Africa, South Asia, Latin America, and other underserved regions,
-              billions of people continue to face limitations in productive-energy
-              services, infrastructure availability, climate resilience, and economic
-              opportunity. These challenges affect households, farms, SMEs, clinics,
-              schools, cooperatives, transport systems, and local economies.
-            </p>
-            <p>
-              Around the world, governments, communities, universities, development
-              institutions, humanitarian organizations, researchers, entrepreneurs, and
-              private-sector organizations continue to work toward addressing these
-              challenges. HydroSol seeks to contribute through a productive-energy
-              framework centered on Productive Continuity, community participation, and
-              distributed capability.
-            </p>
-          </div>
-          <FigureFrame
-            src="/figures/fig05-global-south-challenge.jpeg"
-            alt="Infographic: the Global South productive-energy challenge"
-            caption="The Global South productive-energy challenge — core constraints, affected segments, and the need for change."
-            width={1432}
-            height={955}
-          />
-        </div>
-      </Section>
-
-      <Section eyebrow="Interconnection" title="The Development Continuum" tint>
+      <Section eyebrow="The Remaining Gap" title="Progress in One Area, Constraints in Others">
         <Prose>
           <p>
-            Energy does not operate in isolation. Reliable productive-energy services
-            influence agricultural productivity, water access, food systems, enterprise
-            development, healthcare delivery, education, mobility, and local economic
-            activity. These factors, in turn, influence environmental stewardship,
-            ecological stability, infrastructure resilience, and community well-being.
+            Despite decades of progress, approximately{" "}
+            <strong>2.3 billion people</strong> continue to live beyond the reach of
+            integrated productive infrastructure. Many reside in rural and peri-urban
+            communities where individual interventions have improved lives, yet
+            interconnected productive systems remain limited. Many communities continue
+            to experience limited productive infrastructure beyond the last mile.
           </p>
+        </Prose>
+        <Stagger className="mx-auto mt-8 grid max-w-3xl gap-2.5">
+          {alone.map((a) => (
+            <StaggerItem key={a}>
+              <div className="flex h-full items-start gap-3.5 rounded-xl border border-line bg-white px-5 py-3.5">
+                <span className="mt-[9px] size-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
+                <p className="text-[15px] leading-relaxed text-body">{a}</p>
+              </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
+        <Prose>
           <p>
-            When one element weakens, the effects often spread throughout the system.
-            Reduced productivity may contribute to poverty. Poverty may increase pressure
-            on natural resources. Environmental degradation may reduce agricultural
-            output. Declining productivity may further weaken economic opportunity and
-            community resilience.
-          </p>
-          <p>
-            HydroSol therefore views development as an interconnected continuum rather
-            than a collection of isolated challenges. Its objective is to support
-            productive continuity across the entire system, helping communities strengthen
-            the connections between energy, food systems, ecological stability,
-            infrastructure resilience, and economic participation.
+            Likewise, isolated investments in water, healthcare, education, or enterprise
+            often depend upon complementary systems that may not yet exist. As a result,
+            communities frequently experience progress in one area while continuing to
+            face constraints in others.{" "}
+            <strong>The challenge therefore becomes one of integration.</strong>
           </p>
         </Prose>
       </Section>
 
-      <Section eyebrow="The Stakes" title="The Scale of the Challenge">
+      <Section
+        tint
+        eyebrow="From Individual Solutions to Connected Systems"
+        title="Communities Function as Interconnected Systems"
+      >
+        <Stagger className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2">
+          {connected.map((c, i) => (
+            <StaggerItem key={c}>
+              <div className="flex h-full items-center gap-4 rounded-xl border border-line bg-white px-5 py-4">
+                <span className="display-font grid size-8 shrink-0 place-items-center rounded-full bg-brand-soft text-[12.5px] font-bold text-brand">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <p className="text-[15px] leading-snug text-body">{c}</p>
+              </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
         <Prose>
           <p>
-            The challenge extends beyond energy. It includes livelihoods, productive
-            activity, enterprise development, local capability, resilience, and economic
-            participation.
+            When these relationships are considered collectively, development becomes
+            more than the delivery of individual services.{" "}
+            <strong>It becomes the strengthening of productive communities.</strong>
           </p>
+        </Prose>
+      </Section>
+
+      <Section eyebrow="The Need for an Integrative Framework" title="A Simple but Important Observation">
+        <Prose>
+          <p>
+            Although inspired by the realities of underserved communities across the
+            Global South, HydroSol has been intentionally designed as a globally
+            adaptable productive energy platform capable of serving diverse geographic,
+            economic, and social environments.
+          </p>
+          <p>HydroSol&rsquo;s productive energy concept is founded upon a simple observation:</p>
         </Prose>
         <PullQuote
           lines={[
-            "Communities prosper not because energy exists.",
-            "Communities prosper when energy continuously supports productive activity.",
+            "Communities do not experience their challenges one at a time.",
+            "They experience them simultaneously.",
           ]}
         />
         <Prose>
           <p>
-            For HydroSol, Productive Continuity is therefore not merely an energy
-            objective. It is a development objective.
+            Consequently, sustainable progress increasingly depends upon solutions
+            capable of reinforcing multiple sectors together rather than addressing each
+            independently. This observation does not replace the valuable work already
+            being undertaken across the world. Rather, it seeks to complement those
+            efforts by providing an integrative framework through which productive energy
+            can support broader community development.
           </p>
         </Prose>
+
+        <SubHeading>The Question Therefore Becomes</SubHeading>
+        <Reveal>
+          <div className="mx-auto mt-6 max-w-3xl rounded-2xl bg-gradient-to-r from-brand to-leaf p-px">
+            <div className="rounded-[calc(1rem-1px)] bg-white px-7 py-8 text-center sm:px-10">
+              <p className="display-font mx-auto max-w-2xl text-balance text-[21px] font-bold leading-normal text-navy sm:text-[24px]">
+                Can productive energy serve not only households, but also agriculture,
+                water systems, education, healthcare, local enterprise, and community
+                resilience — within one coordinated framework?
+              </p>
+              <p className="mt-4 text-[15px] text-body">
+                That question forms the foundation of the{" "}
+                <strong className="font-semibold text-brand">
+                  HydroSol Productive Energy Platform.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </Reveal>
       </Section>
 
-      <CtaBand
-        title="From the question to the answer"
-        lede="See how HydroSol responds — an integrated productive-energy ecosystem designed for productive continuity."
-      >
-        <PrimaryButton href="/platform">Explore The HydroSol Platform</PrimaryButton>
-      </CtaBand>
+      <NextChapter
+        current="02"
+        note="The next chapter introduces this framework and explains how productive energy can become an enabling system for integrated community development."
+      />
     </>
   );
 }

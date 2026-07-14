@@ -1,257 +1,152 @@
-import {
-  Banknote,
-  Building2,
-  Cog,
-  GraduationCap,
-  Globe2,
-  HeartHandshake,
-  Landmark,
-  Network,
-  Recycle,
-  Scale,
-  ScanEye,
-  ShieldCheck,
-  Truck,
-  Zap,
-} from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, FileText, MessageCircleQuestion } from "lucide-react";
 import { PrimaryButton, GhostButton } from "@/components/Buttons";
 import { CtaBand } from "@/components/CtaBand";
 import { HeroEmblem } from "@/components/HeroEmblem";
-import { MissionGraphic } from "@/components/MissionGraphic";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, Prose, PullQuote } from "@/components/Section";
+import { Section, Prose } from "@/components/Section";
 import { StatBand } from "@/components/StatBand";
+import { chapters, site } from "@/lib/site";
 
-const platformElements = [
-  { label: "Energy Generation", icon: Zap },
-  { label: "Safety Systems", icon: ShieldCheck },
-  { label: "Resource Logistics", icon: Truck },
-  { label: "Monitoring & Verification", icon: ScanEye },
-  { label: "Governance Mechanisms", icon: Scale },
-  { label: "Regenerative Pathways", icon: Recycle },
-  { label: "Distributed Infrastructure", icon: Network },
-];
-
-const audiences = [
-  { label: "Investors", icon: Banknote },
-  { label: "Governments", icon: Landmark },
-  { label: "Development Institutions", icon: Building2 },
-  { label: "Manufacturers & Technology Providers", icon: Cog },
-  { label: "Universities & Researchers", icon: GraduationCap },
-  { label: "Humanitarian & Community Organizations", icon: HeartHandshake },
-  { label: "International & Multilateral Organizations", icon: Globe2 },
-];
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="ink-panel relative overflow-hidden pb-36 pt-44 text-white sm:pb-44 sm:pt-56">
-        <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
+      <section className="hero-wash relative overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
+        <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroEmblem />
         <div className="container-x relative">
-          <Reveal y={18}>
-            <p className="eyebrow max-w-xl !text-[11px] !tracking-[0.14em] !text-leaf sm:!text-[13px] sm:!tracking-[0.18em]">
-              Building Productive Continuity Through Community Ownership, Distributed
-              Capability, and Local Prosperity
-            </p>
+          <Reveal>
+            <p className="eyebrow">HydroSol™ · {site.tagline}</p>
           </Reveal>
-          <Reveal delay={0.1} y={30}>
-            <h1 className="display-font mt-5 max-w-4xl text-balance text-5xl font-bold leading-[1.02] sm:text-6xl md:text-7xl">
-              Power Everywhere.
-              <br />
+          <Reveal delay={0.08}>
+            <h1 className="display-font mt-5 max-w-3xl text-balance text-[42px] font-bold leading-[1.06] text-navy sm:text-6xl md:text-[64px]">
+              Power Everywhere.{" "}
               <span className="gradient-text">For Everyone.</span>
             </h1>
           </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-7 max-w-2xl text-pretty text-[17px] leading-relaxed text-white/75 sm:text-lg">
-              HydroSol is a distributed productive-energy platform designed to support
-              productive activity in environments where conventional energy systems may
-              become unavailable, unreliable, intermittent, or unaffordable.
+          <Reveal delay={0.14}>
+            <p className="display-font mt-4 text-[20px] font-semibold text-slate-head sm:text-[24px]">
+              {site.secondary}
             </p>
           </Reveal>
-          <Reveal delay={0.3}>
-            <div className="mt-10 flex flex-wrap items-center gap-3.5">
-              <PrimaryButton href="/white-paper">Read White Paper</PrimaryButton>
-              <GhostButton href="/quest" onDark>
-                Explore The Quest
-              </GhostButton>
+          <Reveal delay={0.2}>
+            <p className="mt-6 max-w-2xl text-pretty text-[16px] leading-[1.7] text-body sm:text-[18px]">
+              HydroSol is a globally adaptable productive energy platform — designed to
+              strengthen households, agriculture, water, healthcare, education,
+              enterprise, and mobility within one integrated framework for community
+              development.
+            </p>
+          </Reveal>
+          <Reveal delay={0.26}>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <PrimaryButton href="/challenge">Begin the Journey</PrimaryButton>
+              <GhostButton href="/white-paper">Executive White Paper</GhostButton>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Stats overlap */}
-      <div className="container-x relative z-10 -mt-16 sm:-mt-20">
-        <Reveal>
-          <StatBand />
-        </Reveal>
-      </div>
-
-      {/* South-centric revolution */}
-      <section className="bg-white">
-        <div className="container-x py-16 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-16">
-            <div>
-              <Reveal>
-                <p className="eyebrow">The Mission</p>
-              </Reveal>
-              <Reveal delay={0.05}>
-                <h2 className="display-font mt-3 text-balance text-3xl font-bold leading-tight text-ink sm:text-4xl">
-                  A South-Centric Productive-Energy Revolution
-                </h2>
-              </Reveal>
-              <Prose>
-                <p>
-                  Across much of the Global South, poverty and environmental degradation
-                  often reinforce one another in a cycle that is difficult to escape.
-                  Communities lacking reliable productive-energy services frequently
-                  depend upon fragile natural-resource systems to meet immediate needs. As
-                  environmental conditions deteriorate, productive capacity declines,
-                  economic opportunities narrow, and vulnerability increases.
+      {/* The journey — one continuous story */}
+      <Section
+        eyebrow="One Continuous Story"
+        title="The HydroSol Journey"
+        center
+      >
+        <p className="mx-auto mt-5 max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
+          From today&rsquo;s interconnected development challenges to tomorrow&rsquo;s
+          productive and resilient communities — the HydroSol story unfolds across six
+          chapters. Each one leads naturally to the next.
+        </p>
+        <Stagger className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {chapters.map((c) => (
+            <StaggerItem key={c.href}>
+              <Link
+                href={c.href}
+                className="hairline-card group flex h-full flex-col p-6 hover:-translate-y-1.5 hover:border-brand/40 hover:shadow-[0_16px_44px_rgba(18,59,109,0.1)] sm:p-7"
+              >
+                <p className="display-font text-[13px] font-bold tracking-[0.14em] text-brand/50">
+                  CHAPTER {c.number}
                 </p>
-                <p>
-                  HydroSol was conceived to help address this challenge through a
-                  productive-energy framework designed to support continuity,
-                  participation, and local capability. Rather than viewing energy solely
-                  as a consumptive necessity, HydroSol seeks to promote energy as a
-                  productive asset capable of supporting livelihoods, enterprise creation,
-                  agricultural productivity, local manufacturing, mobility, and community
-                  development.
+                <h3 className="display-font mt-2.5 text-[19px] font-bold leading-snug text-navy">
+                  {c.label}
+                </h3>
+                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">
+                  {c.blurb}
                 </p>
-                <p>
-                  By enabling productive activity closer to where people live and work,
-                  HydroSol seeks to support stronger local economies, broader
-                  participation, and more resilient communities.
-                </p>
-              </Prose>
-            </div>
-            <Reveal delay={0.15} className="lg:self-stretch">
-              <MissionGraphic />
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* What is HydroSol */}
-      <Section eyebrow="The Platform" title="What Is HydroSol?" tint>
-        <div className="mt-4 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
-          <div>
-            <Prose>
-              <p>
-                HydroSol is a distributed productive-energy platform that integrates
-                energy generation, safety systems, resource logistics, monitoring and
-                verification, governance mechanisms, regenerative pathways, and
-                distributed infrastructure architectures into a unified operational
-                ecosystem.
-              </p>
-              <p>
-                The platform is designed to support productive continuity across
-                households, farms, enterprises, institutions, and communities. Its
-                architecture is intended to support practical deployment, local
-                participation, operational flexibility, and progressive expansion across
-                diverse environments.
-              </p>
-            </Prose>
-            <PullQuote
-              lines={[
-                "Rather than focusing solely on energy delivery,",
-                "HydroSol focuses on the productive activities that energy enables.",
-              ]}
-            />
-          </div>
-          <div className="flex h-full flex-col">
-            <Reveal delay={0.1}>
-              <div className="flex items-center gap-4 rounded-full bg-gradient-to-r from-brand to-leaf-deep px-6 py-3 shadow-[0_8px_24px_rgba(0,144,216,0.25)]">
-                <span className="h-px flex-1 bg-gradient-to-r from-transparent to-white/45" aria-hidden />
-                <span className="shrink-0 text-[14px] font-bold tracking-tight text-white">
-                  One Unified Operational Ecosystem
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
+                  Read chapter
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
-                <span className="h-px flex-1 bg-gradient-to-l from-transparent to-white/45" aria-hidden />
-              </div>
-            </Reveal>
-            <Stagger className="mt-4 grid flex-1 auto-rows-fr gap-4 sm:grid-cols-2">
-              {platformElements.map((el, i) => (
-                <StaggerItem
-                  key={el.label}
-                  className={`flex ${
-                    i === platformElements.length - 1 ? "sm:col-span-2" : ""
-                  }`}
-                >
-                  <div className="hairline-card group flex flex-1 items-center gap-3.5 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(7,34,47,0.1)]">
-                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
-                      <el.icon className="size-5" />
-                    </span>
-                    <span className="text-[14.5px] font-semibold leading-snug text-ink">
-                      {el.label}
-                    </span>
-                  </div>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
-        </div>
-      </Section>
-
-      {/* Why HydroSol exists */}
-      <Section eyebrow="The Purpose" title="Why HydroSol Exists">
-        <Prose>
-          <p>
-            HydroSol was conceived not simply to provide energy, but to help communities
-            transform recurring interruptions into opportunities for productive
-            participation and economic growth. Many communities continue to experience
-            limitations in productive-energy services that affect livelihoods, enterprise
-            development, agriculture, healthcare delivery, education, mobility, and local
-            economic activity.
-          </p>
-        </Prose>
-        <PullQuote
-          lines={[
-            "The objective is not merely energy access.",
-            "The objective is sustained productive activity.",
-          ]}
-        />
-        <Prose>
-          <p>
-            HydroSol therefore seeks to support productive continuity through a framework
-            that combines technology, infrastructure, local participation, and long-term
-            operational sustainability.
-          </p>
-        </Prose>
-      </Section>
-
-      {/* Who should engage */}
-      <Section eyebrow="Engagement" title="Who Should Engage?" tint center>
-        <Stagger className="mx-auto mt-12 flex max-w-4xl flex-wrap justify-center gap-4">
-          {audiences.map((a) => (
-            <StaggerItem
-              key={a.label}
-              className="flex w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
-            >
-              <div className="hairline-card group flex flex-1 items-center gap-4 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(7,34,47,0.1)]">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
-                  <a.icon className="size-5" />
-                </span>
-                <span className="text-[14.5px] font-semibold leading-snug text-ink">
-                  {a.label}
-                </span>
-              </div>
+              </Link>
             </StaggerItem>
           ))}
         </Stagger>
       </Section>
 
-      <div className="bg-mist pb-4">
-        <CtaBand
-          title="Begin the journey through the HydroSol story"
-          lede="Understand the challenge, the platform, and the opportunity — starting with the question that defines the mission."
-        >
-          <PrimaryButton href="/quest">Explore The Quest</PrimaryButton>
-          <GhostButton href="/join" onDark>
-            Join the Community
-          </GhostButton>
-        </CtaBand>
-      </div>
+      {/* The scale of the challenge */}
+      <Section tint eyebrow="Why It Matters" title="The Scale of the Challenge">
+        <Prose>
+          <p>
+            Approximately <strong>2.3 billion people</strong> still live beyond reliable
+            productive infrastructure, particularly across the Global South — where
+            limited energy, water, transport, healthcare, education, and enterprise
+            opportunities continue to constrain prosperity.
+          </p>
+        </Prose>
+        <div className="mx-auto mt-10 max-w-4xl">
+          <StatBand />
+        </div>
+      </Section>
+
+      {/* Publications */}
+      <Section eyebrow="HydroSol Publications" title="Read the Framework in Depth" center>
+        <Stagger className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
+          {[
+            {
+              href: "/white-paper",
+              icon: FileText,
+              title: "Executive White Paper",
+              body: "The complete HydroSol framework — challenge, platform, applications, and implementation pathway.",
+            },
+            {
+              href: "/faq",
+              icon: MessageCircleQuestion,
+              title: "Frequently Asked Questions",
+              body: "Clear answers to the most common technical, institutional, and investment questions.",
+            },
+          ].map((p) => (
+            <StaggerItem key={p.href}>
+              <Link
+                href={p.href}
+                className="hairline-card group flex h-full flex-col p-7 text-left hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]"
+              >
+                <span className="grid size-11 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <p.icon className="size-5" />
+                </span>
+                <h3 className="display-font mt-5 text-[18px] font-bold text-navy">
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-[14.5px] leading-relaxed text-body/90">{p.body}</p>
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
+                  Open
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </Section>
+
+      <CtaBand
+        title="Productive Communities. Prosperous Futures."
+        lede="Whether your interest involves implementation, investment, research, manufacturing, deployment, policy, or collaboration — the HydroSol team welcomes the opportunity to engage."
+      >
+        <PrimaryButton href="/challenge">Start with Chapter 01</PrimaryButton>
+        <GhostButton href="/contact" onDark>
+          Contact HydroSol
+        </GhostButton>
+      </CtaBand>
     </>
   );
 }

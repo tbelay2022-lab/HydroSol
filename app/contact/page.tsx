@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const emailRoles: Record<string, string> = {
-  "invest@hydrosolpower.com": "Investor engagement",
-  "partners@hydrosolpower.com": "Partnership discussions",
-  "technology@hydrosolpower.com": "Technical briefings",
-  "info@hydrosolpower.com": "General inquiries",
+  "info@hydrosolpower.com": "General Information",
+  "partners@hydrosolpower.com": "Strategic Partnerships",
+  "invest@hydrosolpower.com": "Investment & Finance",
+  "technology@hydrosolpower.com": "Technology & Engineering",
 };
 
 export default function ContactPage() {
@@ -23,8 +23,9 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact & Engagement"
-        title="Connect with HydroSol"
-        lede="HydroSol welcomes inquiries from organizations and individuals interested in productive-energy solutions, community development, environmental stewardship, economic participation, infrastructure resilience, and sustainable prosperity."
+        title="Contact Information"
+        subtitle="Connect with HydroSol"
+        lede="For partnership, investment, technical, institutional, media, or research inquiries, please contact the HydroSol team directly."
       />
 
       <section className="bg-mist">
@@ -45,7 +46,7 @@ export default function ContactPage() {
                   <StaggerItem key={email}>
                     <a
                       href={`mailto:${email}`}
-                      className="hairline-card group flex items-center gap-4 p-5 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-[0_12px_32px_rgba(7,34,47,0.09)]"
+                      className="hairline-card group flex items-center gap-4 p-5 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-[0_12px_32px_rgba(18,59,109,0.09)]"
                     >
                       <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand-deep transition-colors group-hover:bg-brand group-hover:text-white">
                         <Mail className="size-5" />
