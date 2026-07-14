@@ -33,7 +33,7 @@ export function MissionGraphic() {
         className="pointer-events-none absolute left-1/2 top-1/2 size-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(0,144,216,0.14), rgba(72,192,48,0.06) 55%, transparent 70%)",
+            "radial-gradient(circle, rgba(15,95,168,0.14), rgba(76,175,80,0.06) 55%, transparent 70%)",
         }}
         aria-hidden
       />
@@ -109,7 +109,7 @@ export function MissionGraphic() {
 
         {/* Energy core */}
         <motion.div
-          className="absolute left-1/2 top-1/2 grid size-[62px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-gradient-to-br from-brand to-leaf-deep text-white shadow-[0_0_30px_rgba(0,144,216,0.5)]"
+          className="absolute left-1/2 top-1/2 grid size-[62px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-gradient-to-br from-brand to-leaf-deep text-white shadow-[0_0_30px_rgba(15,95,168,0.5)]"
           animate={reduce ? undefined : { scale: [1, 1.06, 1] }}
           transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -120,7 +120,7 @@ export function MissionGraphic() {
         {NODES.map((n) => (
           <div
             key={n.label}
-            className="absolute grid size-[46px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-xl border border-line bg-white text-brand-deep shadow-[0_2px_10px_rgba(7,34,47,0.07)]"
+            className="absolute grid size-[46px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-xl border border-line bg-white text-brand-deep shadow-[0_2px_10px_rgba(18,59,109,0.07)]"
             style={{ left: pct(n.x), top: pct(n.y) }}
             title={n.label}
           >

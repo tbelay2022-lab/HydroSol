@@ -16,18 +16,14 @@ export function HeroEmblem() {
       className="pointer-events-none absolute right-2 top-1/2 hidden w-[430px] -translate-y-1/2 select-none lg:block xl:right-16 xl:w-[500px]"
       aria-hidden
     >
-      {/* rotating light sweep */}
-      {!reduce && (
-        <motion.div
-          className="absolute left-1/2 top-[40%] size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
-          style={{
-            background:
-              "conic-gradient(from 0deg, transparent 0deg, rgba(0,144,216,0.16) 70deg, transparent 140deg, rgba(72,192,48,0.11) 220deg, transparent 290deg)",
-          }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-        />
-      )}
+      {/* soft ambient glow */}
+      <div
+        className="absolute left-1/2 top-[40%] size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(15,95,168,0.1), rgba(76,175,80,0.06) 55%, transparent 72%)",
+        }}
+      />
 
       {/* pulsing power rings */}
       {!reduce &&
@@ -48,19 +44,6 @@ export function HeroEmblem() {
             }}
           />
         ))}
-
-      {/* orbiting energy orbs */}
-      {!reduce && (
-        <motion.div
-          className="absolute left-1/2 top-[40%] size-[440px]"
-          style={{ x: "-50%", y: "-50%" }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
-        >
-          <span className="absolute left-1/2 top-0 size-2 -translate-x-1/2 rounded-full bg-[#35b6f2] opacity-70 shadow-[0_0_12px_3px_rgba(53,182,242,0.4)]" />
-          <span className="absolute bottom-[12%] right-[6%] size-1.5 rounded-full bg-[#7ed957] opacity-65 shadow-[0_0_10px_2px_rgba(126,217,87,0.38)]" />
-        </motion.div>
-      )}
 
       {/* the logo, floating */}
       <motion.div

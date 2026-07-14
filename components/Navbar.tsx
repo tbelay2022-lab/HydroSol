@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { nav, site } from "@/lib/site";
 
-const menuLinks = [{ label: "Home", href: "/" }, ...nav, { label: "Join", href: "/join" }];
+const menuLinks = [{ label: "Home", href: "/" }, ...nav];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,7 @@ export function Navbar() {
     };
   }, [open]);
 
-  const dark = open || !scrolled;
+  const dark = open;
 
   return (
     <header
@@ -41,7 +41,7 @@ export function Navbar() {
         open
           ? "bg-transparent"
           : scrolled
-            ? "border-b border-line/70 bg-white/85 shadow-[0_1px_20px_rgba(7,34,47,0.06)] backdrop-blur-xl"
+            ? "border-b border-line/70 bg-white/85 shadow-[0_1px_20px_rgba(18,59,109,0.06)] backdrop-blur-xl"
             : "bg-transparent"
       }`}
     >
@@ -58,28 +58,22 @@ export function Navbar() {
           />
           <span
             className={`display-font text-[19px] font-bold tracking-tight transition-colors ${
-              dark ? "text-white" : "text-ink"
+              dark ? "text-white" : "text-navy"
             }`}
           >
             Hydro<span className="text-leaf">Sol</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {nav.map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative text-[14.5px] font-medium transition-colors ${
-                  dark
-                    ? active
-                      ? "text-white"
-                      : "text-white/70 hover:text-white"
-                    : active
-                      ? "text-brand-deep"
-                      : "text-ink/70 hover:text-ink"
+                className={`relative text-[14px] font-medium transition-colors ${
+                  active ? "text-brand" : "text-navy/70 hover:text-navy"
                 }`}
               >
                 {item.label}
@@ -97,7 +91,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-1.5 rounded-full bg-brand px-5 py-2.5 text-[14px] font-semibold text-white transition-all hover:bg-brand-deep hover:shadow-[0_8px_24px_rgba(0,144,216,0.35)]"
+            className="group inline-flex items-center gap-1.5 rounded-full bg-brand px-5 py-2.5 text-[14px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_8px_24px_rgba(76,175,80,0.35)]"
           >
             Get in Touch
             <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -106,7 +100,7 @@ export function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className={`transition-colors lg:hidden ${dark ? "text-white" : "text-ink"}`}
+          className={`transition-colors lg:hidden ${dark ? "text-white" : "text-navy"}`}
           aria-label={open ? "Close menu" : "Open menu"}
         >
           {open ? <X className="size-7" /> : <Menu className="size-7" />}
@@ -120,7 +114,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="ink-panel fixed inset-0 z-0 flex flex-col overflow-y-auto lg:hidden"
+            className="navy-panel fixed inset-0 z-0 flex flex-col overflow-y-auto lg:hidden"
           >
             <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
 

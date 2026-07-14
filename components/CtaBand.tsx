@@ -13,7 +13,7 @@ export function CtaBand({
   return (
     <section className="container-x pb-24 pt-4 sm:pb-28">
       <Reveal>
-        <div className="ink-panel relative overflow-hidden rounded-3xl px-6 py-14 text-center text-white sm:px-12 sm:py-20">
+        <div className="navy-panel relative overflow-hidden rounded-3xl px-6 py-14 text-center text-white sm:px-12 sm:py-20">
           <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative">
             <h2 className="display-font mx-auto max-w-2xl text-balance text-3xl font-bold leading-tight sm:text-4xl">

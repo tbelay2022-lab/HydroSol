@@ -71,7 +71,7 @@ export function ContactForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="rounded-3xl border border-line bg-white p-6 shadow-[0_2px_24px_rgba(7,34,47,0.06)] sm:p-9"
+      className="rounded-3xl border border-line bg-white p-6 shadow-[0_2px_24px_rgba(18,59,109,0.06)] sm:p-9"
     >
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
@@ -130,7 +130,7 @@ export function ContactForm() {
       </div>
       <button
         type="submit"
-        className="group mt-7 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-brand px-7 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-brand-deep hover:shadow-[0_10px_30px_rgba(0,144,216,0.4)] sm:w-auto"
+        className="group mt-7 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-brand px-7 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)] sm:w-auto"
       >
         <Send className="size-4.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         Send an Inquiry

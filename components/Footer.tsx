@@ -4,15 +4,15 @@ import { Mail } from "lucide-react";
 import { footerLinks, site } from "@/lib/site";
 
 const moreLinks = [
-  { label: "Applications", href: "/applications" },
-  { label: "Join the Community", href: "/join" },
+  { label: "Publications", href: "/publications" },
+  { label: "Executive White Paper", href: "/white-paper" },
   { label: "FAQ", href: "/faq" },
-  { label: "White Paper", href: "/white-paper" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
   return (
-    <footer className="ink-panel relative overflow-hidden text-white">
+    <footer className="navy-panel relative overflow-hidden text-white">
       <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
       <div className="container-x relative py-16 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr] lg:gap-8">
@@ -35,6 +35,9 @@ export function Footer() {
             </p>
             <p className="display-font text-[15px] font-medium text-white/60">
               {site.secondary}
+            </p>
+            <p className="mt-5 max-w-xs text-[13.5px] leading-relaxed text-white/50">
+              {site.tagline}
             </p>
           </div>
 
@@ -85,7 +88,8 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
-          <p className="text-[13px] text-white/50">© HydroSol. All Rights Reserved.</p>
+          <p className="text-[13px] text-white/50">© 2026 HydroSol. All Rights Reserved.</p>
+          <p className="text-[13px] italic text-white/50">{site.closing}</p>
           <p className="text-[13px] text-white/50">www.hydrosolpower.com</p>
         </div>
       </div>

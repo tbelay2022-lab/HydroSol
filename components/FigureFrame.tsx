@@ -44,7 +44,7 @@ export function FigureFrame({
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="relative block w-full overflow-hidden rounded-2xl border border-line bg-white p-3 text-left shadow-[0_2px_16px_rgba(7,34,47,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(7,34,47,0.12)] sm:p-4"
+            className="relative block w-full overflow-hidden rounded-2xl border border-line bg-white p-3 text-left shadow-[0_2px_16px_rgba(18,59,109,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(18,59,109,0.12)] sm:p-4"
             aria-label={`Enlarge figure: ${caption}`}
           >
             <Image

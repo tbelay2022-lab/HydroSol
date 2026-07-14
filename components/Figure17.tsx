@@ -45,8 +45,8 @@ export function Figure17() {
   const reduce = useReducedMotion();
   return (
     <Reveal>
-      <div className="overflow-hidden rounded-3xl border border-line bg-white shadow-[0_2px_24px_rgba(7,34,47,0.06)]">
-        <div className="ink-panel px-6 py-6 text-white sm:px-10">
+      <div className="overflow-hidden rounded-3xl border border-line bg-white shadow-[0_2px_24px_rgba(18,59,109,0.06)]">
+        <div className="navy-panel px-6 py-6 text-white sm:px-10">
           <p className="eyebrow !text-leaf">Smart Productive Villages</p>
           <h3 className="display-font mt-2 text-xl font-bold sm:text-2xl">
             The 500-Household Kushet Development Model
@@ -66,7 +66,7 @@ export function Figure17() {
             {ecosystem.map((item) => (
               <StaggerItem key={item.label}>
                 <div className="group flex h-full items-center gap-3.5 rounded-2xl border border-brand/20 bg-brand-soft/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/45 hover:bg-brand-soft">
-                  <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white text-brand-deep shadow-[0_1px_6px_rgba(0,144,216,0.18)]">
+                  <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white text-brand-deep shadow-[0_1px_6px_rgba(15,95,168,0.18)]">
                     <item.icon className="size-5" />
                   </span>
                   <span className="text-[14px] font-semibold leading-snug text-ink">
@@ -107,7 +107,7 @@ export function Figure17() {
                 {group.map((o, i) => (
                   <StaggerItem key={o} className="relative">
                     <div className="flex items-center gap-4 py-2.5">
-                      <span className="display-font relative z-10 grid size-8 shrink-0 place-items-center rounded-full border border-brand/30 bg-white text-[12px] font-bold text-brand-deep shadow-[0_1px_6px_rgba(0,144,216,0.15)]">
+                      <span className="display-font relative z-10 grid size-8 shrink-0 place-items-center rounded-full border border-brand/30 bg-white text-[12px] font-bold text-brand-deep shadow-[0_1px_6px_rgba(15,95,168,0.15)]">
                         {col * 3 + i + 1}
                       </span>
                       <span className="text-[15px] font-semibold text-ink">{o}</span>
@@ -136,11 +136,11 @@ export function Figure17() {
 
           {/* Culminating outcome */}
           <Reveal delay={0.1}>
-            <div className="ink-panel relative overflow-hidden rounded-2xl px-6 py-7 text-white sm:px-8">
+            <div className="navy-panel relative overflow-hidden rounded-2xl px-6 py-7 text-white sm:px-8">
               <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
               <div className="relative flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-center sm:gap-5 sm:text-left">
                 <motion.span
-                  className="grid size-14 shrink-0 place-items-center rounded-full bg-gradient-to-br from-brand to-leaf text-white shadow-[0_0_26px_rgba(72,192,48,0.45)]"
+                  className="grid size-14 shrink-0 place-items-center rounded-full bg-gradient-to-br from-brand to-leaf text-white shadow-[0_0_26px_rgba(76,175,80,0.45)]"
                   animate={reduce ? undefined : { scale: [1, 1.07, 1] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >

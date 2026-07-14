@@ -23,18 +23,18 @@ const stats = [
 
 export function OpportunityStats() {
   return (
-    <div className="ink-panel relative overflow-hidden rounded-3xl">
-      <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden />
-      <div className="relative grid divide-y divide-white/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+    <div className="relative overflow-hidden rounded-3xl border border-line bg-white shadow-[0_16px_48px_rgba(18,59,109,0.07)]">
+      <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
+      <div className="relative grid divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {stats.map((s) => (
           <div key={s.label} className="p-8 sm:p-9">
-            <span className="grid size-11 place-items-center rounded-xl bg-white/10 text-leaf">
+            <span className="grid size-11 place-items-center rounded-xl bg-leaf-soft text-leaf-deep">
               <s.icon className="size-5" />
             </span>
             <p className="display-font mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
               {s.render()}
             </p>
-            <p className="mt-3 text-[14px] leading-snug text-white/60">{s.label}</p>
+            <p className="mt-3 text-[14px] leading-snug text-body/80">{s.label}</p>
           </div>
         ))}
       </div>
