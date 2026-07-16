@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-wash relative overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
+      <section className="hero-droplet relative overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroEmblem />
         <div className="container-x relative">

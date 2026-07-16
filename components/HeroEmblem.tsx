@@ -16,12 +16,12 @@ export function HeroEmblem() {
       className="pointer-events-none absolute right-2 top-1/2 hidden w-[430px] -translate-y-1/2 select-none lg:block xl:right-16 xl:w-[500px]"
       aria-hidden
     >
-      {/* soft ambient glow */}
+      {/* soft ambient glow — white so the emblem lifts off the blue wash */}
       <div
         className="absolute left-1/2 top-[40%] size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(15,95,168,0.1), rgba(76,175,80,0.06) 55%, transparent 72%)",
+            "radial-gradient(circle, rgba(255,255,255,0.75), rgba(255,255,255,0.3) 55%, transparent 72%)",
         }}
       />
 
@@ -31,7 +31,7 @@ export function HeroEmblem() {
           <motion.span
             key={i}
             className={`absolute left-1/2 top-[40%] size-[380px] rounded-full border ${
-              i === 1 ? "border-leaf/20" : "border-brand/25"
+              i === 1 ? "border-leaf/30" : "border-brand/35"
             }`}
             style={{ x: "-50%", y: "-50%" }}
             initial={{ scale: 0.62, opacity: 0 }}
@@ -57,7 +57,7 @@ export function HeroEmblem() {
           width={500}
           height={455}
           priority
-          className="h-auto w-full opacity-[0.13]"
+          className="h-auto w-full opacity-[0.24]"
         />
       </motion.div>
     </div>
