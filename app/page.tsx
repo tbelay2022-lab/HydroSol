@@ -12,8 +12,27 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-droplet relative overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
+      <section className="hero-droplet relative overflow-hidden pb-32 pt-40 sm:pb-44 sm:pt-52">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
+        {/* wave transition into the next section — echoes the droplet curve */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden>
+          <svg
+            viewBox="0 0 1440 110"
+            preserveAspectRatio="none"
+            className="block h-[56px] w-full sm:h-[88px]"
+          >
+            <path
+              d="M0,74 C300,112 760,8 1080,34 C1250,48 1360,60 1440,56 L1440,110 L0,110 Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M0,74 C300,112 760,8 1080,34 C1250,48 1360,60 1440,56"
+              fill="none"
+              stroke="rgba(15,95,168,0.14)"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
         <HeroEmblem />
         <div className="container-x relative">
           <Reveal>
