@@ -1,23 +1,16 @@
 import type { Metadata } from "next";
-import { BookOpen, Download, FileText, Layers, Rocket } from "lucide-react";
+import { Download } from "lucide-react";
 import { CtaBand } from "@/components/CtaBand";
 import { GhostButton } from "@/components/Buttons";
 import { PageHero } from "@/components/PageHero";
-import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
+import { Reveal } from "@/components/Reveal";
 import { Section, Prose } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Executive White Paper",
   description:
-    "Public access to the HydroSol Executive White Paper — the platform’s vision, productive-continuity framework, architecture, implementation philosophy, and long-term development objectives.",
+    "Public access to the HydroSol Executive White Paper — the platform's vision, productive energy framework, architecture, implementation philosophy, and long-term development objectives.",
 };
-
-const additionalDocs = [
-  { label: "Foundations and Doctrine", icon: BookOpen },
-  { label: "Platform Architecture", icon: Layers },
-  { label: "Operational Frameworks", icon: FileText },
-  { label: "Deployment and Implementation", icon: Rocket },
-];
 
 export default function WhitePaperPage() {
   return (
@@ -26,59 +19,32 @@ export default function WhitePaperPage() {
         eyebrow="Publications"
         title="Executive White Paper"
         subtitle="The Complete HydroSol Framework"
-        lede="HydroSol is supported by a comprehensive body of doctrine, architecture, operational, and implementation documentation developed through technical studies, program development activities, and deployment planning efforts."
+        lede="The Executive White Paper presents the platform's vision, productive energy framework, architecture, implementation philosophy, and long-term development objectives."
       />
 
       <Section>
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
-          <div>
-            <Prose>
-              <p>
-                To support broad accessibility, HydroSol currently provides public access
-                to its <strong>Executive White Paper</strong>, which presents the
-                platform’s vision, productive-continuity framework, architecture,
-                implementation philosophy, and long-term development objectives.
-              </p>
-              <p>
-                Additional documentation may be made available according to the nature of
-                the engagement, collaboration, partnership, research activity, investment
-                discussion, pilot initiative, or implementation opportunity.
-              </p>
-            </Prose>
-            <Reveal>
-              <a
-                href="/HydroSol-Executive-White-Paper.pdf"
-                download
-                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-brand px-7 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)]"
-              >
-                <Download className="size-5 transition-transform group-hover:translate-y-0.5" />
-                Download the White Paper
-              </a>
-            </Reveal>
-            <p className="mt-4 text-[13px] text-ink/50">
-              Public download · PDF · HydroSol Executive White Paper
+        <div className="mx-auto max-w-2xl text-center">
+          <Prose>
+            <p>
+              To support broad accessibility, HydroSol provides public access to its{" "}
+              <strong>Executive White Paper</strong> — a single document covering the
+              global challenge, the productive energy platform, community applications,
+              the Smart Productive Village, and the implementation pathway.
             </p>
-          </div>
-
-          <div>
-            <Reveal delay={0.1}>
-              <p className="eyebrow !text-ink/40">
-                Additional Documentation Available Upon Engagement
-              </p>
-            </Reveal>
-            <Stagger className="mt-5 space-y-3">
-              {additionalDocs.map((d) => (
-                <StaggerItem key={d.label}>
-                  <div className="hairline-card flex items-center gap-4 p-5">
-                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand-deep">
-                      <d.icon className="size-5" />
-                    </span>
-                    <span className="text-[15px] font-semibold text-ink">{d.label}</span>
-                  </div>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
+          </Prose>
+          <Reveal>
+            <a
+              href="/HydroSol-Executive-White-Paper.pdf"
+              download
+              className="group mt-10 inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)]"
+            >
+              <Download className="size-5 transition-transform group-hover:translate-y-0.5" />
+              Download the White Paper
+            </a>
+          </Reveal>
+          <p className="mt-4 text-[13px] text-body/60">
+            Public download · PDF · HydroSol Executive White Paper
+          </p>
         </div>
       </Section>
 
