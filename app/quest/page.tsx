@@ -22,33 +22,33 @@ export const metadata: Metadata = {
 const fronts = [
   {
     icon: Zap,
-    title: "Energy Programs",
-    body: "Seek to expand electricity access through grid extension, renewable energy, mini-grids, and decentralized solutions.",
+    title: "Energy",
+    body: "Energy programs seek to expand electricity access through grid extension, renewable energy, mini-grids, and decentralized solutions.",
   },
   {
     icon: Sprout,
-    title: "Agricultural Initiatives",
-    body: "Promote improved farming methods, irrigation, mechanization, storage, and food security.",
+    title: "Agriculture",
+    body: "Agricultural initiatives promote improved farming methods, irrigation, mechanization, storage, and food security.",
   },
   {
     icon: Leaf,
-    title: "Environmental Programs",
-    body: "Encourage afforestation, ecosystem restoration, sustainable resource management, carbon reduction, and climate adaptation.",
+    title: "Environment",
+    body: "Environmental programs encourage afforestation, ecosystem restoration, sustainable resource management, carbon reduction, and climate adaptation.",
   },
   {
     icon: Landmark,
-    title: "Infrastructure Investments",
-    body: "Improve transportation, communications, healthcare facilities, schools, and public services.",
+    title: "Infrastructure",
+    body: "Infrastructure investments improve transportation, communications, healthcare facilities, schools, and public services.",
   },
   {
     icon: TrendingUp,
-    title: "Economic Development",
-    body: "Strengthen entrepreneurship, financial inclusion, local manufacturing, skills development, and employment opportunities.",
+    title: "Economy",
+    body: "Economic development programs strengthen entrepreneurship, financial inclusion, local manufacturing, skills development, and employment opportunities.",
   },
   {
     icon: Globe2,
-    title: "International Frameworks",
-    body: "Including the Sustainable Development Goals — encouraging integrated approaches that seek inclusive, resilient, and environmentally responsible development.",
+    title: "Global Frameworks",
+    body: "International frameworks, including the Sustainable Development Goals, continue to encourage integrated approaches that seek inclusive, resilient, and environmentally responsible development.",
   },
 ];
 
@@ -104,17 +104,14 @@ export default function QuestPage() {
             protection, climate action, and sustainable development.
           </p>
           <p>
-            These accomplishments deserve recognition. The HydroSol journey begins by{" "}
+            These accomplishments deserve recognition. The productive continuity of the
+            platform begins by{" "}
             <strong>acknowledging and respecting this remarkable body of work.</strong>
           </p>
         </Prose>
       </Section>
 
-      <Section
-        tint
-        eyebrow="Progress Across Multiple Fronts"
-        title="Initiatives That Continue to Shape a More Sustainable Future"
-      >
+      <Section tint title="Progress Across Multiple Fronts">
         <Prose>
           <p>
             Around the world, numerous initiatives continue to address important
@@ -128,10 +125,7 @@ export default function QuestPage() {
                 <span className="grid size-11 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                   <f.icon className="size-5" />
                 </span>
-                <h3 className="display-font mt-5 text-[17px] font-bold text-navy">
-                  {f.title}
-                </h3>
-                <p className="mt-2 text-[14.5px] leading-relaxed text-body/90">{f.body}</p>
+                <p className="mt-5 text-[15px] leading-relaxed text-body">{f.body}</p>
               </div>
             </StaggerItem>
           ))}
@@ -144,7 +138,7 @@ export default function QuestPage() {
         </Prose>
       </Section>
 
-      <Section eyebrow="The Remaining Gap" title="Progress in One Area, Constraints in Others">
+      <Section title="The Remaining Gap">
         <Prose>
           <p>
             Despite decades of progress, approximately{" "}
@@ -168,19 +162,23 @@ export default function QuestPage() {
         <Prose>
           <p>
             Likewise, isolated investments in water, healthcare, education, or enterprise
-            often depend upon complementary systems that may not yet exist. As a result,
-            communities frequently experience progress in one area while continuing to
-            face constraints in others.{" "}
+            often depend upon complementary systems that may not yet exist.
+          </p>
+          <p>
+            As a result, communities frequently experience progress in one area while
+            continuing to face constraints in others.{" "}
             <strong>The challenge therefore becomes one of integration.</strong>
           </p>
         </Prose>
       </Section>
 
-      <Section
-        tint
-        eyebrow="From Individual Solutions to Connected Systems"
-        title="Communities Function as Interconnected Systems"
-      >
+      <Section tint title="From Individual Solutions to Connected Systems">
+        <Prose>
+          <p>
+            Experience increasingly demonstrates that communities function as
+            interconnected systems.
+          </p>
+        </Prose>
         <Stagger className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2">
           {connected.map((c, i) => (
             <StaggerItem key={c}>
@@ -202,7 +200,7 @@ export default function QuestPage() {
         </Prose>
       </Section>
 
-      <Section eyebrow="The Need for an Integrative Framework" title="A Simple but Important Observation">
+      <Section title="The Need for an Integrative Framework">
         <Prose>
           <p>
             Although inspired by the realities of underserved communities across the
@@ -210,7 +208,10 @@ export default function QuestPage() {
             adaptable productive energy platform capable of serving diverse geographic,
             economic, and social environments.
           </p>
-          <p>HydroSol&rsquo;s productive energy concept is founded upon a simple observation:</p>
+          <p>
+            HydroSol&rsquo;s productive energy concept is founded upon a simple
+            observation.
+          </p>
         </Prose>
         <PullQuote
           lines={[
@@ -222,21 +223,24 @@ export default function QuestPage() {
           <p>
             Consequently, sustainable progress increasingly depends upon solutions
             capable of reinforcing multiple sectors together rather than addressing each
-            independently. This observation does not replace the valuable work already
-            being undertaken across the world. Rather, it seeks to complement those
-            efforts by providing an integrative framework through which productive energy
-            can support broader community development.
+            independently.
+          </p>
+          <p>
+            This observation does not replace the valuable work already being undertaken
+            across the world. Rather, it seeks to complement those efforts by providing
+            an integrative framework through which productive energy can support broader
+            community development.
           </p>
         </Prose>
 
-        <SubHeading>The Question Therefore Becomes</SubHeading>
+        <SubHeading>The question therefore becomes:</SubHeading>
         <Reveal>
           <div className="mx-auto mt-6 max-w-3xl rounded-2xl bg-gradient-to-r from-brand to-leaf p-px">
             <div className="rounded-[calc(1rem-1px)] bg-white px-7 py-8 text-center sm:px-10">
               <p className="display-font mx-auto max-w-2xl text-balance text-[21px] font-bold leading-normal text-navy sm:text-[24px]">
                 Can productive energy serve not only households, but also agriculture,
                 water systems, education, healthcare, local enterprise, and community
-                resilience — within one coordinated framework?
+                resilience within one coordinated framework?
               </p>
               <p className="mt-4 text-[15px] text-body">
                 That question forms the foundation of the{" "}

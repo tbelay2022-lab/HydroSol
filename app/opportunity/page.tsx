@@ -69,7 +69,7 @@ export default function OpportunityPage() {
         />
       </Section>
 
-      <Section tint eyebrow="A Significant Global Opportunity" title="One of the Largest Productive Infrastructure Opportunities of the Twenty-First Century">
+      <Section tint title="A Significant Global Opportunity">
         <Prose>
           <p>
             Across Africa, South Asia, Latin America, the Caribbean, and other parts of
@@ -78,10 +78,12 @@ export default function OpportunityPage() {
             agriculture, education, healthcare, water systems, and local enterprise.
           </p>
           <p>
-            The productive infrastructure ecosystem serving these communities represents
-            a market opportunity exceeding <strong>US$100 billion</strong> — spanning
-            productive energy, manufacturing, agriculture, mobility, water systems,
-            healthcare, education, digital services, and local enterprise development.
+            This represents one of the largest productive infrastructure opportunities of
+            the twenty-first century. The productive infrastructure ecosystem serving
+            these communities represents a market opportunity exceeding{" "}
+            <strong>US$100 billion</strong>, spanning productive energy, manufacturing,
+            agriculture, mobility, water systems, healthcare, education, digital
+            services, and local enterprise development.
           </p>
         </Prose>
         <div className="mx-auto mt-12 max-w-4xl">
@@ -97,21 +99,21 @@ export default function OpportunityPage() {
         </Prose>
       </Section>
 
-      <Section eyebrow="Building Through Partnership" title="No Single Institution Can Transform Communities Alone">
+      <Section title="Building Through Partnership">
         <div className="mt-4 grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           <Prose>
             <p>
-              HydroSol embraces collaboration as a fundamental operating principle. As
-              illustrated in the Partnership Ecosystem, HydroSol brings together
+              No single institution can transform communities alone. HydroSol therefore
+              embraces collaboration as a fundamental operating principle.
+            </p>
+            <p>
+              As illustrated in the Partnership Ecosystem, HydroSol brings together
               governments, development finance institutions, universities, engineering
               and manufacturing partners, humanitarian organizations, private-sector
               innovators, investors, and local communities within a shared implementation
-              framework.
-            </p>
-            <p>
-              Each partner contributes unique expertise, resources, and experience —
-              creating stronger pathways for implementation while fostering local
-              ownership, long-term sustainability, and measurable community impact.
+              framework. Each partner contributes unique expertise, resources, and
+              experience, creating stronger pathways for implementation while fostering
+              local ownership, long-term sustainability, and measurable community impact.
             </p>
           </Prose>
           <FigureFrame
@@ -124,13 +126,16 @@ export default function OpportunityPage() {
         </div>
       </Section>
 
-      <Section tint eyebrow="The Next Phase" title="From Conceptual Development Toward Practical Implementation">
+      <Section tint title="The Next Phase">
         <Prose>
           <p>
             The HydroSol journey now moves from conceptual development toward practical
-            implementation. The implementation pathway illustrates how each stage builds
-            upon the previous one — transforming vision into measurable community impact
-            through responsible, collaborative implementation.
+            implementation. The implementation pathway below illustrates how engineering
+            refinement, operational validation, pilot deployment, strategic partnerships,
+            regional expansion, and scalable replication come together within one
+            coordinated framework. Each stage builds upon the previous one, transforming
+            vision into measurable community impact through responsible, collaborative
+            implementation.
           </p>
         </Prose>
         <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -163,12 +168,14 @@ export default function OpportunityPage() {
         </div>
       </Section>
 
-      <Section eyebrow="Investment for Productive Communities" title="Capital That Supports Lasting Productive Impact">
+      <Section title="Investment for Productive Communities">
         <Prose>
           <p>
             HydroSol seeks investment that supports lasting productive impact. Capital
-            contributes not only to technology development but to the full foundation of
-            community implementation.
+            contributes not only to technology development but also to manufacturing
+            capability, prototype validation, pilot deployment, regional processing
+            capacity, local workforce development, monitoring systems, and community
+            implementation.
           </p>
         </Prose>
         <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
@@ -191,7 +198,7 @@ export default function OpportunityPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="An Invitation to a Shared Future" title="When Innovation Serves Humanity">
+      <Section tint title="An Invitation to a Shared Future">
         <Prose>
           <p>
             HydroSol believes that the world&rsquo;s greatest opportunities emerge when

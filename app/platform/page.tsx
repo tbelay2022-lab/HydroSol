@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import {
-  Award,
   Bus,
+  Cog,
   Droplets,
   FlaskConical,
   GraduationCap,
   Handshake,
   HeartPulse,
   Home,
+  ShieldCheck,
   Sprout,
   Store,
 } from "lucide-react";
@@ -15,7 +16,7 @@ import { FigureFrame } from "@/components/FigureFrame";
 import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
 import { Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, SubHeading, Prose, PullQuote } from "@/components/Section";
+import { Section, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "The HydroSol Platform",
@@ -39,25 +40,14 @@ const applications = [
   { label: "Healthcare", icon: HeartPulse },
   { label: "Education", icon: GraduationCap },
   { label: "Productive Mobility", icon: Bus },
-  { label: "Small & Medium Enterprises", icon: Store },
+  { label: "Small & Medium-Sized Enterprises", icon: Store },
 ];
 
-const validation = [
-  {
-    icon: FlaskConical,
-    title: "Prototype Development",
-    body: "Progressing through disciplined prototype development and engineering refinement.",
-  },
-  {
-    icon: Award,
-    title: "Operational Validation",
-    body: "Rigorous testing, validation, and continuous improvement at every stage.",
-  },
-  {
-    icon: Handshake,
-    title: "Strategic Partnerships",
-    body: "Collaboration with experienced professionals and institutions as an essential component of responsible innovation.",
-  },
+const progressing = [
+  { label: "Prototype Development", icon: FlaskConical },
+  { label: "Engineering Refinement", icon: Cog },
+  { label: "Operational Validation", icon: ShieldCheck },
+  { label: "Strategic Partnerships", icon: Handshake },
 ];
 
 export default function PlatformPage() {
@@ -94,15 +84,11 @@ export default function PlatformPage() {
             community resilience.
           </p>
           <p>
-            HydroSol therefore introduces the concept of{" "}
-            <strong>Productive Energy</strong> — energy designed to support economic
+            This therefore introduces the concept of{" "}
+            <strong>Productive Energy</strong>—energy designed to support economic
             activity and strengthen communities rather than merely providing electricity
             or heat.
           </p>
-        </Prose>
-
-        <SubHeading>The Convergence of Many Disciplines</SubHeading>
-        <Prose>
           <p>
             HydroSol is not the product of a single scientific discipline. It is the
             convergence of chemistry, engineering, digital technologies, environmental
@@ -114,7 +100,7 @@ export default function PlatformPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="An Integrative Framework" title="More Than Another Energy Technology">
+      <Section tint title="An Integrative Framework">
         <Prose>
           <p>
             The HydroSol Productive Energy Platform is not presented simply as another
@@ -124,10 +110,10 @@ export default function PlatformPage() {
           </p>
           <p>
             Within this framework, productive energy supports multiple sectors
-            simultaneously — including households, agriculture, small enterprises,
+            simultaneously, including households, agriculture, small enterprises,
             healthcare facilities, schools, water systems, and productive mobility.
-            Instead of viewing these sectors independently, the platform recognizes that
-            they reinforce one another.
+            Instead of viewing these sectors independently, the HydroSol Productive
+            Energy Platform recognizes that they reinforce one another.
           </p>
         </Prose>
         <div className="mx-auto mt-10 max-w-4xl">
@@ -144,12 +130,13 @@ export default function PlatformPage() {
             ))}
           </Stagger>
           <p className="mt-7 text-center text-[16px] font-medium italic text-brand">
-            This systems perspective forms the foundation of the HydroSol Platform.
+            This system&rsquo;s perspective forms the foundation of the HydroSol
+            Platform.
           </p>
         </div>
       </Section>
 
-      <Section eyebrow="Distributed Rather Than Centralized" title="Energy Where Productive Activities Occur">
+      <Section title="Distributed Rather Than Centralized">
         <Prose>
           <p>
             Many communities beyond the last mile require solutions that can operate
@@ -158,7 +145,7 @@ export default function PlatformPage() {
           </p>
           <p>
             Instead of depending exclusively upon large centralized infrastructure,
-            productive energy can be deployed where productive activities occur — within
+            productive energy can be deployed where productive activities occur—within
             homes, farms, workshops, cooperatives, schools, clinics, and community
             enterprises. This approach supports local participation while reducing
             dependence upon long-distance infrastructure for every productive activity.
@@ -170,11 +157,16 @@ export default function PlatformPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="A Platform for Multiple Applications" title="One Common Operational Framework">
+      <Section tint title="A Platform for Multiple Applications">
         <Prose>
           <p>
             The HydroSol Platform is designed to support a broad range of productive
             activities through a common operational framework.
+          </p>
+          <p>
+            These include household energy services, agricultural production and
+            processing, water access, healthcare, education, productive mobility, and
+            small and medium-sized enterprises. Each application benefits individually.
           </p>
         </Prose>
         <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
@@ -189,7 +181,7 @@ export default function PlatformPage() {
         </Stagger>
         <Prose>
           <p>
-            Each application benefits individually. More importantly,{" "}
+            More importantly,{" "}
             <strong>
               they become stronger when deployed together within the same community.
             </strong>{" "}
@@ -200,7 +192,7 @@ export default function PlatformPage() {
         </Prose>
       </Section>
 
-      <Section eyebrow="Validation Through Partnership" title="Innovation Supported by Engineering Discipline">
+      <Section title="Validation Through Partnership">
         <Prose>
           <p>
             HydroSol recognizes that innovation achieves its greatest value when
@@ -209,26 +201,21 @@ export default function PlatformPage() {
             engineering refinement, operational validation, and strategic partnerships.
           </p>
         </Prose>
-        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-3">
-          {validation.map((v) => (
-            <StaggerItem key={v.title}>
-              <div className="hairline-card group h-full p-6 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]">
-                <span className="grid size-11 place-items-center rounded-xl bg-leaf-soft text-leaf-deep transition-colors group-hover:bg-leaf group-hover:text-white">
-                  <v.icon className="size-5" />
-                </span>
-                <h3 className="display-font mt-5 text-[17px] font-bold text-navy">
-                  {v.title}
-                </h3>
-                <p className="mt-2 text-[14.5px] leading-relaxed text-body/90">{v.body}</p>
-              </div>
+        <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
+          {progressing.map((p) => (
+            <StaggerItem key={p.label}>
+              <span className="inline-flex items-center gap-2.5 rounded-full border border-leaf/30 bg-leaf-soft px-4 py-2.5 text-[13.5px] font-semibold text-leaf-deep">
+                <p.icon className="size-4" />
+                {p.label}
+              </span>
             </StaggerItem>
           ))}
         </Stagger>
         <Prose>
           <p>
             The HydroSol program has also benefited from the confidence and practical
-            engineering contributions of experienced professionals — including the Chief
-            Executive Officer of a multinational engineering company, a seasoned
+            engineering contributions of experienced professionals, including the Chief
+            Executive Officer of a multinational engineering company—a seasoned
             mechanical engineer and holder of multiple patents in power technologies.
             Their participation strengthens the program&rsquo;s engineering pathway while
             reinforcing HydroSol&rsquo;s commitment to rigorous testing, validation, and
@@ -238,7 +225,7 @@ export default function PlatformPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="Our Philosophy" title="Building Communities Rather Than Installing Technology">
+      <Section tint title="Building Communities Rather Than Installing Technology">
         <Prose>
           <p>
             Technology alone does not transform communities. Transformation occurs when
@@ -248,16 +235,16 @@ export default function PlatformPage() {
         </Prose>
         <PullQuote
           lines={[
-            "HydroSol measures success not by the number of systems deployed,",
+            "HydroSol therefore measures success not by the number of systems deployed,",
             "but by the communities strengthened through productive energy.",
           ]}
         />
         <Prose>
           <p>
-            The HydroSol Platform becomes most meaningful when productive energy is
-            translated into everyday community life. The next chapter demonstrates how
-            individual applications become an integrated productive community — and how
-            these systems ultimately converge within the vision of the{" "}
+            This philosophy prepares the way for the next chapter. Rather than examining
+            individual technical applications in isolation, we now explore how productive
+            energy can support interconnected community systems—and how these systems
+            ultimately converge within the vision of the{" "}
             <strong>Smart Productive Village (Kushet).</strong>
           </p>
         </Prose>
@@ -265,7 +252,7 @@ export default function PlatformPage() {
 
       <NextChapter
         current="03"
-        note="Rather than examining individual technical applications in isolation, we now explore how productive energy supports interconnected community systems."
+        note="The HydroSol Platform becomes most meaningful when productive energy is translated into everyday community life. The following illustration demonstrates how individual applications become an integrated productive community."
       />
     </>
   );

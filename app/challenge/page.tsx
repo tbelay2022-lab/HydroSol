@@ -3,8 +3,7 @@ import { FigureFrame } from "@/components/FigureFrame";
 import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
 import { Stagger, StaggerItem } from "@/components/Reveal";
-import { Section, SubHeading, Prose, PullQuote } from "@/components/Section";
-import { StatBand } from "@/components/StatBand";
+import { Section, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "The Global Challenge",
@@ -62,8 +61,8 @@ export default function ChallengePage() {
               enterprise opportunities continue to constrain prosperity.
             </p>
             <p>
-              Across much of the Global South — including Africa, South Asia, Latin
-              America, the Caribbean, and underserved regions elsewhere — millions of
+              Across much of the Global South—including Africa, South Asia, Latin
+              America, the Caribbean, and underserved regions elsewhere, millions of
               households, farms, schools, clinics, workshops, and small enterprises
               continue to face persistent constraints that limit productivity,
               opportunity, and long-term prosperity. These challenges are particularly
@@ -80,17 +79,13 @@ export default function ChallengePage() {
           </Prose>
         </div>
 
-        <div className="mx-auto mt-14 max-w-4xl">
-          <StatBand />
-        </div>
       </Section>
 
-      <Section
-        tint
-        eyebrow="An Interconnected Reality"
-        title="These Six Challenges Rarely Exist Independently"
-      >
-        <div className="mx-auto mt-10 max-w-4xl">
+      <Section tint title="An Interconnected Reality">
+        <Prose>
+          <p>These six challenges rarely exist independently.</p>
+        </Prose>
+        <div className="mx-auto mt-8 max-w-4xl">
           <Stagger className="grid gap-3 sm:grid-cols-2">
             {chain.map(([head, rest], i) => (
               <StaggerItem key={head}>
@@ -119,7 +114,6 @@ export default function ChallengePage() {
           </p>
         </Prose>
 
-        <SubHeading>More Than an Energy Problem</SubHeading>
         <Prose>
           <p>
             The productive energy platform begins from this understanding. The challenge

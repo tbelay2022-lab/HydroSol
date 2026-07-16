@@ -54,11 +54,11 @@ const invitation = [
   { label: "A humanitarian organization strengthening vulnerable communities", icon: HeartHandshake },
   { label: "An engineering firm contributing technical expertise", icon: Cog },
   { label: "An investor committed to long-term impact", icon: Banknote },
-  { label: "A community leader preparing for implementation", icon: Users },
+  { label: "Or a community leader preparing for implementation", icon: Users },
 ];
 
 const shapedBy = [
-  "By people.",
+  "It will be shaped by people.",
   "By partnerships.",
   "By shared knowledge.",
   "By responsible innovation.",
@@ -109,14 +109,17 @@ export default function JoinPage() {
           <p>
             HydroSol seeks to contribute to this shared global effort. The initiative
             recognizes that lasting development depends upon collaboration between
-            partners across both the Global South and the Global North — combining local
+            partners across both the Global South and the Global North, combining local
             knowledge, engineering excellence, investment, research, and practical
             implementation to strengthen productive communities worldwide.
           </p>
         </Prose>
       </Section>
 
-      <Section tint eyebrow="A Shared Commitment" title="Founded Upon a Simple Belief">
+      <Section tint title="A Shared Commitment">
+        <Prose>
+          <p>HydroSol is founded upon a simple belief:</p>
+        </Prose>
         <PullQuote
           lines={[
             "When productive energy strengthens productive communities,",
@@ -134,7 +137,10 @@ export default function JoinPage() {
         </Prose>
       </Section>
 
-      <Section eyebrow="Looking Ahead" title="The Next Phase Focuses on Practical Implementation">
+      <Section title="Looking Ahead">
+        <Prose>
+          <p>The next phase of HydroSol focuses on practical implementation.</p>
+        </Prose>
         <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
           {ahead.map((a) => (
             <StaggerItem key={a}>
@@ -158,12 +164,13 @@ export default function JoinPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="An Open Invitation" title="Whether You Are…">
+      <Section tint title="An Open Invitation">
         <Prose>
           <p>
             HydroSol welcomes collaboration with all who share the commitment to
             productive, resilient, and prosperous communities.
           </p>
+          <p>Whether you are:</p>
         </Prose>
         <Stagger className="mx-auto mt-10 flex max-w-5xl flex-wrap justify-center gap-4">
           {invitation.map((p) => (
@@ -190,7 +197,7 @@ export default function JoinPage() {
         </p>
       </Section>
 
-      <Section eyebrow="The Journey Continues" title="The Future Will Be Shaped by Collaboration">
+      <Section title="The Journey Continues">
         <Prose>
           <p>
             The future will be shaped by collaboration across disciplines, institutions,

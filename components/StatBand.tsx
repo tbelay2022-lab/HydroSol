@@ -2,16 +2,16 @@ import { CountUp } from "@/components/CountUp";
 
 const stats = [
   {
-    render: () => <CountUp to={2.3} decimals={1} suffix="B+" />,
-    label: "people facing productive-energy constraints",
+    render: () => <CountUp to={2.3} decimals={1} suffix="B" />,
+    label: "people still live beyond reliable productive infrastructure",
   },
   {
-    render: () => <CountUp to={80} suffix="" />,
-    label: "countries across the Global South and beyond",
+    render: () => <CountUp to={6} />,
+    label: "interconnected development challenges — one integrated journey",
   },
   {
-    render: () => <CountUp to={100} prefix="USD " suffix="B+" />,
-    label: "combined market and development opportunity",
+    render: () => <CountUp to={100} prefix="US$" suffix="B+" />,
+    label: "productive infrastructure market opportunity",
   },
 ];
 

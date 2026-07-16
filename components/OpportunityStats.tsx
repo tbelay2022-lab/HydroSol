@@ -1,23 +1,18 @@
-import { Globe2, TrendingUp, Users } from "lucide-react";
+import { TrendingUp, Users } from "lucide-react";
 import { CountUp } from "@/components/CountUp";
 
 const stats = [
   {
     icon: Users,
-    render: () => <CountUp to={2.3} decimals={1} suffix="B+" className="gradient-text" />,
-    label: "people facing productive-energy constraints",
-  },
-  {
-    icon: Globe2,
-    render: () => <CountUp to={80} className="gradient-text" />,
-    label: "countries across the Global South and beyond",
+    render: () => <CountUp to={2.3} decimals={1} suffix="B" className="gradient-text" />,
+    label: "people seeking reliable productive infrastructure across the Global South",
   },
   {
     icon: TrendingUp,
     render: () => (
-      <CountUp to={100} prefix="USD " suffix="B+" className="gradient-text" />
+      <CountUp to={100} prefix="US$" suffix="B+" className="gradient-text" />
     ),
-    label: "combined market and development opportunity",
+    label: "market opportunity across the productive infrastructure ecosystem",
   },
 ];
 
@@ -25,7 +20,7 @@ export function OpportunityStats() {
   return (
     <div className="relative overflow-hidden rounded-3xl border border-line bg-white shadow-[0_16px_48px_rgba(18,59,109,0.07)]">
       <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
-      <div className="relative grid divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      <div className="relative grid divide-y divide-line sm:grid-cols-2 sm:divide-x sm:divide-y-0">
         {stats.map((s) => (
           <div key={s.label} className="p-8 sm:p-9">
             <span className="grid size-11 place-items-center rounded-xl bg-leaf-soft text-leaf-deep">

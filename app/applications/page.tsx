@@ -28,23 +28,23 @@ const applications = [
   },
   {
     icon: Sprout,
-    title: "Strengthening Agriculture & Food Systems",
-    body: "Agriculture remains the backbone of many developing economies. Productive energy supports irrigation, food processing, storage, refrigeration, mechanization, and value addition — strengthening food security while increasing farmer productivity and rural incomes.",
+    title: "Strengthening Agriculture and Food Systems",
+    body: "Agriculture remains the backbone of many developing economies. Productive energy supports irrigation, food processing, storage, refrigeration, mechanization, and value addition. These improvements strengthen food security while increasing farmer productivity and rural incomes.",
   },
   {
     icon: Droplets,
-    title: "Supporting Water, Health & Education",
-    body: "Water systems become more dependable. Healthcare facilities improve their operational capability. Schools gain access to modern learning environments and digital resources. Together, these services strengthen human capital while improving quality of life.",
+    title: "Supporting Water, Health, and Education",
+    body: "Reliable energy contributes directly to community well-being. Water systems become more dependable. Healthcare facilities improve their operational capability. Schools gain access to modern learning environments and digital resources. Together, these services strengthen human capital while improving quality of life.",
   },
   {
     icon: Store,
-    title: "Enabling Small & Medium Enterprises",
-    body: "Productive energy enables workshops, processing facilities, refrigeration, service industries, manufacturing, and other income-generating activities. Women and youth particularly benefit from expanded opportunities for entrepreneurship, innovation, and local enterprise development.",
+    title: "Enabling Small and Medium Enterprises",
+    body: "Local businesses are essential drivers of economic growth. Productive energy enables workshops, processing facilities, refrigeration, service industries, manufacturing, and other income-generating activities that create employment within communities. Women and youth particularly benefit from expanded opportunities for entrepreneurship, innovation, and local enterprise development.",
   },
   {
     icon: Bus,
     title: "Productive Mobility",
-    body: "Agricultural products reach markets. Small businesses receive supplies. Communities improve access to education, healthcare, and commercial services. Productive mobility strengthens local productivity, economic development, and regional connectivity.",
+    body: "Energy also supports productive transportation. Agricultural products reach markets. Small businesses receive supplies. Communities improve access to education, healthcare, and commercial services. Productive mobility therefore strengthens local productivity, economic development, and regional connectivity.",
   },
 ];
 
@@ -121,7 +121,7 @@ export default function ApplicationsPage() {
         </Stagger>
       </Section>
 
-      <Section tint eyebrow="Beyond Individual Applications" title="One Coordinated Ecosystem">
+      <Section tint title="Beyond Individual Applications">
         <Prose>
           <p>
             Each application delivers important benefits individually. However, HydroSol
@@ -134,25 +134,22 @@ export default function ApplicationsPage() {
         </Prose>
         <PullQuote
           lines={[
-            "Development becomes more than the sum of individual projects.",
+            "Development therefore becomes more than the sum of individual projects.",
             "It becomes an integrated community system.",
           ]}
         />
       </Section>
 
-      <Section
-        eyebrow="The Smart Productive Village"
-        title="The Kushet — Where Every Dimension of Local Life Is Strengthened"
-      >
+      <Section title="The Smart Productive Village (Kushet)">
         <Prose>
           <p>
             HydroSol envisions communities where productive energy strengthens every
             dimension of local life simultaneously. The{" "}
             <strong>Smart Productive Village (Kushet)</strong> represents this vision.
             While particularly suited to rural and peri-urban communities across Africa,
-            South Asia, Latin America, and the Caribbean, the framework is intentionally
-            adaptable to underserved communities wherever productive infrastructure
-            remains limited.
+            South Asia, Latin America, and the Caribbean, the Smart Productive Village
+            framework is intentionally adaptable to underserved communities wherever
+            productive infrastructure remains limited.
           </p>
           <p>
             Rather than introducing isolated technologies, the Kushet integrates
@@ -201,7 +198,7 @@ export default function ApplicationsPage() {
         </Prose>
       </Section>
 
-      <Section tint eyebrow="A Replicable Development Model" title="Not a Single Demonstration">
+      <Section tint title="A Replicable Development Model">
         <Prose>
           <p>
             The Smart Productive Village is not intended as a single demonstration. It is
@@ -236,7 +233,7 @@ export default function ApplicationsPage() {
 
       <NextChapter
         current="04"
-        note="How can the Smart Productive Village be validated, financed, replicated, and scaled across thousands of communities? That question forms the focus of the next chapter."
+        note="That question forms the focus of the next chapter."
       />
     </>
   );
