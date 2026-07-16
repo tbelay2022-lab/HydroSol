@@ -6,7 +6,7 @@ import { HeroEmblem } from "@/components/HeroEmblem";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Section, Prose } from "@/components/Section";
 import { StatBand } from "@/components/StatBand";
-import { chapters, site } from "@/lib/site";
+import { chapters } from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -54,28 +54,11 @@ export default function HomePage() {
         <HeroEmblem />
         <div className="container-x relative">
           <Reveal>
-            <p className="eyebrow">HydroSol™ · {site.tagline}</p>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h1 className="display-font mt-5 max-w-3xl text-balance text-[42px] font-bold leading-[1.06] text-navy sm:text-6xl md:text-[64px]">
-              Power Everywhere.{" "}
-              <span className="gradient-text">For Everyone.</span>
+            <h1 className="display-font mt-5 max-w-3xl text-balance text-[42px] font-bold leading-[1.08] text-navy sm:text-6xl md:text-[64px]">
+              Desertification of the Global South.
             </h1>
           </Reveal>
           <Reveal delay={0.14}>
-            <p className="display-font mt-4 text-[20px] font-semibold text-slate-head sm:text-[24px]">
-              {site.secondary}
-            </p>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-pretty text-[16px] leading-[1.7] text-body sm:text-[18px]">
-              HydroSol is a globally adaptable productive energy platform — designed to
-              strengthen households, agriculture, water, healthcare, education,
-              enterprise, and mobility within one integrated framework for community
-              development.
-            </p>
-          </Reveal>
-          <Reveal delay={0.26}>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <PrimaryButton href="/challenge">Begin the Journey</PrimaryButton>
               <GhostButton href="/white-paper">Executive White Paper</GhostButton>
