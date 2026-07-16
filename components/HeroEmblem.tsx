@@ -3,9 +3,15 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 
+const droplets = [
+  { left: "22%", size: 9, delay: 0, duration: 8, drift: 14 },
+  { left: "70%", size: 7, delay: 2.6, duration: 9.5, drift: -10 },
+  { left: "46%", size: 5, delay: 5.2, duration: 7.5, drift: 8 },
+];
+
 /**
  * Animated brand centerpiece for the home hero.
- * Ring pulses + orbiting orbs are centered on the emblem (≈40% from the
+ * Ring pulses + rising droplets are centered on the emblem (≈40% from the
  * top of the logo image), not the wordmark below it.
  */
 export function HeroEmblem() {
@@ -21,7 +27,7 @@ export function HeroEmblem() {
         className="absolute left-1/2 top-[40%] size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(255,255,255,0.75), rgba(255,255,255,0.3) 55%, transparent 72%)",
+            "radial-gradient(circle, rgba(255,255,255,0.85), rgba(255,255,255,0.35) 55%, transparent 72%)",
         }}
       />
 
@@ -31,11 +37,11 @@ export function HeroEmblem() {
           <motion.span
             key={i}
             className={`absolute left-1/2 top-[40%] size-[380px] rounded-full border ${
-              i === 1 ? "border-leaf/30" : "border-brand/35"
+              i === 1 ? "border-leaf/35" : "border-brand/40"
             }`}
             style={{ x: "-50%", y: "-50%" }}
             initial={{ scale: 0.62, opacity: 0 }}
-            animate={{ scale: [0.62, 1.28], opacity: [0, 0.3, 0] }}
+            animate={{ scale: [0.62, 1.28], opacity: [0, 0.35, 0] }}
             transition={{
               duration: 5,
               delay: i * 1.7,
@@ -45,10 +51,32 @@ export function HeroEmblem() {
           />
         ))}
 
-      {/* the logo, floating */}
+      {/* rising droplets — a quiet water motif around the emblem */}
+      {!reduce &&
+        droplets.map((d, i) => (
+          <motion.span
+            key={i}
+            className="absolute top-[62%] rounded-full bg-gradient-to-b from-brand/50 to-leaf/40 blur-[1px]"
+            style={{ left: d.left, width: d.size, height: d.size }}
+            initial={{ y: 30, x: 0, opacity: 0 }}
+            animate={{ y: -190, x: d.drift, opacity: [0, 0.55, 0.45, 0] }}
+            transition={{
+              duration: d.duration,
+              delay: d.delay,
+              repeat: Infinity,
+              ease: "easeOut",
+            }}
+          />
+        ))}
+
+      {/* the logo — floating, with a gentle sway and breath */}
       <motion.div
-        animate={reduce ? undefined : { y: [0, -12, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        animate={
+          reduce
+            ? undefined
+            : { y: [0, -14, 0], rotate: [0, 1.1, 0, -1.1, 0], scale: [1, 1.015, 1] }
+        }
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
         className="relative"
       >
         <Image
@@ -57,7 +85,7 @@ export function HeroEmblem() {
           width={500}
           height={455}
           priority
-          className="h-auto w-full opacity-[0.24]"
+          className="h-auto w-full opacity-[0.45] drop-shadow-[0_18px_40px_rgba(15,95,168,0.18)]"
         />
       </motion.div>
     </div>
