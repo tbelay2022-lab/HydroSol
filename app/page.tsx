@@ -14,24 +14,42 @@ export default function HomePage() {
       {/* Hero */}
       <section className="hero-droplet relative overflow-hidden pb-32 pt-40 sm:pb-44 sm:pt-52">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
-        {/* wave transition into the next section — echoes the droplet curve */}
+        {/* living wave transition — two drifting water lines, echoing the droplet */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden>
-          <svg
-            viewBox="0 0 1440 110"
-            preserveAspectRatio="none"
-            className="block h-[56px] w-full sm:h-[88px]"
-          >
-            <path
-              d="M0,74 C300,112 760,8 1080,34 C1250,48 1360,60 1440,56 L1440,110 L0,110 Z"
-              fill="#ffffff"
-            />
-            <path
-              d="M0,74 C300,112 760,8 1080,34 C1250,48 1360,60 1440,56"
-              fill="none"
-              stroke="rgba(15,95,168,0.14)"
-              strokeWidth="2"
-            />
-          </svg>
+          <div className="relative h-[56px] overflow-hidden sm:h-[88px]">
+            {/* back swell — mirrored, translucent, slow */}
+            <div className="animate-wave-slow motion-reduce:animate-none absolute bottom-0 left-0 h-full w-[200%]">
+              <svg
+                viewBox="0 0 2880 140"
+                preserveAspectRatio="none"
+                className="h-full w-full -scale-x-100"
+              >
+                <path
+                  d="M0,58 Q360,118 720,58 T1440,58 T2160,58 T2880,58 L2880,140 L0,140 Z"
+                  fill="rgba(255,255,255,0.5)"
+                />
+              </svg>
+            </div>
+            {/* front shoreline — white, with a faint blue crest line */}
+            <div className="animate-wave motion-reduce:animate-none absolute bottom-0 left-0 h-full w-[200%]">
+              <svg
+                viewBox="0 0 2880 140"
+                preserveAspectRatio="none"
+                className="h-full w-full"
+              >
+                <path
+                  d="M0,76 Q360,130 720,76 T1440,76 T2160,76 T2880,76 L2880,140 L0,140 Z"
+                  fill="#ffffff"
+                />
+                <path
+                  d="M0,76 Q360,130 720,76 T1440,76 T2160,76 T2880,76"
+                  fill="none"
+                  stroke="rgba(15,95,168,0.12)"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <HeroEmblem />
         <div className="container-x relative">

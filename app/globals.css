@@ -20,8 +20,19 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --animate-marquee: marquee 46s linear infinite;
+  --animate-wave: wave-drift 22s linear infinite;
+  --animate-wave-slow: wave-drift 34s linear infinite;
 
   @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes wave-drift {
     from {
       transform: translateX(0);
     }

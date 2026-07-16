@@ -40,11 +40,11 @@ export function HeroEmblem() {
               i === 1 ? "border-leaf/35" : "border-brand/40"
             }`}
             style={{ x: "-50%", y: "-50%" }}
-            initial={{ scale: 0.62, opacity: 0 }}
-            animate={{ scale: [0.62, 1.28], opacity: [0, 0.35, 0] }}
+            initial={{ scale: 0.6, opacity: 0 }}
+            animate={{ scale: [0.6, 1.85], opacity: [0, 0.32, 0] }}
             transition={{
-              duration: 5,
-              delay: i * 1.7,
+              duration: 6.5,
+              delay: i * 2.2,
               repeat: Infinity,
               ease: "easeOut",
             }}
