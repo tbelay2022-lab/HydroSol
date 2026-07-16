@@ -55,7 +55,8 @@ export default function HomePage() {
         <div className="container-x relative">
           <Reveal>
             <h1 className="display-font mt-5 max-w-3xl text-balance text-[42px] font-bold leading-[1.08] text-navy sm:text-6xl md:text-[64px]">
-              Desertification of the Global South.
+              Desertification of{" "}
+              <span className="gradient-text">the Global South.</span>
             </h1>
           </Reveal>
           <Reveal delay={0.14}>
