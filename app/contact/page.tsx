@@ -21,6 +21,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
+        tintBelow
         eyebrow="Contact & Engagement"
         title="Contact Information"
         subtitle="Connect with HydroSol"

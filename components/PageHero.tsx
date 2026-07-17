@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { HeroWaves } from "@/components/HeroWaves";
 import { Reveal } from "@/components/Reveal";
 
 export function PageHero({
@@ -7,16 +8,20 @@ export function PageHero({
   subtitle,
   lede,
   children,
+  tintBelow = false,
 }: {
   eyebrow: string;
   title: ReactNode;
   subtitle?: string;
   lede?: string;
   children?: ReactNode;
+  /** Set when the section below the hero uses the light-gray background. */
+  tintBelow?: boolean;
 }) {
   return (
-    <section className="hero-wash relative overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-44">
+    <section className="hero-droplet relative overflow-hidden pb-28 pt-36 sm:pb-36 sm:pt-44">
       <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
+      <HeroWaves tint={tintBelow} />
       <div className="container-x relative flex flex-col items-center text-center">
         <Reveal>
           <p className="eyebrow">{eyebrow}</p>

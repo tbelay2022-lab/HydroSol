@@ -14,6 +14,7 @@ export default function FaqPage() {
   return (
     <>
       <PageHero
+        tintBelow
         eyebrow="FAQ"
         title="Frequently Asked Questions"
         lede="Concise answers to common questions regarding the HydroSol framework, productive continuity, deployment philosophy, partnerships, and development objectives. For a comprehensive discussion, consult the HydroSol Executive White Paper."
