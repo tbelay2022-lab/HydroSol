@@ -18,20 +18,36 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  // Deployment URL — switch to site.url once hydrosolpower.com points here
+  metadataBase: new URL("https://hydrosol.vercel.app"),
   title: {
     default: "HydroSol — Power Everywhere. For Everyone.",
     template: "%s — HydroSol",
   },
   description:
-    "HydroSol is a distributed productive-energy platform designed to support productive activity in environments where conventional energy systems may become unavailable, unreliable, intermittent, or unaffordable.",
+    "HydroSol is a globally adaptable productive energy platform — distributed productive energy for sustainable development, strengthening households, agriculture, water, healthcare, education, enterprise, and mobility within one integrated framework. Productive Communities. Prosperous Futures.",
   openGraph: {
     title: "HydroSol — Power Everywhere. For Everyone.",
     description:
-      "A distributed productive-energy platform supporting livelihoods, enterprise development, and sustainable community growth in underserved and last-mile environments.",
-    url: site.url,
+      "Distributed Productive Energy for Sustainable Development. Productive Communities. Prosperous Futures.",
+    url: "https://hydrosol.vercel.app",
     siteName: "HydroSol",
     type: "website",
+    images: [
+      {
+        url: "/figures/hs2-brand-banner.jpg",
+        width: 1536,
+        height: 1024,
+        alt: "HydroSol — Power Everywhere. For Everyone. Circular · Scalable · Modular · Inclusive",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HydroSol — Power Everywhere. For Everyone.",
+    description:
+      "Distributed Productive Energy for Sustainable Development. Productive Communities. Prosperous Futures.",
+    images: ["/figures/hs2-brand-banner.jpg"],
   },
 };
 
