@@ -19,7 +19,7 @@ export default function WhitePaperPage() {
         eyebrow="Publications"
         title="Executive White Paper"
         subtitle="The Complete HydroSol Framework"
-        lede="The Executive White Paper presents the platform's vision, productive energy framework, architecture, implementation philosophy, and long-term development objectives."
+        lede="Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development."
       />
 
       <Section>

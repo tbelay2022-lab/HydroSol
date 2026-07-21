@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 const emailRoles: Record<string, string> = {
   "info@hydrosolpower.com": "General Information",
-  "partners@hydrosolpower.com": "Strategic Partnerships",
-  "invest@hydrosolpower.com": "Investment & Finance",
   "technology@hydrosolpower.com": "Technology & Engineering",
+  "partners@hydrosolpower.com": "Partnerships",
+  "invest@hydrosolpower.com": "Investment Opportunities",
 };
 
 export default function ContactPage() {
@@ -25,22 +25,27 @@ export default function ContactPage() {
         eyebrow="Contact & Engagement"
         title="Contact Information"
         subtitle="Connect with HydroSol"
-        lede="For partnership, investment, technical, institutional, media, or research inquiries, please contact the HydroSol team directly."
+        lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
       />
 
       <section className="bg-mist">
         <div className="container-x py-16 sm:py-24">
           <Reveal>
             <p className="mx-auto max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
-              We welcome engagement from governments, development institutions, United
-              Nations agencies, international organizations, investors, manufacturers,
-              universities, research institutions, humanitarian organizations,
-              foundations, private-sector enterprises, community organizations, and
-              prospective pilot partners.
+              We welcome enquiries from governments, universities, research
+              institutions, manufacturers, development organizations, investors,
+              engineering professionals, and communities interested in collaborating
+              with HydroSol.
             </p>
           </Reveal>
 
-          <Stagger className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
+          <Reveal>
+            <p className="mx-auto mt-8 max-w-2xl text-center text-[15px] font-medium text-navy">
+              Contact the HydroSol team through the following addresses:
+            </p>
+          </Reveal>
+
+          <Stagger className="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-2">
             {site.emails.map((email) => (
               <StaggerItem key={email}>
                 <a
@@ -62,11 +67,12 @@ export default function ContactPage() {
           </Stagger>
 
           <Reveal>
-            <p className="mx-auto mt-10 flex items-center justify-center gap-2.5 text-[15px] font-semibold text-navy">
+            <p className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-2.5 text-center text-[15px] font-semibold text-navy">
               <span className="grid size-9 place-items-center rounded-lg bg-leaf-soft text-leaf-deep">
                 <Globe className="size-4.5" />
               </span>
-              www.hydrosolpower.com
+              Visit the HydroSol Knowledge Platform:&nbsp;
+              <span className="text-brand">www.hydrosolpower.com</span>
             </p>
           </Reveal>
 

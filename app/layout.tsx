@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s — HydroSol",
   },
   description:
-    "HydroSol is a globally adaptable productive energy platform — distributed productive energy for sustainable development, strengthening households, agriculture, water, healthcare, education, enterprise, and mobility within one integrated framework. Productive Communities. Prosperous Futures.",
+    "HydroSol represents a new way of thinking about productive energy — one designed to empower communities beyond the last mile. Transforming interconnected challenges into interconnected prosperity through engineering, innovation, partnership, and environmental stewardship.",
   openGraph: {
     title: "HydroSol — Power Everywhere. For Everyone.",
     description:

@@ -17,14 +17,14 @@ const publications = [
   {
     href: "/white-paper",
     icon: FileText,
-    title: "Executive White Paper",
-    body: "The complete HydroSol framework — the global challenge, the productive energy platform, community applications, and the implementation pathway. Available to read online or download as a PDF.",
+    title: "HydroSol White Paper",
+    body: "Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development.",
   },
   {
     href: "/faq",
     icon: MessageCircleQuestion,
     title: "Frequently Asked Questions",
-    body: "Clear answers to the most common questions about HydroSol — technology, validation, implementation, partnership, and investment.",
+    body: "Find concise answers to common questions regarding HydroSol technology, engineering principles, safety, deployment, operations, and applications.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function PublicationsPage() {
         eyebrow="Publications"
         title="HydroSol Publications"
         subtitle="The Framework in Depth"
-        lede="For readers who wish to go beyond the journey chapters, HydroSol publishes its complete framework and answers to the most common questions."
+        lede="HydroSol is presented through a progressive body of engineering, technical, and strategic knowledge designed for readers with different interests and levels of detail."
       />
 
       <Section>

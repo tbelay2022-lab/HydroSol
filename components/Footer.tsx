@@ -37,7 +37,7 @@ export function Footer() {
               {site.secondary}
             </p>
             <p className="mt-5 max-w-xs text-[13.5px] leading-relaxed text-white/50">
-              {site.tagline}
+              {site.engineering}
             </p>
           </div>
 
@@ -88,11 +88,11 @@ export function Footer() {
         </div>
 
         <p className="mt-14 border-t border-white/10 pt-7 text-center text-[13.5px] text-white/55">
-          The HydroSol journey continues toward productive communities worldwide
+          {site.transforming}
         </p>
         <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
           <p className="text-[13px] text-white/50">© 2026 HydroSol. All Rights Reserved.</p>
-          <p className="text-[13px] italic text-white/50">{site.closing}</p>
+          <p className="max-w-md text-[13px] italic text-white/50">{site.closing}</p>
           <p className="text-[13px] text-white/50">www.hydrosolpower.com</p>
         </div>
       </div>

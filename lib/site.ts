@@ -3,13 +3,17 @@ export const site = {
   motto: "Power Everywhere. For Everyone.",
   secondary: "Productive Communities. Prosperous Futures.",
   tagline: "Distributed Productive Energy for Sustainable Development",
-  closing: "Powering Productive Communities for Generations to Come.",
+  engineering: "Engineering Productive Energy for Sustainable Development",
+  transforming: "Transforming Interconnected Challenges into Interconnected Prosperity",
+  through: "Through Engineering • Innovation • Partnership • Environmental Stewardship",
+  closing:
+    "Together, we can build a future where every community has the opportunity to prosper.",
   url: "https://hydrosolpower.com",
   emails: [
     "info@hydrosolpower.com",
+    "technology@hydrosolpower.com",
     "partners@hydrosolpower.com",
     "invest@hydrosolpower.com",
-    "technology@hydrosolpower.com",
   ],
 };
 
@@ -21,7 +25,7 @@ export const chapters = [
     short: "Challenge",
     href: "/challenge",
     blurb:
-      "Six interconnected development challenges shape productivity and prosperity beyond the last mile.",
+      "Beyond the last mile — the challenge is interconnected, and the solution must be interconnected.",
   },
   {
     number: "02",
@@ -29,31 +33,31 @@ export const chapters = [
     short: "Quest",
     href: "/quest",
     blurb:
-      "Humanity's continuing search for sustainable development — and the gap that remains.",
+      "From challenge to innovation — how a simple but profound question led to the HydroSol Platform.",
   },
   {
     number: "03",
-    label: "The HydroSol Platform",
-    short: "Platform",
+    label: "The HydroSol Ecosystem",
+    short: "Ecosystem",
     href: "/platform",
     blurb:
-      "Productive energy for productive communities, delivered through one integrated framework.",
+      "A distributed productive energy ecosystem, engineered around five fundamental principles.",
   },
   {
     number: "04",
-    label: "Applications Become Communities",
-    short: "Applications",
+    label: "From Platform to Productive Communities",
+    short: "Communities",
     href: "/applications",
     blurb:
-      "From households to enterprises — how applications converge into the Smart Productive Village.",
+      "Deploying distributed productive energy — from households to regional productive ecosystems.",
   },
   {
     number: "05",
-    label: "Opportunity & Finance",
+    label: "Opportunity & Investment",
     short: "Opportunity",
     href: "/opportunity",
     blurb:
-      "From vision to implementation — validation, partnership, and a global opportunity.",
+      "Building partnerships for sustainable development — shared vision, shared responsibility, shared prosperity.",
   },
   {
     number: "06",
@@ -61,15 +65,15 @@ export const chapters = [
     short: "Join the Mission",
     href: "/join",
     blurb:
-      "An open invitation to build productive communities together.",
+      "From engineering innovation to societal transformation — an invitation to validate, demonstrate, and build together.",
   },
 ];
 
 export const nav = [
   { label: "Challenge", href: "/challenge" },
   { label: "Quest", href: "/quest" },
-  { label: "Platform", href: "/platform" },
-  { label: "Applications", href: "/applications" },
+  { label: "Ecosystem", href: "/platform" },
+  { label: "Communities", href: "/applications" },
   { label: "Opportunity", href: "/opportunity" },
   { label: "Join the Mission", href: "/join" },
   { label: "Publications", href: "/publications" },

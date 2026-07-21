@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
-  Banknote,
-  Building2,
-  Cog,
-  Factory,
-  GraduationCap,
-  HeartHandshake,
-  Landmark,
-  Lightbulb,
-  Rocket,
-  Users,
+  ArrowRight,
+  FileText,
+  Globe,
+  MessageCircleQuestion,
 } from "lucide-react";
 import { PrimaryButton, GhostButton } from "@/components/Buttons";
 import { CtaBand } from "@/components/CtaBand";
@@ -21,218 +16,173 @@ import { Section, Prose, PullQuote } from "@/components/Section";
 export const metadata: Metadata = {
   title: "Join the Mission",
   description:
-    "An open invitation to build productive communities together — HydroSol welcomes collaboration with all who share the commitment to productive, resilient, and prosperous communities.",
+    "From engineering innovation to societal transformation — an invitation to collaborative validation, demonstration projects, and pilot deployments.",
 };
 
-const roles = [
-  ["Governments", "establish policy and create enabling environments."],
-  ["Universities", "expand knowledge through research and innovation."],
-  ["Development institutions", "support long-term social and economic progress."],
-  ["Engineering firms", "transform ideas into practical solutions."],
-  ["Manufacturers", "scale production."],
-  ["Humanitarian organizations", "strengthen communities."],
-  ["Entrepreneurs", "create opportunity."],
-  ["Investors", "provide the resources that enable innovation to grow."],
-  ["Communities themselves", "remain the most important partners of all."],
-];
-
-const ahead = [
-  "Prototype development",
-  "Operational validation",
-  "Pilot deployments",
-  "Regional partnerships",
-  "Knowledge sharing",
-  "Continuous engineering improvement",
-  "Measured community impact",
-];
-
-const invitation = [
-  { label: "A government seeking practical development solutions", icon: Landmark },
-  { label: "A university interested in collaborative research", icon: GraduationCap },
-  { label: "A manufacturer exploring innovative technologies", icon: Factory },
-  { label: "A development institution supporting sustainable growth", icon: Building2 },
-  { label: "A humanitarian organization strengthening vulnerable communities", icon: HeartHandshake },
-  { label: "An engineering firm contributing technical expertise", icon: Cog },
-  { label: "An investor committed to long-term impact", icon: Banknote },
-  { label: "Or a community leader preparing for implementation", icon: Users },
-];
-
-const shapedBy = [
-  "It will be shaped by people.",
-  "By partnerships.",
-  "By shared knowledge.",
-  "By responsible innovation.",
-  "And by communities empowered to build their own prosperity.",
+const explore = [
+  {
+    href: "/",
+    icon: Globe,
+    title: "Explore the HydroSol Website",
+    body: "Discover the complete HydroSol Platform, engineering doctrines, implementation pathways, partnership ecosystem, and long-term development vision.",
+  },
+  {
+    href: "/faq",
+    icon: MessageCircleQuestion,
+    title: "Read the Frequently Asked Questions (FAQ)",
+    body: "Find concise answers to common questions regarding HydroSol technology, engineering principles, safety, deployment, operations, and applications.",
+  },
+  {
+    href: "/white-paper",
+    icon: FileText,
+    title: "Read the HydroSol White Paper",
+    body: "Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development.",
+  },
 ];
 
 export default function JoinPage() {
   return (
     <>
       <PageHero
-        eyebrow="Chapter 06 · The HydroSol Journey"
+        eyebrow="Chapter 6 · The HydroSol Journey"
         title="Join the Mission"
-        subtitle="Building Productive Communities Together"
-        lede="The HydroSol journey ultimately seeks to transform today's interconnected development challenges into tomorrow's productive and resilient communities."
+        subtitle="From Engineering Innovation to Societal Transformation"
+        lede="Every great engineering achievement begins with discovery, advances through validation, and fulfills its purpose through implementation."
       />
 
       <Section>
-        <div className="mx-auto mb-12 max-w-4xl">
+        <Prose>
+          <p>
+            HydroSol was created to address one of humanity&rsquo;s most pressing
+            development challenges:{" "}
+            <strong>
+              providing safe, reliable, and sustainable productive energy for communities
+              beyond the reach of conventional infrastructure.
+            </strong>
+          </p>
+          <p>
+            Its development has been guided by established principles of engineering,
+            chemistry, materials science, systems integration, and continuous engineering
+            improvement. Over several years, the HydroSol Platform has progressed from
+            scientific concept through engineering design, laboratory experimentation,
+            prototype development, and iterative refinement into an integrated platform
+            for distributed productive energy.
+          </p>
+          <p>
+            Laboratory investigations have been conducted under varying operating
+            temperatures and environmental conditions to evaluate operational behavior,
+            safety, performance, and engineering reliability. The knowledge gained
+            through these investigations has continuously strengthened the design and
+            operational architecture of the HydroSol Platform.
+          </p>
+          <p>
+            The platform has also benefited from independent technical review by
+            experienced engineering professionals, including a multinational
+            infrastructure development organization and a distinguished power engineer
+            with an extensive international patent portfolio. Their professional
+            assessments have provided valuable technical insight and reinforced
+            confidence in the engineering principles and practical potential of the
+            HydroSol Platform.
+          </p>
+          <p>
+            These milestones represent an important stage in HydroSol&rsquo;s engineering
+            journey—but not its conclusion. Responsible engineering advances through
+            continuous validation, independent evaluation, and practical implementation.
+          </p>
+          <p>
+            The next stage is therefore to undertake collaborative validation,
+            demonstration projects, and pilot deployments with governments, universities,
+            research institutions, manufacturers, development organizations, investors,
+            and local communities. Through these partnerships, HydroSol seeks to further
+            verify its performance under real-world operating conditions and accelerate
+            the transition from validated engineering to scalable implementation that
+            benefits society.
+          </p>
+        </Prose>
+
+        <div className="mx-auto mt-12 max-w-2xl">
           <FigureFrame
-            src="/figures/hs2-08-transformation.jpg"
-            alt="The Transformation — from today's interconnected challenges to tomorrow's Smart Productive Village through the HydroSol journey"
-            caption="The transformation — from interconnected challenges to interconnected prosperity."
-            width={1432}
-            height={894}
-            priority
+            src="/figures/hs2-07-implementation-pathway.jpg"
+            alt="The Implementation Pathway — vision, prototype, validation, pilot, regional deployment, replication, and global impact"
+            caption="The Implementation Pathway — from vision to global impact. One journey, many partners, limitless impact."
+            width={1024}
+            height={1536}
           />
         </div>
-        <Prose>
-          <p>
-            The challenges facing humanity are too significant for any single
-            organization, technology, or institution to solve alone.{" "}
-            <strong>Progress has always depended upon collaboration.</strong>
-          </p>
-        </Prose>
-        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {roles.map(([who, what]) => (
-            <StaggerItem key={who}>
-              <div className="flex h-full items-start gap-3.5 rounded-xl border border-line bg-white px-5 py-4">
-                <span className="mt-[8px] size-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
-                <p className="text-[14.5px] leading-relaxed text-body">
-                  <strong className="font-semibold text-navy">{who}</strong> {what}
-                </p>
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
-        <Prose>
-          <p>
-            HydroSol seeks to contribute to this shared global effort. The initiative
-            recognizes that lasting development depends upon collaboration between
-            partners across both the Global South and the Global North, combining local
-            knowledge, engineering excellence, investment, research, and practical
-            implementation to strengthen productive communities worldwide.
-          </p>
-        </Prose>
-      </Section>
 
-      <Section tint title="A Shared Commitment">
-        <Prose>
-          <p>HydroSol is founded upon a simple belief:</p>
-        </Prose>
         <PullQuote
           lines={[
-            "When productive energy strengthens productive communities,",
-            "opportunity expands.",
+            "HydroSol has established its scientific and engineering foundation.",
+            "The next chapter is to demonstrate that foundation at increasing scales",
+            "through independent validation, pilot projects, and collaborative implementation.",
           ]}
         />
         <Prose>
           <p>
-            That opportunity extends beyond access to energy. It reaches agriculture,
-            education, healthcare, water services, enterprise development, environmental
-            stewardship, productive mobility, and community resilience. By strengthening
-            these systems together, communities become increasingly capable of creating
-            sustainable prosperity from within.
+            We welcome collaboration with organizations interested in independent
+            technical validation, laboratory and field evaluation, demonstration
+            projects, research partnerships, manufacturing cooperation, strategic
+            investment, and regional implementation initiatives.
+          </p>
+          <p>
+            Together, these efforts will help transform engineering innovation into
+            practical solutions that strengthen communities, expand productive
+            opportunity, and support sustainable development.
           </p>
         </Prose>
+
+        <div className="mx-auto mt-12 max-w-4xl">
+          <FigureFrame
+            src="/figures/hs2-08-transformation.jpg"
+            alt="The Transformation — from today's interconnected challenges to tomorrow's Smart Productive Village through the HydroSol journey"
+            caption="From Today's World to Tomorrow's Smart Productive Village"
+            width={1432}
+            height={894}
+          />
+        </div>
       </Section>
 
-      <Section title="Looking Ahead">
-        <Prose>
-          <p>The next phase of HydroSol focuses on practical implementation.</p>
-        </Prose>
-        <Stagger className="mx-auto mt-8 flex max-w-3xl flex-wrap gap-2.5">
-          {ahead.map((a) => (
-            <StaggerItem key={a}>
-              <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-brand-soft/60 px-4 py-2 text-[13.5px] font-semibold text-navy">
-                <Rocket className="size-4 text-brand" aria-hidden />
-                {a}
-              </span>
-            </StaggerItem>
-          ))}
-        </Stagger>
+      <Section tint title="Continue Your Exploration">
         <Prose>
           <p>
-            Each successful implementation will strengthen the evidence base for wider
-            replication. Each lesson learned will improve future deployments. Each
-            partnership will contribute to a stronger global community of practice.
-          </p>
-          <p>
-            HydroSol therefore views every deployment not as an endpoint, but as{" "}
-            <strong>another step in a continuing journey of learning and improvement.</strong>
+            HydroSol is presented through a progressive body of engineering, technical,
+            and strategic knowledge designed for readers with different interests and
+            levels of detail. To continue your exploration, we invite you to:
           </p>
         </Prose>
-      </Section>
-
-      <Section tint title="An Open Invitation">
-        <Prose>
-          <p>
-            HydroSol welcomes collaboration with all who share the commitment to
-            productive, resilient, and prosperous communities.
-          </p>
-          <p>Whether you are:</p>
-        </Prose>
-        <Stagger className="mx-auto mt-10 flex max-w-5xl flex-wrap justify-center gap-4">
-          {invitation.map((p) => (
-            <StaggerItem
-              key={p.label}
-              className="flex w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
-            >
-              <div className="hairline-card group flex flex-1 items-center gap-4 p-5 hover:-translate-y-1 hover:border-leaf/50 hover:shadow-[0_14px_36px_rgba(18,59,109,0.1)]">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-leaf-soft text-leaf-deep transition-colors group-hover:bg-leaf group-hover:text-white">
-                  <p.icon className="size-5" />
+        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 lg:grid-cols-3">
+          {explore.map((e) => (
+            <StaggerItem key={e.href}>
+              <Link
+                href={e.href}
+                className="hairline-card group flex h-full flex-col p-6 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)] sm:p-7"
+              >
+                <span className="grid size-11 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <e.icon className="size-5" />
                 </span>
-                <span className="text-[14.5px] font-semibold leading-snug text-navy">
-                  {p.label}
+                <h3 className="display-font mt-5 text-[17px] font-bold leading-snug text-navy">
+                  {e.title}
+                </h3>
+                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">
+                  {e.body}
+                </p>
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
+                  Open
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
-              </div>
+              </Link>
             </StaggerItem>
           ))}
         </Stagger>
-        <p className="mx-auto mt-10 max-w-3xl text-center text-[17px] leading-[1.7] text-body sm:text-[19px]">
-          We invite you to{" "}
-          <strong className="font-semibold text-navy">
-            explore, collaborate, validate, and build together.
-          </strong>
-        </p>
-      </Section>
-
-      <Section title="The Journey Continues">
-        <Prose>
-          <p>
-            The future will be shaped by collaboration across disciplines, institutions,
-            and communities.
-          </p>
-        </Prose>
-        <Stagger className="mx-auto mt-8 grid max-w-3xl gap-2.5">
-          {shapedBy.map((s) => (
-            <StaggerItem key={s}>
-              <div className="flex items-center gap-4 rounded-xl border border-line bg-white px-5 py-3.5">
-                <Lightbulb className="size-4 shrink-0 text-leaf-deep" aria-hidden />
-                <p className="display-font text-[15.5px] font-semibold text-navy">{s}</p>
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
-        <Prose>
-          <p>
-            HydroSol is committed to contributing to that future. Together, we can help
-            create productive communities, strengthen resilient local economies, and
-            expand opportunities for generations to come.
-          </p>
-        </Prose>
       </Section>
 
       <CtaBand
-        title="Ready to build productive communities together?"
-        lede="Reach the HydroSol team directly, read the full framework, or start with the most common questions."
+        title="Connect with the HydroSol Team"
+        lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
       >
         <PrimaryButton href="/contact">Contact HydroSol</PrimaryButton>
-        <GhostButton href="/white-paper" onDark>
-          Executive White Paper
-        </GhostButton>
-        <GhostButton href="/faq" onDark>
-          Read the FAQ
+        <GhostButton href="/publications" onDark>
+          HydroSol Publications
         </GhostButton>
       </CtaBand>
     </>
