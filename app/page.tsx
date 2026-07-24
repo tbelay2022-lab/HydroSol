@@ -17,27 +17,21 @@ export default function HomePage() {
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroWaves />
         <HeroEmblem />
-        <div className="container-x relative">
+        <div className="container-x relative text-center">
           <Reveal>
-            <h1 className="display-font max-w-3xl text-balance text-[38px] font-bold uppercase leading-[1.1] tracking-wide text-brand sm:text-5xl md:text-[56px]">
+            <h1 className="display-font mx-auto max-w-4xl text-balance text-[38px] font-bold uppercase leading-[1.1] tracking-wide text-brand sm:text-5xl md:text-[56px]">
               Welcome to HydroSol
             </h1>
           </Reveal>
           <Reveal delay={0.08}>
-            <p className="display-font mt-5 text-[24px] font-bold leading-snug text-brand sm:text-[30px]">
+            <p className="display-font mx-auto mt-6 text-[24px] font-bold leading-snug text-brand sm:text-[30px]">
               {site.motto}
             </p>
           </Reveal>
           <Reveal delay={0.14}>
-            <p className="display-font mt-2 text-[19px] font-bold leading-snug text-brand sm:text-[22px]">
+            <p className="display-font mx-auto mt-3 text-[19px] font-bold leading-snug text-brand sm:text-[22px]">
               {site.secondary}
             </p>
-          </Reveal>
-          <Reveal delay={0.22}>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
-              <PrimaryButton href="/challenge">Begin the Journey</PrimaryButton>
-              <GhostButton href="/white-paper">HydroSol White Paper</GhostButton>
-            </div>
           </Reveal>
         </div>
       </section>

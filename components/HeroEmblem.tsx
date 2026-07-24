@@ -19,7 +19,7 @@ export function HeroEmblem() {
 
   return (
     <div
-      className="pointer-events-none absolute right-2 top-1/2 hidden w-[330px] -translate-y-1/2 select-none lg:block xl:right-20 xl:w-[385px]"
+      className="pointer-events-none absolute right-4 top-1/2 hidden w-[290px] -translate-y-1/2 select-none xl:block 2xl:right-14 2xl:w-[330px]"
       aria-hidden
     >
       {/* soft ambient glow — white so the emblem lifts off the blue wash */}
