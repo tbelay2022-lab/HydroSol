@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  // Deployment URL — switch to site.url once hydrosolpower.com points here
+  // Deployment URL — switch to site.url once www.hydrosol.energy points here
   metadataBase: new URL("https://hydrosol.vercel.app"),
   title: {
     default: "HydroSol — Power Everywhere. For Everyone.",

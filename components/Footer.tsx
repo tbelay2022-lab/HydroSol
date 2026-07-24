@@ -93,7 +93,7 @@ export function Footer() {
         <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
           <p className="text-[13px] text-white/50">© 2026 HydroSol. All Rights Reserved.</p>
           <p className="max-w-md text-[13px] italic text-white/50">{site.closing}</p>
-          <p className="text-[13px] text-white/50">www.hydrosolpower.com</p>
+          <p className="text-[13px] text-white/50">www.hydrosol.energy</p>
         </div>
       </div>
     </footer>

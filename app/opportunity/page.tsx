@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { FigureFrame } from "@/components/FigureFrame";
 import { NextChapter } from "@/components/NextChapter";
-import { OpportunityStats } from "@/components/OpportunityStats";
 import { PageHero } from "@/components/PageHero";
 import { Section, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Opportunity & Investment",
+  title: "Opportunity & Partnership",
   description:
-    "Building partnerships for sustainable development — a potential market exceeding US$100 billion, addressed through one collaborative framework.",
+    "Building the future together — the partnership ecosystem through which the HydroSol vision becomes a shared mission.",
 };
 
 export default function OpportunityPage() {
@@ -16,101 +15,96 @@ export default function OpportunityPage() {
     <>
       <PageHero
         eyebrow="Chapter 5 · The HydroSol Journey"
-        title="Opportunity & Investment"
-        subtitle="Building Partnerships for Sustainable Development"
-        lede="Lasting transformation is achieved through collaboration, not technology alone."
+        title="Opportunity & Partnership"
+        subtitle="Building the Future Together"
+        lede="“The greatest transformations are achieved not by individuals working alone, but by institutions working together toward a shared purpose.”"
       />
 
       <Section>
         <Prose>
           <p>
-            The opportunity extends far beyond technology itself. More than{" "}
-            <strong>2.3 billion people</strong> across the Global South continue to lack
-            access to the productive infrastructure needed to build resilient local
-            economies. Meeting these needs represents one of the largest sustainable
-            development opportunities of the twenty-first century, with HydroSol
-            addressing a potential market exceeding <strong>US$100 billion</strong>{" "}
-            across productive energy, water, agriculture, healthcare, education,
-            enterprise, mobility, and supporting infrastructure.
+            Throughout history, societies have advanced when knowledge, engineering,
+            enterprise, governance, and human ingenuity have converged toward common
+            goals. No civilization has been built by a single institution acting alone.
+            Progress has always depended upon the ability of diverse organizations and
+            communities to combine their strengths in pursuit of a shared future.
           </p>
-        </Prose>
-        <div className="mx-auto mt-12 max-w-4xl">
-          <OpportunityStats />
-        </div>
-        <Prose>
           <p>
-            HydroSol is built on the belief that sustainable development is the result of
-            coordinated partnerships. No single organization, institution, or technology
-            can address the interconnected challenges of energy, water, food security,
-            healthcare, education, enterprise, mobility, and environmental stewardship in
-            isolation.
+            HydroSol embraces this enduring principle. The challenge of creating
+            productive communities extends beyond technology. It requires the
+            synchronization of engineering, manufacturing, finance, education, research,
+            public policy, entrepreneurship, and community leadership within{" "}
+            <strong>one collaborative ecosystem.</strong> Sustainable development is
+            therefore not the responsibility of any one partner, but the collective
+            achievement of many.
           </p>
         </Prose>
-      </Section>
 
-      <Section tint title="One Collaborative Framework">
-        <div className="mt-4 grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <Prose>
-            <p>
-              The HydroSol Ecosystem brings together governments, universities, research
-              institutions, manufacturers, investors, development finance institutions,
-              engineering partners, non-governmental organizations, and local communities
-              within one collaborative framework. Each partner contributes unique
-              expertise, resources, and capabilities while working toward a shared
-              objective:{" "}
-              <strong>building productive, resilient, and prosperous communities.</strong>
-            </p>
-            <p>
-              At the center of this ecosystem is the HydroSol Platform, supported by{" "}
-              <strong>Regional Processing Centers (RPCs)</strong> that coordinate
-              manufacturing, technical services, cartridge lifecycle management,
-              engineering training, quality assurance, digital monitoring, and continuous
-              operational improvement. Together, these capabilities ensure that
-              distributed productive-energy systems remain reliable, scalable, and
-              sustainable throughout their operational life.
-            </p>
-          </Prose>
+        <div className="mx-auto mt-12 max-w-4xl">
           <FigureFrame
             src="/figures/hs2-06-partnership-ecosystem.jpg"
             alt="The HydroSol Partnership Ecosystem — governments, universities, manufacturers, investors, NGOs, development finance institutions, communities, and engineering partners"
-            caption="The Partnership Ecosystem — collective innovation, shared responsibility, and continuous development."
+            caption="The Partnership Ecosystem — each partner strengthens the others."
             width={1432}
             height={784}
           />
         </div>
+
         <Prose>
           <p>
-            This collaborative model strengthens local capacity by encouraging knowledge
-            transfer, workforce development, entrepreneurship, and regional industrial
-            participation. Rather than creating long-term dependence, the HydroSol
-            Ecosystem is designed to help communities build the technical capability and
-            institutional resilience needed to manage and expand their own productive
-            infrastructure.
+            The HydroSol Ecosystem provides the framework through which these diverse
+            capabilities work together. Governments establish enabling policies and
+            public infrastructure. Universities and research institutions expand
+            scientific knowledge and engineering innovation. Manufacturers transform
+            ideas into practical technologies. Financial institutions and development
+            partners provide the capital needed for sustainable growth. Entrepreneurs
+            create productive enterprises, while communities contribute leadership, local
+            knowledge, stewardship, and long-term ownership. Each partner strengthens the
+            others, creating capabilities that no institution could achieve
+            independently.
           </p>
           <p>
-            The HydroSol Ecosystem therefore represents more than a network of partners.{" "}
-            <strong>
-              It is a framework for collective innovation, shared responsibility, and
-              continuous development.
-            </strong>
+            This collaboration extends beyond implementing projects. It builds
+            institutional capacity, strengthens regional industries, expands technical
+            skills, encourages responsible investment, and creates opportunities for
+            continuous learning and innovation. As experience grows, knowledge is shared
+            across regions, allowing successful practices to be adapted, replicated, and
+            continuously improved. Every partnership therefore contributes not only to
+            today&rsquo;s success but also to tomorrow&rsquo;s capability.
           </p>
           <p>
-            By combining engineering excellence with institutional cooperation, the
-            HydroSol Ecosystem creates an environment where technology becomes a catalyst
-            for economic opportunity, environmental stewardship, and enduring community
-            prosperity.
+            Central to this vision is the belief that{" "}
+            <strong>development is ultimately about people.</strong> HydroSol encourages
+            broad participation by women and young people, recognizing their capacity to
+            drive innovation, entrepreneurship, technical excellence, and community
+            leadership. At the same time, it values the experience, mentorship, and
+            institutional memory of senior professionals and community leaders. By
+            bringing generations together, the ecosystem combines fresh ideas with
+            practical wisdom, ensuring that progress is both innovative and enduring.
+          </p>
+          <p>
+            HydroSol therefore invites governments, universities, industries, financial
+            institutions, development organizations, entrepreneurs, and communities to
+            participate in something larger than an engineering initiative. It is an
+            invitation to build a collaborative ecosystem where knowledge becomes
+            capability, capability creates opportunity, and opportunity enables
+            productive communities to flourish for generations.
           </p>
         </Prose>
 
         <PullQuote
-          lines={["Shared Vision.", "Shared Responsibility.", "Shared Prosperity."]}
+          lines={[
+            "Communities flourish when systems work together.",
+            "Systems flourish when institutions work together.",
+            "Collective capability builds prosperous communities.",
+          ]}
         />
-        <p className="mx-auto max-w-3xl text-center text-[16px] font-medium italic text-brand sm:text-[17px]">
-          Engineering Together for a Sustainable Future
-        </p>
       </Section>
 
-      <NextChapter current="05" />
+      <NextChapter
+        current="05"
+        note="Every engineering achievement ultimately serves a larger purpose. The HydroSol journey concludes by looking beyond individual projects toward a future where Productive Energy, collaborative institutions, and empowered communities contribute to a more resilient, prosperous, and sustainable civilization."
+      />
     </>
   );
 }

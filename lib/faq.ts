@@ -145,7 +145,7 @@ export const faqSections = [
       },
       {
         q: "How can I contact HydroSol?",
-        a: "Partnership, investment, technical, media, and institutional inquiries may be directed through HydroSol’s official communication channels: invest@hydrosolpower.com, partners@hydrosolpower.com, technology@hydrosolpower.com, and info@hydrosolpower.com.",
+        a: "Partnership, investment, technical, media, and institutional inquiries may be directed through HydroSol’s official communication channels: info@hydrosol.energy, partners@hydrosol.energy, invest@hydrosol.energy, and technology@hydrosol.energy.",
       },
     ],
   },

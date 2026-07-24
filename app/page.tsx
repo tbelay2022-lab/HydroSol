@@ -12,35 +12,31 @@ import { chapters, site } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      {/* Hero — Welcome to HydroSol */}
+      {/* Hero — Welcome to HydroSol (header hierarchy per client notes) */}
       <section className="hero-droplet relative overflow-hidden pb-32 pt-40 sm:pb-44 sm:pt-52">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroWaves />
         <HeroEmblem />
         <div className="container-x relative">
           <Reveal>
-            <p className="eyebrow">Welcome to HydroSol</p>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h1 className="display-font mt-5 max-w-3xl text-balance text-[42px] font-bold leading-[1.06] text-navy sm:text-6xl md:text-[64px]">
-              Power Everywhere.{" "}
-              <span className="gradient-text">For Everyone.</span>
+            <h1 className="display-font max-w-3xl text-balance text-[38px] font-bold uppercase leading-[1.1] tracking-wide text-brand sm:text-5xl md:text-[56px]">
+              Welcome to HydroSol
             </h1>
           </Reveal>
+          <Reveal delay={0.08}>
+            <p className="display-font mt-5 text-[24px] font-bold leading-snug text-brand sm:text-[30px]">
+              {site.motto}
+            </p>
+          </Reveal>
           <Reveal delay={0.14}>
-            <p className="display-font mt-4 text-[20px] font-semibold text-slate-head sm:text-[24px]">
+            <p className="display-font mt-2 text-[19px] font-bold leading-snug text-brand sm:text-[22px]">
               {site.secondary}
             </p>
           </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-pretty text-[17px] italic leading-[1.7] text-body sm:text-[19px]">
-              Every enduring transformation begins with a shared vision.
-            </p>
-          </Reveal>
-          <Reveal delay={0.26}>
+          <Reveal delay={0.22}>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <PrimaryButton href="/challenge">Begin the Journey</PrimaryButton>
-              <GhostButton href="/white-paper">Executive White Paper</GhostButton>
+              <GhostButton href="/white-paper">HydroSol White Paper</GhostButton>
             </div>
           </Reveal>
         </div>
@@ -50,17 +46,22 @@ export default function HomePage() {
       <Section>
         <Prose>
           <p>
-            Inspired by years of scientific research, engineering innovation, and
-            practical experience, HydroSol represents a new way of thinking about
-            productive energy—one designed to empower communities beyond the last mile.
+            Across much of the Global South—including Africa, South Asia, Latin America,
+            the Caribbean, and underserved regions elsewhere—millions of households,
+            farms, schools, clinics, workshops, and small enterprises continue to face
+            persistent constraints that limit productivity, opportunity, and long-term
+            prosperity.
           </p>
           <p>
-            Today, more than <strong>2.3 billion people</strong> across the Global South
-            continue to live without the productive infrastructure needed to build
-            lasting prosperity. Their challenge is not simply a lack of energy, but the
-            absence of integrated systems that support water, agriculture, healthcare,
-            education, enterprise, mobility, environmental stewardship, and resilient
-            local economies.
+            Their challenge is not simply a lack of energy, but the absence of integrated
+            systems that support water, agriculture, healthcare, education, enterprise,
+            mobility, environmental stewardship, and resilient local economies.
+          </p>
+          <p>
+            These constraints are particularly evident beyond the{" "}
+            <strong>&ldquo;last mile,&rdquo;</strong> where infrastructure becomes
+            increasingly limited, communities become more isolated, and access to
+            reliable productive services declines.
           </p>
         </Prose>
 
@@ -76,28 +77,35 @@ export default function HomePage() {
 
         <Prose>
           <p>
-            HydroSol responds to this challenge by bringing these essential systems
-            together within one coordinated framework, where{" "}
-            <strong>Productive Energy</strong> becomes the catalyst for opportunity,
-            environmental responsibility, resilient infrastructure, and sustainable
-            community development.
+            HydroSol addresses this challenge through the principle of{" "}
+            <strong>Productive Energy</strong>—energy that creates value by enabling
+            water supply, food production, healthcare, education, manufacturing,
+            enterprise, mobility, and other productive activities.
           </p>
           <p>
-            HydroSol is not simply about producing energy.{" "}
+            Unlike consumptive energy, which is used primarily for immediate household or
+            personal needs, Productive Energy generates lasting economic, social, and
+            environmental value by strengthening the systems upon which communities
+            depend.
+          </p>
+          <p>
             <strong>
-              It is about enabling people, restoring environments, strengthening
-              communities, and creating prosperity that endures.
+              Productive Energy is energy that creates opportunity. It powers not only
+              devices, but livelihoods, institutions, enterprises, and communities.
             </strong>
           </p>
           <p>
-            The pages that follow present a practical journey—from understanding
-            today&rsquo;s interconnected challenges to building productive, resilient,
-            and environmentally responsible communities through engineering, innovation,
-            and partnership.
+            This understanding inspired the development of the HydroSol Ecosystem—an
+            engineering framework designed to support productive communities rather than
+            simply provide energy. By integrating essential systems within a coordinated
+            operational architecture, HydroSol seeks to enable local productivity,
+            strengthen resilience, encourage environmental stewardship, and expand
+            opportunities for economic and social development.
           </p>
           <p>
-            Explore the chapters above and discover how the HydroSol Ecosystem is helping
-            transform interconnected challenges into interconnected prosperity.
+            The HydroSol journey is therefore more than a technological innovation. It is
+            the pursuit of a practical engineering solution that empowers communities to
+            build productive, resilient, and sustainable futures.
           </p>
         </Prose>
 
@@ -116,10 +124,28 @@ export default function HomePage() {
             </div>
           </div>
         </Reveal>
+
+        <Prose>
+          <p>
+            The pages that follow present a practical journey—from understanding
+            today&rsquo;s interconnected challenges to building productive, resilient,
+            and environmentally responsible communities through engineering, innovation,
+            and partnership.
+          </p>
+          <p>
+            We invite you to discover how the HydroSol Ecosystem is transforming
+            interconnected challenges into interconnected prosperity.
+          </p>
+        </Prose>
       </Section>
 
       {/* The journey — one continuous story */}
       <Section tint eyebrow="One Continuous Story" title="The HydroSol Journey" center>
+        <p className="mx-auto mt-5 max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
+          The journey begins by examining the global challenge—and why the future of
+          sustainable development depends on integrated productive systems rather than
+          isolated solutions.
+        </p>
         <Stagger className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {chapters.map((c) => (
             <StaggerItem key={c.href}>
@@ -147,38 +173,45 @@ export default function HomePage() {
       </Section>
 
       {/* Publications */}
-      <Section eyebrow="HydroSol Publications" title="Continue Your Exploration" center>
+      <Section eyebrow="HydroSol Publications" title="Continue the Journey" center>
+        <p className="mx-auto mt-5 max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
+          Every enduring partnership begins with understanding. We encourage you to begin
+          by exploring the{" "}
+          <Link href="/white-paper" className="font-semibold text-brand hover:text-leaf-deep">
+            HydroSol White Paper
+          </Link>{" "}
+          and the{" "}
+          <Link href="/faq" className="font-semibold text-brand hover:text-leaf-deep">
+            Frequently Asked Questions (FAQ)
+          </Link>
+          , which introduce the HydroSol vision, constitutional doctrine, engineering
+          principles, operational framework, and long-term objectives.
+        </p>
         <Stagger className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
           {[
             {
               href: "/white-paper",
               icon: FileText,
               title: "HydroSol White Paper",
-              body: "Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development.",
             },
             {
               href: "/faq",
               icon: MessageCircleQuestion,
-              title: "Frequently Asked Questions",
-              body: "Find concise answers to common questions regarding HydroSol technology, engineering principles, safety, deployment, operations, and applications.",
+              title: "Frequently Asked Questions (FAQ)",
             },
           ].map((p) => (
             <StaggerItem key={p.href}>
               <Link
                 href={p.href}
-                className="hairline-card group flex h-full flex-col p-7 text-left hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]"
+                className="hairline-card group flex h-full items-center gap-4 p-6 text-left hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)]"
               >
-                <span className="grid size-12 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                   <p.icon className="size-6" />
                 </span>
-                <h3 className="display-font mt-5 text-[19px] font-bold text-navy">
+                <span className="display-font text-[17px] font-bold text-navy">
                   {p.title}
-                </h3>
-                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">{p.body}</p>
-                <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
-                  Open
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
+                <ArrowRight className="ml-auto size-4 shrink-0 text-brand transition-transform group-hover:translate-x-1" />
               </Link>
             </StaggerItem>
           ))}
@@ -186,8 +219,8 @@ export default function HomePage() {
       </Section>
 
       <CtaBand
-        title="Connect with the HydroSol team"
-        lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
+        title="Contact the HydroSol Development Team"
+        lede="Whether your interest lies in research, investment, manufacturing, education, policy, or implementation, we welcome the opportunity to transform innovative ideas into practical solutions that deliver lasting human benefit."
       >
         <PrimaryButton href="/contact">Contact HydroSol</PrimaryButton>
         <GhostButton href="/challenge" onDark>

@@ -7,13 +7,13 @@ export const site = {
   transforming: "Transforming Interconnected Challenges into Interconnected Prosperity",
   through: "Through Engineering • Innovation • Partnership • Environmental Stewardship",
   closing:
-    "Together, we can build a future where every community has the opportunity to prosper.",
-  url: "https://hydrosolpower.com",
+    "Together, let us transform interconnected challenges into interconnected prosperity.",
+  url: "https://www.hydrosol.energy",
   emails: [
-    "info@hydrosolpower.com",
-    "technology@hydrosolpower.com",
-    "partners@hydrosolpower.com",
-    "invest@hydrosolpower.com",
+    "info@hydrosol.energy",
+    "partners@hydrosol.energy",
+    "invest@hydrosol.energy",
+    "technology@hydrosol.energy",
   ],
 };
 
@@ -25,7 +25,7 @@ export const chapters = [
     short: "Challenge",
     href: "/challenge",
     blurb:
-      "Beyond the last mile — the challenge is interconnected, and the solution must be interconnected.",
+      "Beyond the last mile — why the future of sustainable development depends on integrated productive systems rather than isolated solutions.",
   },
   {
     number: "02",
@@ -33,7 +33,7 @@ export const chapters = [
     short: "Quest",
     href: "/quest",
     blurb:
-      "From challenge to innovation — how a simple but profound question led to the HydroSol Platform.",
+      "Searching for a better path — the journey that inspired HydroSol and the search for a practical engineering pathway.",
   },
   {
     number: "03",
@@ -41,23 +41,23 @@ export const chapters = [
     short: "Ecosystem",
     href: "/platform",
     blurb:
-      "A distributed productive energy ecosystem, engineered around five fundamental principles.",
+      "An integrated engineering platform for productive communities, resilient local economies, and sustainable development.",
   },
   {
     number: "04",
-    label: "From Platform to Productive Communities",
+    label: "Productive Communities",
     short: "Communities",
     href: "/applications",
     blurb:
-      "Deploying distributed productive energy — from households to regional productive ecosystems.",
+      "From engineering vision to community transformation — Smart Productive Communities and Regional Production Centers.",
   },
   {
     number: "05",
-    label: "Opportunity & Investment",
+    label: "Opportunity & Partnership",
     short: "Opportunity",
     href: "/opportunity",
     blurb:
-      "Building partnerships for sustainable development — shared vision, shared responsibility, shared prosperity.",
+      "Building the future together — the partnership ecosystem through which the HydroSol vision becomes a shared mission.",
   },
   {
     number: "06",
@@ -65,7 +65,7 @@ export const chapters = [
     short: "Join the Mission",
     href: "/join",
     blurb:
-      "From engineering innovation to societal transformation — an invitation to validate, demonstrate, and build together.",
+      "Transforming interconnected challenges into interconnected prosperity — an open call for a shared future.",
   },
 ];
 

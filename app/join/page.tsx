@@ -1,44 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowRight,
-  FileText,
-  Globe,
-  MessageCircleQuestion,
-} from "lucide-react";
+import { Mail } from "lucide-react";
 import { PrimaryButton, GhostButton } from "@/components/Buttons";
 import { CtaBand } from "@/components/CtaBand";
 import { FigureFrame } from "@/components/FigureFrame";
 import { PageHero } from "@/components/PageHero";
-import { Stagger, StaggerItem } from "@/components/Reveal";
+import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Section, Prose, PullQuote } from "@/components/Section";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Join the Mission",
   description:
-    "From engineering innovation to societal transformation — an invitation to collaborative validation, demonstration projects, and pilot deployments.",
+    "Transforming interconnected challenges into interconnected prosperity — an open call for a shared future.",
 };
 
-const explore = [
-  {
-    href: "/",
-    icon: Globe,
-    title: "Explore the HydroSol Website",
-    body: "Discover the complete HydroSol Platform, engineering doctrines, implementation pathways, partnership ecosystem, and long-term development vision.",
-  },
-  {
-    href: "/faq",
-    icon: MessageCircleQuestion,
-    title: "Read the Frequently Asked Questions (FAQ)",
-    body: "Find concise answers to common questions regarding HydroSol technology, engineering principles, safety, deployment, operations, and applications.",
-  },
-  {
-    href: "/white-paper",
-    icon: FileText,
-    title: "Read the HydroSol White Paper",
-    body: "Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development.",
-  },
-];
+const emailRoles: Record<string, string> = {
+  "info@hydrosol.energy": "General Enquiries",
+  "partners@hydrosol.energy": "Partnerships",
+  "invest@hydrosol.energy": "Investment & Finance",
+  "technology@hydrosol.energy": "Engineering & Technology",
+};
 
 export default function JoinPage() {
   return (
@@ -46,88 +28,75 @@ export default function JoinPage() {
       <PageHero
         eyebrow="Chapter 6 · The HydroSol Journey"
         title="Join the Mission"
-        subtitle="From Engineering Innovation to Societal Transformation"
-        lede="Every great engineering achievement begins with discovery, advances through validation, and fulfills its purpose through implementation."
+        subtitle="Transforming Interconnected Challenges into Interconnected Prosperity"
+        lede="“The greatest achievements of engineering are measured not only by technological advancement, but by their enduring contribution to humanity, productive communities, and the stewardship of our shared planet.”"
       />
 
-      <Section>
+      <Section title="The Opportunity Before Us">
         <Prose>
           <p>
-            HydroSol was created to address one of humanity&rsquo;s most pressing
-            development challenges:{" "}
+            Humanity faces interconnected challenges unlike any in history. Energy
+            insecurity, environmental degradation, water scarcity, food insecurity,
+            infrastructure deficits, and economic inequality increasingly reinforce one
+            another across every region of the world.
+          </p>
+          <p>
+            These challenges cannot be addressed in isolation. They demand integrated
+            thinking, sound engineering, scientific knowledge, institutional cooperation,
+            and a shared commitment to sustainable progress.
+          </p>
+          <p>
+            HydroSol was conceived from this understanding—not simply as another energy
+            technology, but as{" "}
             <strong>
-              providing safe, reliable, and sustainable productive energy for communities
-              beyond the reach of conventional infrastructure.
+              an integrated engineering platform designed to transform interconnected
+              challenges into interconnected prosperity.
             </strong>
           </p>
-          <p>
-            Its development has been guided by established principles of engineering,
-            chemistry, materials science, systems integration, and continuous engineering
-            improvement. Over several years, the HydroSol Platform has progressed from
-            scientific concept through engineering design, laboratory experimentation,
-            prototype development, and iterative refinement into an integrated platform
-            for distributed productive energy.
-          </p>
-          <p>
-            Laboratory investigations have been conducted under varying operating
-            temperatures and environmental conditions to evaluate operational behavior,
-            safety, performance, and engineering reliability. The knowledge gained
-            through these investigations has continuously strengthened the design and
-            operational architecture of the HydroSol Platform.
-          </p>
-          <p>
-            The platform has also benefited from independent technical review by
-            experienced engineering professionals, including a multinational
-            infrastructure development organization and a distinguished power engineer
-            with an extensive international patent portfolio. Their professional
-            assessments have provided valuable technical insight and reinforced
-            confidence in the engineering principles and practical potential of the
-            HydroSol Platform.
-          </p>
-          <p>
-            These milestones represent an important stage in HydroSol&rsquo;s engineering
-            journey—but not its conclusion. Responsible engineering advances through
-            continuous validation, independent evaluation, and practical implementation.
-          </p>
-          <p>
-            The next stage is therefore to undertake collaborative validation,
-            demonstration projects, and pilot deployments with governments, universities,
-            research institutions, manufacturers, development organizations, investors,
-            and local communities. Through these partnerships, HydroSol seeks to further
-            verify its performance under real-world operating conditions and accelerate
-            the transition from validated engineering to scalable implementation that
-            benefits society.
-          </p>
         </Prose>
+      </Section>
 
-        <div className="mx-auto mt-12 max-w-2xl">
-          <FigureFrame
-            src="/figures/hs2-07-implementation-pathway.jpg"
-            alt="The Implementation Pathway — vision, prototype, validation, pilot, regional deployment, replication, and global impact"
-            caption="The Implementation Pathway — from vision to global impact. One journey, many partners, limitless impact."
-            width={1024}
-            height={1536}
-          />
-        </div>
-
-        <PullQuote
-          lines={[
-            "HydroSol has established its scientific and engineering foundation.",
-            "The next chapter is to demonstrate that foundation at increasing scales",
-            "through independent validation, pilot projects, and collaborative implementation.",
-          ]}
-        />
+      <Section tint title="A Journey of Research, Engineering, and Practical Experience">
         <Prose>
           <p>
-            We welcome collaboration with organizations interested in independent
-            technical validation, laboratory and field evaluation, demonstration
-            projects, research partnerships, manufacturing cooperation, strategic
-            investment, and regional implementation initiatives.
+            HydroSol is the culmination of years of engineering research, scientific
+            investigation, systems innovation, and practical experience dedicated to
+            addressing one fundamental question:
+          </p>
+        </Prose>
+        <Reveal>
+          <div className="mx-auto mt-8 max-w-3xl rounded-2xl bg-gradient-to-r from-brand to-leaf p-px">
+            <div className="rounded-[calc(1rem-1px)] bg-white px-7 py-8 text-center sm:px-10">
+              <p className="display-font mx-auto max-w-2xl text-balance text-[21px] font-bold leading-normal text-navy sm:text-[24px]">
+                How can productive energy become universally accessible, environmentally
+                responsible, economically sustainable, and locally empowering?
+              </p>
+            </div>
+          </div>
+        </Reveal>
+        <Prose>
+          <p>
+            The answer extends beyond technology alone. HydroSol integrates engineering,
+            scientific knowledge, institutional collaboration, environmental stewardship,
+            and productive development within a coherent operational framework.
           </p>
           <p>
-            Together, these efforts will help transform engineering innovation into
-            practical solutions that strengthen communities, expand productive
-            opportunity, and support sustainable development.
+            Guided by the constitutional principles of{" "}
+            <strong>
+              Productive Energy, Productive Continuity, Distributed Resilience, and
+              Civilization Continuity
+            </strong>
+            , HydroSol demonstrates how engineering can create enduring value by
+            strengthening resilience, expanding opportunity, and supporting sustainable
+            development.
+          </p>
+          <p>
+            Throughout this website, we have explored today&rsquo;s interconnected
+            challenges, examined new approaches to productive infrastructure, and
+            presented engineering principles intended to improve lives and create lasting
+            value for present and future generations. That journey does not end here. It
+            continues through learning, innovation, collaboration, and the shared belief
+            that engineering should serve humanity.
           </p>
         </Prose>
 
@@ -142,43 +111,136 @@ export default function JoinPage() {
         </div>
       </Section>
 
-      <Section tint title="Continue Your Exploration">
+      <Section title="Continue the Journey">
         <Prose>
           <p>
-            HydroSol is presented through a progressive body of engineering, technical,
-            and strategic knowledge designed for readers with different interests and
-            levels of detail. To continue your exploration, we invite you to:
+            Every enduring partnership begins with understanding. We encourage you to
+            begin by exploring the{" "}
+            <Link
+              href="/white-paper"
+              className="font-semibold text-brand underline-offset-4 hover:text-leaf-deep hover:underline"
+            >
+              HydroSol White Paper
+            </Link>{" "}
+            and the{" "}
+            <Link
+              href="/faq"
+              className="font-semibold text-brand underline-offset-4 hover:text-leaf-deep hover:underline"
+            >
+              Frequently Asked Questions (FAQ)
+            </Link>
+            , which introduce the HydroSol vision, constitutional doctrine, engineering
+            principles, operational framework, and long-term objectives.
+          </p>
+          <p>
+            Behind HydroSol stands a multidisciplinary engineering and development team
+            committed to translating research, engineering excellence, and practical
+            experience into solutions that strengthen productive communities and support
+            sustainable development.
+          </p>
+          <p>
+            We welcome dialogue with governments, public agencies, universities, research
+            institutions, manufacturers, investors, financial institutions, development
+            organizations, humanitarian agencies, non-governmental organizations (NGOs),
+            entrepreneurs, infrastructure operators, community leaders, and
+            implementation partners seeking practical pathways toward resilient
+            infrastructure, productive energy, environmental stewardship, and sustainable
+            economic opportunity.
           </p>
         </Prose>
-        <Stagger className="mx-auto mt-10 grid max-w-5xl gap-4 lg:grid-cols-3">
-          {explore.map((e) => (
-            <StaggerItem key={e.href}>
-              <Link
-                href={e.href}
-                className="hairline-card group flex h-full flex-col p-6 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_16px_40px_rgba(18,59,109,0.1)] sm:p-7"
+      </Section>
+
+      <Section tint title="An Open Call for a Shared Future">
+        <Prose>
+          <p>
+            <strong>
+              The demand is vast, the need urgent, and the human impact transformative.
+            </strong>
+          </p>
+          <p>
+            HydroSol invites partners across the public, private, academic, financial,
+            and development sectors to collaborate in advancing practical engineering
+            solutions that strengthen communities and expand sustainable opportunity.
+          </p>
+          <p>
+            Whether your interest lies in research, investment, manufacturing, education,
+            policy, or implementation, we welcome the opportunity to transform innovative
+            ideas into practical solutions that deliver lasting human benefit.
+          </p>
+          <p>
+            <strong>
+              Together, let us co-develop, co-own, and scale a model that proves
+              sustainable innovation can begin anywhere and belong to everyone.
+            </strong>
+          </p>
+        </Prose>
+
+        <Reveal>
+          <p className="mx-auto mt-12 max-w-2xl text-center text-[15px] font-medium text-navy">
+            Contact the HydroSol Development Team
+          </p>
+        </Reveal>
+        <Stagger className="mx-auto mt-6 grid max-w-3xl gap-4 sm:grid-cols-2">
+          {site.emails.map((email) => (
+            <StaggerItem key={email}>
+              <a
+                href={`mailto:${email}`}
+                className="hairline-card group flex h-full items-center gap-4 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(18,59,109,0.1)]"
               >
-                <span className="grid size-11 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
-                  <e.icon className="size-5" />
+                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <Mail className="size-5" />
                 </span>
-                <h3 className="display-font mt-5 text-[17px] font-bold leading-snug text-navy">
-                  {e.title}
-                </h3>
-                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">
-                  {e.body}
-                </p>
-                <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
-                  Open
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                <span>
+                  <span className="block text-[12.5px] font-medium uppercase tracking-wide text-body/60">
+                    {emailRoles[email]}
+                  </span>
+                  <span className="text-[14.5px] font-semibold text-navy">{email}</span>
                 </span>
-              </Link>
+              </a>
             </StaggerItem>
           ))}
         </Stagger>
+        <p className="mx-auto mt-6 text-center text-[14.5px] text-body">
+          Website:{" "}
+          <span className="font-semibold text-brand">www.hydrosol.energy</span>
+        </p>
+      </Section>
+
+      <Section title="Engineering Should Improve Lives">
+        <Prose>
+          <p>
+            Engineering is ultimately measured not only by what it creates, but by the
+            lives it improves and the future it helps to shape.
+          </p>
+          <p>
+            Every generation inherits challenges. Every generation also inherits the
+            opportunity—and the responsibility—to solve them.
+          </p>
+          <p>
+            Through research, engineering, partnership, and shared purpose, we can
+            strengthen communities, restore the environment, expand productive
+            opportunity, and contribute to a future that is more resilient, more
+            prosperous, and more sustainable.
+          </p>
+          <p>
+            <strong>
+              Together, let us transform interconnected challenges into interconnected
+              prosperity.
+            </strong>
+          </p>
+        </Prose>
+
+        <PullQuote
+          lines={[
+            "Power Everywhere. For Everyone.",
+            "Productive Communities. Prosperous Futures.",
+          ]}
+        />
       </Section>
 
       <CtaBand
-        title="Connect with the HydroSol Team"
-        lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
+        title="Contact the HydroSol Development Team"
+        lede="Whether your interest lies in research, investment, manufacturing, education, policy, or implementation, we welcome the opportunity to begin a conversation."
       >
         <PrimaryButton href="/contact">Contact HydroSol</PrimaryButton>
         <GhostButton href="/publications" onDark>

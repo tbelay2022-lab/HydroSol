@@ -5,9 +5,9 @@ import { PageHero } from "@/components/PageHero";
 import { Section, Prose, PullQuote } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "From Platform to Productive Communities",
+  title: "Productive Communities",
   description:
-    "Deploying distributed productive energy — a distributed deployment model that places productive energy at the point of need, supported by Regional Processing Centers.",
+    "From engineering vision to community transformation — Smart Productive Communities supported by Regional Production Centers.",
 };
 
 export default function CommunitiesPage() {
@@ -15,9 +15,9 @@ export default function CommunitiesPage() {
     <>
       <PageHero
         eyebrow="Chapter 4 · The HydroSol Journey"
-        title="From Platform to Productive Communities"
-        subtitle="Deploying Distributed Productive Energy"
-        lede="Technology creates lasting value only when it is successfully deployed where people live, work, and build their futures."
+        title="Productive Communities"
+        subtitle="From Engineering Vision to Community Transformation"
+        lede="“Engineering achieves its greatest purpose when innovation becomes practical, sustainable, and improves everyday life.”"
       />
 
       <Section>
@@ -25,7 +25,7 @@ export default function CommunitiesPage() {
           <FigureFrame
             src="/figures/hs2-05-kushet.jpg"
             alt="The Smart Productive Village (Kushet) — productive energy integrated with homes, agriculture, water systems, healthcare, education, enterprises, mobility, and environmental stewardship"
-            caption="The Smart Productive Village (Kushet) — a productive ecosystem where every system strengthens the other and everyone thrives."
+            caption="A productive ecosystem where every system strengthens the other and everyone thrives."
             width={1432}
             height={955}
             priority
@@ -33,69 +33,87 @@ export default function CommunitiesPage() {
         </div>
         <Prose>
           <p>
-            HydroSol transforms engineering innovation into practical community
-            development through a distributed deployment model that places productive
-            energy at the point of need. Rather than relying exclusively on large
-            centralized infrastructure, the HydroSol Platform enables communities to
-            establish local productive-energy systems that grow progressively with their
-            economic, social, and environmental needs.
+            The HydroSol Ecosystem reaches its full purpose when engineering becomes part
+            of everyday community life. Productive Energy is transformed from an
+            engineering capability into a catalyst for productive communities—creating
+            opportunities for livelihoods, strengthening local institutions, and enabling
+            resilient local economies.
           </p>
           <p>
-            Its modular architecture allows deployment at multiple scales—from individual
-            households and small enterprises to schools, healthcare facilities,
-            agricultural operations, industrial users, and entire productive communities.
-            As local demand increases, additional HydroSol units can be integrated
-            seamlessly without disrupting existing operations, creating a scalable
-            pathway toward regional productive ecosystems.
+            At the heart of this transformation are{" "}
+            <strong>Smart Productive Communities</strong>, where Productive Energy
+            supports clean water, agriculture, healthcare, education, enterprise,
+            mobility, digital connectivity, environmental stewardship, and other
+            essential community services. Working together rather than independently,
+            these systems reinforce one another to create a continuous cycle of
+            productivity, resilience, and shared prosperity.
           </p>
           <p>
-            This distributed approach strengthens resilience by reducing dependence on
-            distant energy supplies while expanding local capability, employment,
-            entrepreneurship, and technical capacity. Energy is no longer viewed simply
-            as a utility service, but as{" "}
-            <strong>
-              productive infrastructure that enables communities to create value, improve
-              essential services, and build sustainable local economies.
-            </strong>
+            Supporting every community is a network of{" "}
+            <strong>Regional Production Centers (RPCs)</strong>. These centers provide
+            cartridge manufacturing and regeneration, engineering support, quality
+            assurance, logistics, technical training, maintenance services, digital
+            coordination, and continuous operational improvement. More than production
+            facilities, they become regional centers of knowledge, engineering
+            excellence, workforce development, and long-term operational support.
           </p>
           <p>
-            Supporting this transformation is the{" "}
-            <strong>Regional Processing Center (RPC)</strong>, which serves as the
-            operational hub for manufacturing support, cartridge lifecycle management,
-            technical servicing, engineering training, digital monitoring, quality
-            assurance, and continuous system improvement. Through the RPC network, the
-            HydroSol Ecosystem combines decentralized deployment with coordinated
-            engineering standards, ensuring reliability, safety, and long-term
-            operational excellence.
+            Because the HydroSol Ecosystem is modular and scalable, communities can begin
+            with their most immediate priorities and expand progressively as productive
+            capacity grows. Infrastructure, institutions, and local capabilities evolve
+            together, allowing each community to develop at its own pace while remaining
+            connected to a broader regional ecosystem.
+          </p>
+        </Prose>
+      </Section>
+
+      <Section tint title="Communities at the Center">
+        <Prose>
+          <p>
+            Technology alone does not transform communities. <strong>People do.</strong>
           </p>
           <p>
-            By integrating distributed productive energy with regional engineering
-            support, HydroSol establishes an ecosystem capable of continuous learning,
-            technological evolution, and sustainable expansion.
+            HydroSol therefore places communities at the center of implementation by
+            encouraging local ownership, building technical capability, supporting
+            entrepreneurship, and strengthening the institutions that sustain long-term
+            development.
           </p>
           <p>
-            The objective is not merely to deliver energy.{" "}
-            <strong>
-              The objective is to build productive communities that create opportunity,
-              strengthen resilience, and sustain prosperity for generations.
-            </strong>
+            Particular emphasis is placed on <strong>women and young people</strong>,
+            recognizing that they are among the greatest drivers of innovation,
+            enterprise, and community transformation, yet are often underrepresented in
+            economic opportunity. HydroSol therefore seeks to encourage their broad
+            participation across engineering, manufacturing, operations,
+            entrepreneurship, technical training, and community leadership, while equally
+            valuing the knowledge, mentorship, and experience contributed by senior
+            members of the community.
           </p>
-          <p>From today&rsquo;s world to tomorrow&rsquo;s Smart Productive Village.</p>
+          <p>
+            The objective is not simply to create employment, but to build productive
+            generations working together—where youthful innovation is strengthened by
+            experience, and experience is renewed through the energy, creativity, and
+            aspirations of a new generation.
+          </p>
+          <p>
+            The measure of success is therefore not the number of systems installed, but
+            the communities empowered, the enterprises created, the livelihoods
+            strengthened, and the opportunities sustained.
+          </p>
         </Prose>
 
         <PullQuote
           lines={[
-            "Distributed Deployment.",
-            "Regional Coordination.",
-            "Sustainable Transformation.",
+            "Engineering serves communities.",
+            "Productive Energy enables opportunity.",
+            "Productive Communities create Prosperous Futures.",
           ]}
         />
-        <p className="mx-auto max-w-3xl text-center text-[16px] font-medium italic text-brand sm:text-[17px]">
-          Building Productive Communities Through Distributed Engineering
-        </p>
       </Section>
 
-      <NextChapter current="04" />
+      <NextChapter
+        current="04"
+        note="No productive community is built by one organization alone. Sustainable transformation depends upon collaboration among engineering, industry, government, finance, universities, development institutions, entrepreneurs, and community leadership. The next chapter explores the partnership ecosystem through which the HydroSol vision becomes a shared mission capable of transforming communities at regional, national, and international scale."
+      />
     </>
   );
 }

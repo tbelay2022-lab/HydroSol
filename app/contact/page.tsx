@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const emailRoles: Record<string, string> = {
-  "info@hydrosolpower.com": "General Information",
-  "technology@hydrosolpower.com": "Technology & Engineering",
-  "partners@hydrosolpower.com": "Partnerships",
-  "invest@hydrosolpower.com": "Investment Opportunities",
+  "info@hydrosol.energy": "General Enquiries",
+  "partners@hydrosol.energy": "Partnerships",
+  "invest@hydrosol.energy": "Investment & Finance",
+  "technology@hydrosol.energy": "Engineering & Technology",
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <PageHero
         tintBelow
         eyebrow="Contact & Engagement"
-        title="Contact Information"
+        title="Contact the HydroSol Development Team"
         subtitle="Connect with HydroSol"
         lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
       />
@@ -71,8 +71,8 @@ export default function ContactPage() {
               <span className="grid size-9 place-items-center rounded-lg bg-leaf-soft text-leaf-deep">
                 <Globe className="size-4.5" />
               </span>
-              Visit the HydroSol Knowledge Platform:&nbsp;
-              <span className="text-brand">www.hydrosolpower.com</span>
+              Website:&nbsp;
+              <span className="text-brand">www.hydrosol.energy</span>
             </p>
           </Reveal>
 
