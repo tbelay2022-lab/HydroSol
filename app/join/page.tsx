@@ -33,6 +33,16 @@ export default function JoinPage() {
       />
 
       <Section title="The Opportunity Before Us">
+        <div className="mx-auto mb-12 max-w-4xl">
+          <FigureFrame
+            src="/figures/hs2-08-transformation.jpg"
+            alt="The Transformation — from today's interconnected challenges to tomorrow's Smart Productive Village through the HydroSol journey"
+            caption="From Today's World to Tomorrow's Smart Productive Village"
+            width={1432}
+            height={894}
+            priority
+          />
+        </div>
         <Prose>
           <p>
             Humanity faces interconnected challenges unlike any in history. Energy
@@ -100,15 +110,6 @@ export default function JoinPage() {
           </p>
         </Prose>
 
-        <div className="mx-auto mt-12 max-w-4xl">
-          <FigureFrame
-            src="/figures/hs2-08-transformation.jpg"
-            alt="The Transformation — from today's interconnected challenges to tomorrow's Smart Productive Village through the HydroSol journey"
-            caption="From Today's World to Tomorrow's Smart Productive Village"
-            width={1432}
-            height={894}
-          />
-        </div>
       </Section>
 
       <Section title="Continue the Journey">

@@ -13,7 +13,7 @@ export function HeroWaves({
   const fill = tint ? "#f7fafc" : "#ffffff";
   return (
     <div className="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden>
-      <div className="relative h-[56px] overflow-hidden sm:h-[88px]">
+      <div className="relative h-[48px] overflow-hidden sm:h-[72px]">
         {/* back swell — mirrored, translucent, slow */}
         <div className="animate-wave-slow motion-reduce:animate-none absolute bottom-0 left-0 h-full w-[200%]">
           <svg

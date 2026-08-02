@@ -16,7 +16,7 @@ export function Section({
 }) {
   return (
     <section className={tint ? "bg-mist" : "bg-white"}>
-      <div className="container-x py-16 sm:py-22">
+      <div className="container-x py-10 sm:py-14">
         {(eyebrow || title) && (
           <Reveal>
             <div
@@ -56,17 +56,15 @@ export function Prose({ children }: { children: ReactNode }) {
 export function PullQuote({ lines }: { lines: string[] }) {
   return (
     <Reveal>
-      <div className="relative mx-auto my-12 max-w-3xl pl-7 sm:pl-9">
+      <div className="relative mx-auto my-10 max-w-4xl pl-7 sm:pl-9">
         <span
           className="absolute bottom-1 left-0 top-1 w-[3px] rounded-full bg-gradient-to-b from-brand to-leaf"
           aria-hidden
         />
-        {lines.map((l, i) => (
+        {lines.map((l) => (
           <p
             key={l}
-            className={`display-font text-balance text-2xl font-bold leading-[1.22] sm:text-[30px] ${
-              i === lines.length - 1 ? "gradient-text" : "text-navy"
-            }`}
+            className="display-font text-pretty text-[22px] font-bold leading-[1.3] text-navy sm:text-[27px]"
           >
             {l}
           </p>

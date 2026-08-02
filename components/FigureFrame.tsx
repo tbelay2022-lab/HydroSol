@@ -61,10 +61,6 @@ export function FigureFrame({
               Enlarge
             </span>
           </button>
-          <figcaption className="mt-3 flex items-start gap-2 px-1 text-[13.5px] leading-snug text-ink/55">
-            <span className="mt-[7px] h-px w-5 shrink-0 bg-gradient-to-r from-brand to-leaf" aria-hidden />
-            {caption}
-          </figcaption>
         </figure>
       </Reveal>
 

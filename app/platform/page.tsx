@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { FigureFrame } from "@/components/FigureFrame";
 import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
@@ -67,6 +68,17 @@ export default function EcosystemPage() {
             designed to strengthen productive capacity while building upon resources
             already available within each community.
           </p>
+          <p>
+            Further detail on how HydroSol fits the present energy ecosystem is given on
+            the{" "}
+            <Link
+              href="/faq"
+              className="font-semibold text-brand underline-offset-4 hover:text-leaf-deep hover:underline"
+            >
+              FAQ
+            </Link>
+            .
+          </p>
         </Prose>
       </Section>
 
@@ -133,11 +145,9 @@ export default function EcosystemPage() {
             "One Ecosystem.",
             "Many Integrated Systems.",
             "One Shared Purpose.",
+            "Productive Communities. Prosperous Futures.",
           ]}
         />
-        <p className="mx-auto max-w-3xl text-center text-[16px] font-medium italic text-brand sm:text-[17px]">
-          Productive Communities. Prosperous Futures.
-        </p>
       </Section>
 
       <NextChapter

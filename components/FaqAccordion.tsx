@@ -62,9 +62,69 @@ export function FaqAccordion() {
                           transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
                           className="overflow-hidden"
                         >
-                          <p className="px-5 pb-6 text-[15px] leading-relaxed text-ink/70 sm:px-7">
-                            {item.a}
-                          </p>
+                          <div className="px-5 pb-6 sm:px-7">
+                            <p className="text-[15px] leading-relaxed text-ink/70">
+                              {item.a}
+                            </p>
+
+                            {"tables" in item &&
+                              item.tables?.map((table) => (
+                                <div key={table.title} className="mt-6">
+                                  <p className="display-font text-[15px] font-bold text-navy">
+                                    {table.title}
+                                  </p>
+                                  <div className="mt-3 overflow-x-auto rounded-xl border border-line">
+                                    <table className="w-full min-w-[560px] border-collapse text-left text-[13.5px]">
+                                      <thead>
+                                        <tr className="bg-brand-soft">
+                                          {table.headers.map((h) => (
+                                            <th
+                                              key={h}
+                                              scope="col"
+                                              className="border-b border-line px-4 py-3 align-bottom font-semibold text-navy"
+                                            >
+                                              {h}
+                                            </th>
+                                          ))}
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        {table.rows.map((row) => (
+                                          <tr
+                                            key={row[0]}
+                                            className="border-b border-line last:border-0 odd:bg-white even:bg-mist"
+                                          >
+                                            {row.map((cell, ci) => (
+                                              <td
+                                                key={cell}
+                                                className={`px-4 py-3 align-top leading-snug ${
+                                                  ci === 0
+                                                    ? "font-semibold text-navy"
+                                                    : "text-ink/70"
+                                                }`}
+                                              >
+                                                {cell}
+                                              </td>
+                                            ))}
+                                          </tr>
+                                        ))}
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  {"note" in table && table.note && (
+                                    <p className="mt-2 text-[12.5px] italic text-ink/55">
+                                      {table.note}
+                                    </p>
+                                  )}
+                                </div>
+                              ))}
+
+                            {"closing" in item && item.closing && (
+                              <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
+                                {item.closing}
+                              </p>
+                            )}
+                          </div>
                         </motion.div>
                       )}
                     </AnimatePresence>

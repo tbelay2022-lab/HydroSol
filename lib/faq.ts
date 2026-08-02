@@ -1,3 +1,6 @@
+export const faqIntro =
+  "This FAQ provides concise answers to common questions regarding the HydroSol framework, productive continuity, deployment philosophy, partnerships, and development objectives. Readers seeking a comprehensive strategic, technical, operational, environmental, and economic discussion are encouraged to consult the HydroSol Executive White Paper.";
+
 export const faqSections = [
   {
     title: "General Questions",
@@ -5,6 +8,10 @@ export const faqSections = [
       {
         q: "What is HydroSol?",
         a: "HydroSol is a distributed productive-energy framework designed to strengthen productive continuity, resilience, livelihoods, enterprise development, and long-term prosperity.",
+      },
+      {
+        q: "Why does HydroSol focus on productive energy rather than simply energy?",
+        a: "HydroSol recognizes that access to energy alone does not automatically create development. Productive energy enables livelihoods, enterprise creation, agriculture, healthcare, education, local industry, and economic participation. HydroSol therefore focuses on what energy enables rather than simply what it delivers.",
       },
       {
         q: "Why was HydroSol created?",
@@ -48,6 +55,10 @@ export const faqSections = [
         a: "No. HydroSol is designed to complement and extend productive capability where additional accessibility, flexibility, and resilience are required.",
       },
       {
+        q: "What is HydroSol's Infrastructure Operating System (Infra-OS)?",
+        a: "Infra-OS is HydroSol's operational philosophy for coordinating productive energy, regeneration, logistics, quality assurance, deployment, and community participation into one integrated productive infrastructure ecosystem.",
+      },
+      {
         q: "Is HydroSol intended to compete with existing energy solutions?",
         a: "No. HydroSol is intended to complement existing energy systems and development efforts. The framework seeks to provide an additional productive-energy pathway that can support productive continuity where accessibility, resilience, flexibility, or localized deployment are important.",
       },
@@ -73,6 +84,10 @@ export const faqSections = [
         a: "Agriculture, healthcare, SMEs, education, communications, productive mobility, food systems, community infrastructure, and local manufacturing.",
       },
       {
+        q: "What is a Smart Productive Village?",
+        a: "A Smart Productive Village is HydroSol's integrated implementation model in which productive households, SMEs, agriculture, healthcare, education, water systems, and community infrastructure are connected through distributed productive energy to strengthen local resilience and prosperity.",
+      },
+      {
         q: "What is meant by “Last-Mile-First”?",
         a: "HydroSol begins with the productive needs of communities and enterprises rather than waiting for centralized infrastructure expansion.",
       },
@@ -95,7 +110,7 @@ export const faqSections = [
       },
       {
         q: "What is HydroSol’s deployment philosophy?",
-        a: "Validate → Demonstrate → Replicate → Adopt → Scale.",
+        a: "Validate → Demonstrate → Replicate → Adopt → Scale",
       },
       {
         q: "Why does HydroSol emphasize infrastructure-light development?",
@@ -108,7 +123,7 @@ export const faqSections = [
     items: [
       {
         q: "Who can partner with HydroSol?",
-        a: "Governments, municipalities, DFIs, UN agencies, NGOs, universities, foundations, corporations, investors, entrepreneurs, and community organizations.",
+        a: "Governments, municipalities, DFIs, UN agencies, NGOs, universities, foundations, corporations, investors, entrepreneurs, and community organizations. Investment opportunities may include pilot deployments, Regional Processing Centers (RPCs), manufacturing partnerships, ecosystem expansion, strategic technology collaboration, and long-term regional development initiatives.",
       },
       {
         q: "How can investors engage?",
@@ -141,12 +156,72 @@ export const faqSections = [
       },
       {
         q: "Where can I learn more?",
-        a: "Readers are encouraged to consult the HydroSol Executive White Paper for a comprehensive understanding of the framework and its long-term vision.",
+        a: "Readers are encouraged to explore the HydroSol website and consult the Executive White Paper for a comprehensive understanding of the HydroSol framework and its long-term vision.",
       },
       {
-        q: "How can I contact HydroSol?",
-        a: "Partnership, investment, technical, media, and institutional inquiries may be directed through HydroSol’s official communication channels: info@hydrosol.energy, partners@hydrosol.energy, invest@hydrosol.energy, and technology@hydrosol.energy.",
+        q: "Where does HydroSol fit within today's energy landscape?",
+        a: "Every energy solution serves different needs depending on local conditions, infrastructure, affordability, and intended application. HydroSol complements—not replaces—the existing energy mix by providing a distributed productive energy platform for households, enterprises, institutions, and communities.",
+        tables: [
+          {
+            title: "Energy Solutions at a Glance",
+            headers: [
+              "Energy Solution",
+              "Primary Use",
+              "Infrastructure",
+              "Productive Capacity",
+              "Environmental Consideration",
+              "Typical Operating Cost*",
+            ],
+            rows: [
+              ["Firewood", "Cooking, heating", "None", "Household", "High forest dependence", "Low cash"],
+              ["Charcoal", "Cooking", "Fuel supply", "Household", "High forest dependence", "Medium"],
+              ["Kerosene", "Cooking, lighting", "Fuel distribution", "Household", "Combustion emissions", "Medium–High"],
+              ["LPG", "Cooking", "Cylinder supply", "Household / SME", "Lower emissions", "Medium"],
+              ["Gasoline / Diesel", "Mobility, generators", "Fuel stations", "High", "Combustion emissions", "High"],
+              ["Grid Electricity", "Homes & industry", "Grid network", "High", "Depends on generation mix", "Varies"],
+              ["Solar Systems", "Lighting & basic electricity", "Panels & batteries", "Low–Medium", "Renewable", "Low after installation"],
+              [
+                "HydroSol Platform",
+                "Productive energy",
+                "Modular Regional Processing Centers",
+                "Household → Regional",
+                "Supports reduced biomass dependence, complements afforestation, and enables low-emission applications",
+                "Designed for affordable distributed productive energy",
+              ],
+            ],
+            note: "*Operating costs vary by country and market conditions and are provided only as a general reference.",
+          },
+          {
+            title: "Why HydroSol Is Different",
+            headers: ["Conventional Approach", "HydroSol Platform"],
+            rows: [
+              ["Fuel", "Productive energy platform"],
+              ["Central supply", "Distributed production"],
+              ["Continuous fuel purchases", "Regional productive ecosystem"],
+              ["Energy consumption", "Energy supporting productive livelihoods"],
+              ["Stand-alone technologies", "Integrated engineering ecosystem"],
+              ["Resource extraction", "Resource regeneration & afforestation support"],
+              ["Technology deployment", "Engineering, manufacturing, governance & knowledge integration"],
+              ["Energy access", "Productive Continuity"],
+            ],
+          },
+        ],
+        closing:
+          "HydroSol integrates safe hydrogen-on-demand, modular engineering, regional manufacturing, cartridge logistics, digital coordination, engineering standards, and knowledge continuity into one scalable platform designed to expand productive energy access while strengthening economic opportunity, environmental stewardship, and community resilience.",
+      },
+      {
+        q: "How can I engage with the HydroSol Initiative?",
+        a: "The HydroSol Initiative welcomes collaboration with governments, development partners, investors, researchers, industry, educational institutions, media organizations, and communities that share the vision of expanding access to productive, resilient, and sustainable energy systems. Partnership, investment, technical, institutional, and media inquiries are welcome through HydroSol's official communication channels.",
       },
     ],
   },
 ];
+
+export const faqCommitment = {
+  title: "Our Commitment",
+  paragraphs: [
+    "HydroSol is ultimately about enabling Productive Continuity.",
+    "Its purpose is not merely to provide energy, but to help communities transform productive energy into productive livelihoods, resilient local economies, and prosperous futures.",
+    "We believe that sustainable development is achieved when engineering innovation, environmental stewardship, and human capability advance together.",
+  ],
+};

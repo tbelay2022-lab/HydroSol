@@ -19,7 +19,7 @@ export function PageHero({
   tintBelow?: boolean;
 }) {
   return (
-    <section className="hero-droplet relative overflow-hidden pb-28 pt-36 sm:pb-36 sm:pt-44">
+    <section className="hero-droplet relative overflow-hidden pb-16 pt-32 sm:pb-20 sm:pt-40">
       <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
       <HeroWaves tint={tintBelow} />
       <div className="container-x relative flex flex-col items-center text-center">

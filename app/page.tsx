@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero — Welcome to HydroSol (header hierarchy per client notes) */}
-      <section className="hero-droplet relative overflow-hidden pb-32 pt-40 sm:pb-44 sm:pt-52">
+      <section className="hero-droplet relative overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-44">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroWaves />
         <HeroEmblem />
@@ -38,6 +38,16 @@ export default function HomePage() {
 
       {/* Welcome narrative */}
       <Section>
+        <div className="mx-auto mb-12 max-w-4xl">
+          <FigureFrame
+            src="/figures/hs3-global-south-map.jpg"
+            alt="Global South: the HydroSol opportunity — more than 2.3 billion people across the Global South seek the productive infrastructure needed for lasting prosperity and sustainable development"
+            caption="Global South: the HydroSol opportunity — our focus, our commitment, our future."
+            width={1432}
+            height={955}
+            priority
+          />
+        </div>
         <Prose>
           <p>
             Across much of the Global South—including Africa, South Asia, Latin America,
@@ -57,19 +67,6 @@ export default function HomePage() {
             increasingly limited, communities become more isolated, and access to
             reliable productive services declines.
           </p>
-        </Prose>
-
-        <div className="mx-auto mt-12 max-w-4xl">
-          <FigureFrame
-            src="/figures/hs3-global-south-map.jpg"
-            alt="Global South: the HydroSol opportunity — more than 2.3 billion people across the Global South seek the productive infrastructure needed for lasting prosperity and sustainable development"
-            caption="Global South: the HydroSol opportunity — our focus, our commitment, our future."
-            width={1432}
-            height={955}
-          />
-        </div>
-
-        <Prose>
           <p>
             HydroSol addresses this challenge through the principle of{" "}
             <strong>Productive Energy</strong>—energy that creates value by enabling
@@ -109,10 +106,10 @@ export default function HomePage() {
               <p className="display-font text-balance text-[20px] font-bold leading-normal text-navy sm:text-[23px]">
                 {site.transforming}
               </p>
-              <p className="mt-3 text-[14.5px] font-medium tracking-wide text-brand">
+              <p className="mt-3 text-[14.5px] font-medium tracking-wide text-navy">
                 {site.through}
               </p>
-              <p className="mt-4 text-[13px] font-medium text-body/70">
+              <p className="mt-4 text-[13px] font-medium text-navy">
                 HydroSol™ · {site.tagline}
               </p>
             </div>

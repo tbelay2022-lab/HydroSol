@@ -21,6 +21,16 @@ export default function OpportunityPage() {
       />
 
       <Section>
+        <div className="mx-auto mb-12 max-w-4xl">
+          <FigureFrame
+            src="/figures/hs2-06-partnership-ecosystem.jpg"
+            alt="The HydroSol Partnership Ecosystem — governments, universities, manufacturers, investors, NGOs, development finance institutions, communities, and engineering partners"
+            caption="The Partnership Ecosystem — each partner strengthens the others."
+            width={1432}
+            height={784}
+            priority
+          />
+        </div>
         <Prose>
           <p>
             Throughout history, societies have advanced when knowledge, engineering,
@@ -39,16 +49,6 @@ export default function OpportunityPage() {
             achievement of many.
           </p>
         </Prose>
-
-        <div className="mx-auto mt-12 max-w-4xl">
-          <FigureFrame
-            src="/figures/hs2-06-partnership-ecosystem.jpg"
-            alt="The HydroSol Partnership Ecosystem — governments, universities, manufacturers, investors, NGOs, development finance institutions, communities, and engineering partners"
-            caption="The Partnership Ecosystem — each partner strengthens the others."
-            width={1432}
-            height={784}
-          />
-        </div>
 
         <Prose>
           <p>
