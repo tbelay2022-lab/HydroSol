@@ -1,0 +1,20 @@
+feat: apply client's New_updates notes and replace FAQ with new document
+
+1. Home, Chapter 5 and Chapter 6: figure moved above the body text
+2. All pages: removed the caption line beneath every picture
+   (FigureFrame no longer renders a figcaption; alt text and the
+   click-to-enlarge lightbox keep the description)
+3. Chapter 1: 'Prosperity is not created by individual technologies.'
+   now sets on one line (PullQuote widened to max-w-4xl, 27px)
+   and consecutive quote lines share one colour — the gradient on the
+   last line is gone site-wide
+4. Chapter 3: added 'Further detail on how HydroSol fits the present
+   energy ecosystem is given on the FAQ.' with FAQ linked to /faq
+5. FAQ replaced with the client's new document: 34 questions across 6
+   sections verbatim, plus the introduction and Our Commitment blocks,
+   and Q33's two comparison tables now render (scrollable on mobile)
+6. Removed the empty space after each page heading: tighter hero
+   padding, shorter wave band, tighter section rhythm
+
+Also removed two unused components that still carried the old
+two-tone line styling.

@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/NshutiYvan10/hydrosol-website.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[user]
+	name = NshutiYvan10
+	email = 116834234+NshutiYvan10@users.noreply.github.com
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
