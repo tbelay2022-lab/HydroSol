@@ -3,14 +3,15 @@ import Link from "next/link";
 import { ArrowRight, FileText, MessageCircleQuestion } from "lucide-react";
 import { PrimaryButton } from "@/components/Buttons";
 import { CtaBand } from "@/components/CtaBand";
+import { FigureFrame } from "@/components/FigureFrame";
 import { PageHero } from "@/components/PageHero";
 import { Stagger, StaggerItem } from "@/components/Reveal";
-import { Section } from "@/components/Section";
+import { Section, Prose } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "HydroSol Publications",
   description:
-    "The HydroSol Executive White Paper and Frequently Asked Questions — the framework in depth.",
+    "The knowledge architecture behind HydroSol and selected public materials, including the HydroSol White Paper and Frequently Asked Questions.",
 };
 
 const publications = [
@@ -34,11 +35,43 @@ export default function PublicationsPage() {
       <PageHero
         eyebrow="Publications"
         title="HydroSol Publications"
-        subtitle="The Framework in Depth"
-        lede="HydroSol is presented through a progressive body of engineering, technical, and strategic knowledge designed for readers with different interests and levels of detail."
+        subtitle="The Knowledge Architecture Behind HydroSol"
+        lede="A multidisciplinary body of engineering, scientific, technical, and strategic knowledge supporting HydroSol’s integrated productive-energy model."
       />
 
-      <Section>
+      <Section compactTop>
+        <div className="mx-auto mb-10 max-w-5xl">
+          <FigureFrame
+            src="/figures/hs-publications-knowledge-architecture.png"
+            alt="The Knowledge Architecture Behind HydroSol — multidisciplinary knowledge converging into the HydroSol platform, a five-volume knowledge series, intellectual-property protection, selected publications, and the White Paper and FAQ."
+            caption="The Knowledge Architecture Behind HydroSol — where multidisciplinary knowledge converges and innovation becomes impact."
+            width={1432}
+            height={955}
+            priority
+          />
+        </div>
+
+        <Prose>
+          <p>
+            Representing a paradigm shift from conventional energy systems toward an
+            integrated productive-energy model, HydroSol brings energy generation,
+            productive use, infrastructure, and community development within a unified
+            framework.
+          </p>
+          <p>
+            Publication will be undertaken selectively and in stages, enabling HydroSol to
+            share its knowledge foundation with the wider public, scientific, engineering,
+            and development communities while safeguarding innovations requiring
+            appropriate patent and intellectual-property protection.
+          </p>
+          <p>
+            The HydroSol White Paper and FAQ, presented below, provide accessible
+            introductions to the platform and its broader vision.
+          </p>
+        </Prose>
+      </Section>
+
+      <Section tint>
         <Stagger className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-2">
           {publications.map((p) => (
             <StaggerItem key={p.href}>
@@ -52,7 +85,9 @@ export default function PublicationsPage() {
                 <h2 className="display-font mt-5 text-[19px] font-bold text-navy">
                   {p.title}
                 </h2>
-                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">{p.body}</p>
+                <p className="mt-2.5 text-[14.5px] leading-relaxed text-body/90">
+                  {p.body}
+                </p>
                 <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-[14px] font-semibold text-brand transition-colors group-hover:text-leaf-deep">
                   Open
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -64,7 +99,7 @@ export default function PublicationsPage() {
       </Section>
 
       <CtaBand
-        title="Questions the publications don't answer?"
+        title="Explore the HydroSol knowledge foundation"
         lede="For partnership, investment, technical, institutional, media, or research inquiries, the HydroSol team welcomes your message."
       >
         <PrimaryButton href="/contact">Contact HydroSol</PrimaryButton>

@@ -36,7 +36,7 @@ export default function QuestPage() {
         lede="“Every great engineering achievement begins not with an answer, but with the courage to ask a better question.”"
       />
 
-      <Section>
+      <Section compactTop>
         <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
             src="/figures/hs2-02-humanitys-quest.jpg"

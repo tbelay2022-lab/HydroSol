@@ -9,7 +9,7 @@ import { Section, Prose } from "@/components/Section";
 export const metadata: Metadata = {
   title: "Executive White Paper",
   description:
-    "Public access to the HydroSol Executive White Paper — the platform's vision, productive energy framework, architecture, implementation philosophy, and long-term development objectives.",
+    "Public access to the HydroSol Executive White Paper — A South-Centric Productive Energy Revolution, covering productive continuity, the HydroSol framework, deployment, regeneration, finance, validation, and scaling.",
 };
 
 export default function WhitePaperPage() {
@@ -17,31 +17,46 @@ export default function WhitePaperPage() {
     <>
       <PageHero
         eyebrow="Publications"
-        title="Executive White Paper"
-        subtitle="The Complete HydroSol Framework"
-        lede="Explore the comprehensive technical and strategic foundation of the HydroSol Platform, including its scientific basis, engineering architecture, implementation strategy, and opportunities for sustainable development."
+        title="HydroSol Executive White Paper"
+        subtitle="A South-Centric Productive Energy Revolution"
+        lede="A concise institutional introduction to HydroSol’s productive-energy framework, its pathway from engineering readiness to real-world validation, and its vision for resilient, productive communities."
       />
 
-      <Section>
-        <div className="mx-auto max-w-2xl text-center">
+      <Section compactTop>
+        <div className="mx-auto max-w-3xl text-center">
           <Prose>
             <p>
-              To support broad accessibility, HydroSol provides public access to its{" "}
-              <strong>Executive White Paper</strong> — a single document covering the
-              global challenge, the productive energy platform, community applications,
-              the Smart Productive Village, and the implementation pathway.
+              The <strong>HydroSol Executive White Paper</strong> presents HydroSol as a
+              distributed productive-energy ecosystem designed to strengthen{" "}
+              <strong>productive continuity</strong> across infrastructure-constrained and
+              resilience-oriented environments.
+            </p>
+            <p>
+              The paper examines the global productive-energy challenge, the shift from
+              consumptive energy to productive continuity, the HydroSol operational
+              framework, Regional Processing Centers and circular regeneration, productive
+              continuity at scale, development finance and impact investment,
+              infrastructure-light development, validation and scaling, and the pathway
+              from vision to action.
+            </p>
+            <p>
+              It is intended as an accessible strategic and institutional overview. Readers
+              seeking concise answers to common technical, deployment, partnership, and
+              investment questions may also consult the companion FAQ.
             </p>
           </Prose>
+
           <Reveal>
             <a
               href="/HydroSol-Executive-White-Paper.pdf"
               download
-              className="group mt-10 inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)]"
+              className="group mt-8 inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-[15.5px] font-semibold text-white transition-all hover:bg-leaf hover:shadow-[0_10px_28px_rgba(76,175,80,0.35)]"
             >
               <Download className="size-5 transition-transform group-hover:translate-y-0.5" />
               Download the White Paper
             </a>
           </Reveal>
+
           <p className="mt-4 text-[13px] text-body/60">
             Public download · PDF · HydroSol Executive White Paper
           </p>
@@ -49,8 +64,8 @@ export default function WhitePaperPage() {
       </Section>
 
       <CtaBand
-        title="Questions after reading?"
-        lede="Reach the HydroSol team for partnership discussions, technical briefings, investor engagement, or institutional collaboration."
+        title="Continue exploring HydroSol"
+        lede="For partnership discussions, pilot deployment opportunities, investor engagement, technical briefings, or institutional collaboration, the HydroSol team welcomes your inquiry."
       >
         <GhostButton href="/contact" onDark>
           Contact HydroSol

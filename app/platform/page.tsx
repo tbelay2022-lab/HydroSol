@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { FigureFrame } from "@/components/FigureFrame";
 import { NextChapter } from "@/components/NextChapter";
 import { PageHero } from "@/components/PageHero";
@@ -21,7 +20,7 @@ export default function EcosystemPage() {
         lede="“Sustainable development is achieved not by isolated technologies, but by integrated systems working together toward a common purpose.”"
       />
 
-      <Section>
+      <Section compactTop>
         <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
             src="/figures/hs2-03-platform.jpg"
@@ -34,19 +33,18 @@ export default function EcosystemPage() {
         </div>
         <Prose>
           <p>
-            The HydroSol Ecosystem translates the principle of{" "}
-            <strong>Productive Energy</strong> into an integrated engineering platform
-            for community development. Rather than viewing energy as an isolated service,
-            it positions energy as the catalyst that enables productive infrastructure,
-            strengthens local institutions, expands economic opportunity, and supports
-            resilient communities.
+            The HydroSol Ecosystem is the operational architecture through which{" "}
+            <strong>Productive Energy</strong> is translated into practical community
+            development. It integrates engineering, manufacturing, digital intelligence,
+            environmental stewardship, and localized operations into one coordinated
+            platform that enables productive infrastructure to grow as a unified system
+            rather than as isolated projects.
           </p>
           <p>
-            Built upon the convergence of engineering, chemistry, manufacturing, digital
-            intelligence, environmental stewardship, and systems integration, the
-            HydroSol Ecosystem provides a coordinated framework through which communities
-            can strengthen agriculture, water, healthcare, education, enterprise,
-            mobility, and local industry while protecting the environment.
+            Rather than treating energy, water, agriculture, healthcare, education,
+            enterprise, and mobility as independent sectors, the HydroSol Ecosystem
+            connects them within a common engineering framework where progress in one
+            strengthens progress across the others.
           </p>
         </Prose>
       </Section>
@@ -54,12 +52,12 @@ export default function EcosystemPage() {
       <Section tint title="Engineering Communities, Not Simply Energy Systems">
         <Prose>
           <p>
-            HydroSol recognizes that communities prosper when essential systems reinforce
-            one another. Productive Energy supports water and agriculture; agriculture
-            strengthens enterprise; enterprise creates employment; stronger livelihoods
-            improve education, healthcare, environmental stewardship, and community
-            resilience. The result is not a collection of independent services, but{" "}
-            <strong>a productive ecosystem capable of sustained development.</strong>
+            Communities prosper when essential systems reinforce one another. Productive
+            Energy supports productive infrastructure; productive infrastructure
+            strengthens enterprise; enterprise creates livelihoods; stronger livelihoods
+            improve social services, environmental stewardship, and community resilience.
+            The result is an integrated productive ecosystem rather than a collection of
+            independent services.
           </p>
           <p>
             HydroSol therefore complements existing energy infrastructure rather than
@@ -67,17 +65,6 @@ export default function EcosystemPage() {
             energy, batteries, generators, or conventional fuels, the ecosystem is
             designed to strengthen productive capacity while building upon resources
             already available within each community.
-          </p>
-          <p>
-            Further detail on how HydroSol fits the present energy ecosystem is given on
-            the{" "}
-            <Link
-              href="/faq"
-              className="font-semibold text-brand underline-offset-4 hover:text-leaf-deep hover:underline"
-            >
-              FAQ
-            </Link>
-            .
           </p>
         </Prose>
       </Section>
@@ -125,11 +112,11 @@ export default function EcosystemPage() {
       <Section title="A Platform for Lasting Prosperity">
         <Prose>
           <p>
-            Through one coordinated engineering platform, HydroSol supports productive
-            households, agriculture, water systems, healthcare, education, manufacturing,
-            mobility, and local enterprise. Individually these applications improve daily
-            life; collectively they strengthen the economic, social, institutional, and
-            environmental foundations of productive communities.
+            HydroSol measures success not simply by energy delivered, but by productive
+            outcomes—communities empowered, enterprises established, livelihoods
+            strengthened, institutions supported, and opportunities sustained. These
+            outcomes are achieved through disciplined engineering, continuous validation,
+            strategic partnerships, and continuous operational learning.
           </p>
           <p>
             HydroSol advances through disciplined engineering, continuous validation,
@@ -152,7 +139,7 @@ export default function EcosystemPage() {
 
       <NextChapter
         current="03"
-        note="The HydroSol Ecosystem establishes the engineering foundation. The next chapter demonstrates how this architecture is translated into practice through Smart Productive Communities, Regional Production Centers, and coordinated productive infrastructure."
+        note="The HydroSol Ecosystem establishes the operational engineering foundation. The next chapter demonstrates how this architecture is translated into Smart Productive Communities, Regional Production Centers, and coordinated productive infrastructure."
       />
     </>
   );

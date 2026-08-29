@@ -23,19 +23,19 @@ export default function ContactPage() {
       <PageHero
         tintBelow
         eyebrow="Contact & Engagement"
-        title="Contact the HydroSol Development Team"
+        title="Contact the HydroSol Team"
         subtitle="Connect with HydroSol"
         lede="Whether you are interested in engineering collaboration, independent validation, pilot projects, manufacturing partnerships, strategic investment, or implementation initiatives, we welcome the opportunity to begin a conversation."
       />
 
       <section className="bg-mist">
-        <div className="container-x py-16 sm:py-24">
+        <div className="container-x pb-10 pt-3 sm:pb-14 sm:pt-4">
           <Reveal>
             <p className="mx-auto max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
-              We welcome enquiries from governments, universities, research
+              HydroSol welcomes enquiries from governments, universities, research
               institutions, manufacturers, development organizations, investors,
-              engineering professionals, and communities interested in collaborating
-              with HydroSol.
+              engineering professionals, and communities seeking collaboration,
+              validation, deployment, or implementation opportunities.
             </p>
           </Reveal>
 

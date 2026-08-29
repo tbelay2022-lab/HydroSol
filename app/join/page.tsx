@@ -32,7 +32,7 @@ export default function JoinPage() {
         lede="“The greatest achievements of engineering are measured not only by technological advancement, but by their enduring contribution to humanity, productive communities, and the stewardship of our shared planet.”"
       />
 
-      <Section title="The Opportunity Before Us">
+      <Section compactTop title="The Journey Continues">
         <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
             src="/figures/hs2-08-transformation.jpg"
@@ -48,75 +48,28 @@ export default function JoinPage() {
             Humanity faces interconnected challenges unlike any in history. Energy
             insecurity, environmental degradation, water scarcity, food insecurity,
             infrastructure deficits, and economic inequality increasingly reinforce one
-            another across every region of the world.
+            another across regions and societies worldwide.
           </p>
           <p>
-            These challenges cannot be addressed in isolation. They demand integrated
-            thinking, sound engineering, scientific knowledge, institutional cooperation,
-            and a shared commitment to sustainable progress.
+            Addressing these challenges requires more than individual technologies or
+            isolated initiatives. It requires integrated thinking, engineering excellence,
+            scientific knowledge, institutional cooperation, and a shared commitment to
+            sustainable progress.
           </p>
           <p>
-            HydroSol was conceived from this understanding—not simply as another energy
-            technology, but as{" "}
-            <strong>
-              an integrated engineering platform designed to transform interconnected
-              challenges into interconnected prosperity.
-            </strong>
+            The journey presented throughout this website does not conclude here. It
+            continues through collaboration, practical implementation, continuous
+            learning, and responsible innovation. The next chapter will be shaped by the
+            partnerships we build and the actions we take together.
           </p>
         </Prose>
       </Section>
 
-      <Section tint title="A Journey of Research, Engineering, and Practical Experience">
-        <Prose>
-          <p>
-            HydroSol is the culmination of years of engineering research, scientific
-            investigation, systems innovation, and practical experience dedicated to
-            addressing one fundamental question:
-          </p>
-        </Prose>
-        <Reveal>
-          <div className="mx-auto mt-8 max-w-3xl rounded-2xl bg-gradient-to-r from-brand to-leaf p-px">
-            <div className="rounded-[calc(1rem-1px)] bg-white px-7 py-8 text-center sm:px-10">
-              <p className="display-font mx-auto max-w-2xl text-balance text-[21px] font-bold leading-normal text-navy sm:text-[24px]">
-                How can productive energy become universally accessible, environmentally
-                responsible, economically sustainable, and locally empowering?
-              </p>
-            </div>
-          </div>
-        </Reveal>
-        <Prose>
-          <p>
-            The answer extends beyond technology alone. HydroSol integrates engineering,
-            scientific knowledge, institutional collaboration, environmental stewardship,
-            and productive development within a coherent operational framework.
-          </p>
-          <p>
-            Guided by the constitutional principles of{" "}
-            <strong>
-              Productive Energy, Productive Continuity, Distributed Resilience, and
-              Civilization Continuity
-            </strong>
-            , HydroSol demonstrates how engineering can create enduring value by
-            strengthening resilience, expanding opportunity, and supporting sustainable
-            development.
-          </p>
-          <p>
-            Throughout this website, we have explored today&rsquo;s interconnected
-            challenges, examined new approaches to productive infrastructure, and
-            presented engineering principles intended to improve lives and create lasting
-            value for present and future generations. That journey does not end here. It
-            continues through learning, innovation, collaboration, and the shared belief
-            that engineering should serve humanity.
-          </p>
-        </Prose>
 
-      </Section>
-
-      <Section title="Continue the Journey">
+      <Section title="Building the Future Together">
         <Prose>
           <p>
-            Every enduring partnership begins with understanding. We encourage you to
-            begin by exploring the{" "}
+            We invite you to explore the{" "}
             <Link
               href="/white-paper"
               className="font-semibold text-brand underline-offset-4 hover:text-leaf-deep hover:underline"
@@ -130,49 +83,60 @@ export default function JoinPage() {
             >
               Frequently Asked Questions (FAQ)
             </Link>
-            , which introduce the HydroSol vision, constitutional doctrine, engineering
-            principles, operational framework, and long-term objectives.
+            , which present the vision, constitutional doctrine, engineering principles,
+            operational framework, and long-term objectives that underpin this initiative.
           </p>
           <p>
-            Behind HydroSol stands a multidisciplinary engineering and development team
-            committed to translating research, engineering excellence, and practical
-            experience into solutions that strengthen productive communities and support
-            sustainable development.
+            We welcome collaboration with governments, public agencies, municipalities,
+            universities, research institutions, engineering organizations, manufacturers,
+            infrastructure operators, entrepreneurs, investors, commercial banks,
+            development finance institutions (DFIs), multilateral development banks,
+            climate finance institutions, carbon market and carbon credit organizations,
+            development organizations, humanitarian agencies, non-governmental
+            organizations (NGOs), philanthropic foundations, private-sector partners,
+            cooperatives, civil society organizations, and implementation partners
+            committed to advancing productive energy, resilient infrastructure,
+            environmental stewardship, and sustainable development.
           </p>
           <p>
-            We welcome dialogue with governments, public agencies, universities, research
-            institutions, manufacturers, investors, financial institutions, development
-            organizations, humanitarian agencies, non-governmental organizations (NGOs),
-            entrepreneurs, infrastructure operators, community leaders, and
-            implementation partners seeking practical pathways toward resilient
-            infrastructure, productive energy, environmental stewardship, and sustainable
-            economic opportunity.
+            Whether your interest lies in research, engineering, manufacturing, education,
+            public policy, investment, climate finance, carbon markets, enterprise
+            development, infrastructure deployment, technology transfer, environmental
+            restoration, capacity building, or implementation, we welcome the opportunity
+            to explore practical partnerships that transform innovative ideas into
+            measurable and lasting human benefit.
+          </p>
+          <p>
+            The challenges before us are shared. The solutions must be shared as well.
+            Through collaboration among governments, industry, academia, financial
+            institutions, development partners, and communities, we can accelerate the
+            transition from innovation to implementation—and from implementation to
+            sustainable prosperity.
           </p>
         </Prose>
       </Section>
 
-      <Section tint title="An Open Call for a Shared Future">
+      <Section tint title="A Shared Commitment">
         <Prose>
           <p>
-            <strong>
-              The demand is vast, the need urgent, and the human impact transformative.
-            </strong>
+            Every generation inherits challenges. Every generation also inherits the
+            opportunity—and responsibility—to solve them.
           </p>
           <p>
-            HydroSol invites partners across the public, private, academic, financial,
-            and development sectors to collaborate in advancing practical engineering
-            solutions that strengthen communities and expand sustainable opportunity.
+            Together, let us co-develop, co-own, and scale a model that demonstrates
+            sustainable innovation can begin anywhere and benefit everyone.
           </p>
           <p>
-            Whether your interest lies in research, investment, manufacturing, education,
-            policy, or implementation, we welcome the opportunity to transform innovative
-            ideas into practical solutions that deliver lasting human benefit.
+            Together, we can illuminate homes, power farms, schools, healthcare facilities,
+            workshops, and small enterprises; strengthen water and food security; create
+            meaningful employment; and expand opportunities for resilient and sustainable
+            prosperity across the Global South—and wherever reliable infrastructure is
+            needed most.
           </p>
           <p>
-            <strong>
-              Together, let us co-develop, co-own, and scale a model that proves
-              sustainable innovation can begin anywhere and belong to everyone.
-            </strong>
+            HydroSol is not the destination. It is an invitation—to collaborate, to
+            innovate, and to help build a more productive, resilient, and sustainable
+            future together.
           </p>
         </Prose>
 
@@ -205,32 +169,6 @@ export default function JoinPage() {
           Website:{" "}
           <span className="font-semibold text-brand">www.hydrosol.energy</span>
         </p>
-      </Section>
-
-      <Section title="Engineering Should Improve Lives">
-        <Prose>
-          <p>
-            Engineering is ultimately measured not only by what it creates, but by the
-            lives it improves and the future it helps to shape.
-          </p>
-          <p>
-            Every generation inherits challenges. Every generation also inherits the
-            opportunity—and the responsibility—to solve them.
-          </p>
-          <p>
-            Through research, engineering, partnership, and shared purpose, we can
-            strengthen communities, restore the environment, expand productive
-            opportunity, and contribute to a future that is more resilient, more
-            prosperous, and more sustainable.
-          </p>
-          <p>
-            <strong>
-              Together, let us transform interconnected challenges into interconnected
-              prosperity.
-            </strong>
-          </p>
-        </Prose>
-
         <PullQuote
           lines={[
             "Power Everywhere. For Everyone.",
@@ -238,6 +176,7 @@ export default function JoinPage() {
           ]}
         />
       </Section>
+
 
       <CtaBand
         title="Contact the HydroSol Development Team"

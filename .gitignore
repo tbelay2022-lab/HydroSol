@@ -43,3 +43,6 @@ next-env.d.ts
 # AI agent guidance — not part of the deliverable
 CLAUDE.md
 AGENTS.md
+
+.vercel
+.env*

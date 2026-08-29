@@ -23,7 +23,7 @@ export default function FaqPage() {
       />
 
       <section className="bg-mist">
-        <div className="container-x py-12 sm:py-16">
+        <div className="container-x pb-10 pt-3 sm:pb-14 sm:pt-4">
           <FaqAccordion />
 
           <Reveal>

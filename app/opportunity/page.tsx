@@ -20,7 +20,7 @@ export default function OpportunityPage() {
         lede="“The greatest transformations are achieved not by individuals working alone, but by institutions working together toward a shared purpose.”"
       />
 
-      <Section>
+      <Section compactTop>
         <div className="mx-auto mb-12 max-w-4xl">
           <FigureFrame
             src="/figures/hs2-06-partnership-ecosystem.jpg"
@@ -31,38 +31,28 @@ export default function OpportunityPage() {
             priority
           />
         </div>
-        <Prose>
-          <p>
-            Throughout history, societies have advanced when knowledge, engineering,
-            enterprise, governance, and human ingenuity have converged toward common
-            goals. No civilization has been built by a single institution acting alone.
-            Progress has always depended upon the ability of diverse organizations and
-            communities to combine their strengths in pursuit of a shared future.
-          </p>
-          <p>
-            HydroSol embraces this enduring principle. The challenge of creating
-            productive communities extends beyond technology. It requires the
-            synchronization of engineering, manufacturing, finance, education, research,
-            public policy, entrepreneurship, and community leadership within{" "}
-            <strong>one collaborative ecosystem.</strong> Sustainable development is
-            therefore not the responsibility of any one partner, but the collective
-            achievement of many.
-          </p>
-        </Prose>
 
         <Prose>
           <p>
-            The HydroSol Ecosystem provides the framework through which these diverse
-            capabilities work together. Governments establish enabling policies and
-            public infrastructure. Universities and research institutions expand
-            scientific knowledge and engineering innovation. Manufacturers transform
-            ideas into practical technologies. Financial institutions and development
-            partners provide the capital needed for sustainable growth. Entrepreneurs
-            create productive enterprises, while communities contribute leadership, local
-            knowledge, stewardship, and long-term ownership. Each partner strengthens the
-            others, creating capabilities that no institution could achieve
-            independently.
+            No productive community is built by one institution acting alone. Sustainable
+            development succeeds when governments, industry, finance, academia,
+            entrepreneurs, and communities work toward a shared purpose. HydroSol embraces
+            this enduring principle. The challenge of creating productive communities
+            extends beyond technology. It requires the synchronization of engineering,
+            manufacturing, finance, education, research, public policy, entrepreneurship,
+            and community leadership within one collaborative ecosystem. Sustainable
+            development is therefore not the responsibility of any one partner, but the
+            collective achievement of many.
           </p>
+
+          <p>
+            The HydroSol Ecosystem provides a collaborative framework in which governments,
+            academia, industry, financial institutions, development partners,
+            entrepreneurs, and communities each contribute their unique strengths. Together
+            they transform knowledge into capability, investment into opportunity, and
+            engineering into sustainable development.
+          </p>
+
           <p>
             This collaboration extends beyond implementing projects. It builds
             institutional capacity, strengthens regional industries, expands technical
@@ -70,33 +60,35 @@ export default function OpportunityPage() {
             continuous learning and innovation. As experience grows, knowledge is shared
             across regions, allowing successful practices to be adapted, replicated, and
             continuously improved. Every partnership therefore contributes not only to
-            today&rsquo;s success but also to tomorrow&rsquo;s capability.
+            today&apos;s success but also to tomorrow&apos;s capability.
           </p>
+
           <p>
-            Central to this vision is the belief that{" "}
-            <strong>development is ultimately about people.</strong> HydroSol encourages
-            broad participation by women and young people, recognizing their capacity to
-            drive innovation, entrepreneurship, technical excellence, and community
-            leadership. At the same time, it values the experience, mentorship, and
-            institutional memory of senior professionals and community leaders. By
-            bringing generations together, the ecosystem combines fresh ideas with
-            practical wisdom, ensuring that progress is both innovative and enduring.
+            Central to this vision is the belief that development is ultimately about
+            people. HydroSol encourages broad participation by women and young people,
+            recognizing their capacity to drive innovation, entrepreneurship, technical
+            excellence, and community leadership. At the same time, it values the
+            experience, mentorship, and institutional memory of senior professionals and
+            community leaders. By bringing generations together, the ecosystem combines
+            fresh ideas with practical wisdom, ensuring that progress is both innovative
+            and enduring.
           </p>
+
           <p>
             HydroSol therefore invites governments, universities, industries, financial
             institutions, development organizations, entrepreneurs, and communities to
             participate in something larger than an engineering initiative. It is an
-            invitation to build a collaborative ecosystem where knowledge becomes
-            capability, capability creates opportunity, and opportunity enables
-            productive communities to flourish for generations.
+            invitation to build a collaborative ecosystem in which knowledge becomes
+            capability, capability creates opportunity, and opportunity enables productive
+            communities to flourish for generations.
           </p>
         </Prose>
 
         <PullQuote
           lines={[
-            "Communities flourish when systems work together.",
-            "Systems flourish when institutions work together.",
-            "Collective capability builds prosperous communities.",
+            "Communities flourish through collaboration.",
+            "Collaboration creates collective capability.",
+            "Collective capability builds prosperous futures.",
           ]}
         />
       </Section>
