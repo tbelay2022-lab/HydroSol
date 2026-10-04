@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageHero } from "@/components/PageHero";
+import { Section } from "@/components/Section";
+export const metadata: Metadata = { title: "Progress & Milestones", description: "From Invention Toward Implementation" };
+export default function Page() { return <><PageHero eyebrow="HydroSol Today" title="PROGRESS & MILESTONES" subtitle="FROM INVENTION TOWARD IMPLEMENTATION"/><Section><div className="mx-auto max-w-3xl space-y-6 text-[15.5px] leading-relaxed text-body"><p>HydroSol has progressed through scientific investigation, laboratory experimentation, engineering development, system architecture and implementation planning.</p><p><strong>Current status:</strong></p><div className="space-y-2"><p><strong>HydroSol Productive Energy Platform:</strong> Developed</p><p><strong>HydroSol Technologies LLC:</strong> Formation in Progress</p><p><strong>U.S. Provisional Patent Application:</strong> Filing in Final Preparation</p><p><strong>Prototype, Pilot &amp; Field Validation:</strong> Next Stage</p></div><p>Significant milestones will be reported as they are achieved.</p><Link href="/today" className="inline-block pt-3 font-semibold text-brand hover:text-leaf-deep">← Back to HydroSol Today</Link></div></Section></>; }

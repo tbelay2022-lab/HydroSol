@@ -4,7 +4,6 @@ import { Mail } from "lucide-react";
 import { footerLinks, site } from "@/lib/site";
 
 const moreLinks = [
-  { label: "Publications", href: "/publications" },
   { label: "Executive White Paper", href: "/white-paper" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -61,13 +60,13 @@ export function Footer() {
             <h3 className="eyebrow !text-white/50">Contact</h3>
             <ul className="mt-5 space-y-3">
               {site.emails.map((email) => (
-                <li key={email}>
+                <li key={email.address}>
                   <a
-                    href={`mailto:${email}`}
-                    className="inline-flex items-center gap-2 text-[14px] text-white/75 transition-colors hover:text-white"
+                    href={`mailto:${email.address}`}
+                    className="group inline-flex items-start gap-2 text-[14px] text-white/75 transition-colors hover:text-white"
                   >
-                    <Mail className="size-3.5 text-leaf" />
-                    {email}
+                    <Mail className="mt-0.5 size-3.5 shrink-0 text-leaf" />
+                    <span><span className="font-semibold text-white/85">{email.label}</span><span className="block text-[12.5px] text-white/55">{email.address}</span></span>
                   </a>
                 </li>
               ))}
@@ -93,7 +92,7 @@ export function Footer() {
         <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
           <p className="text-[13px] text-white/50">© 2026 HydroSol. All Rights Reserved.</p>
           <p className="max-w-md text-[13px] italic text-white/50">{site.closing}</p>
-          <p className="text-[13px] text-white/50">www.hydrosol.energy</p>
+          <p className="text-[13px] text-white/50">{site.location} · hydrosol.energy</p>
         </div>
       </div>
     </footer>

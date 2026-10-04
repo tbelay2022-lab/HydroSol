@@ -19,37 +19,28 @@ export function PageHero({
   tintBelow?: boolean;
 }) {
   return (
-    <section className="hero-droplet relative overflow-hidden pb-4 pt-24 sm:pb-5 sm:pt-28">
+    <section className="hero-droplet relative overflow-hidden pb-16 pt-32 sm:pb-20 sm:pt-40">
       <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
       <HeroWaves tint={tintBelow} />
-
       <div className="container-x relative flex flex-col items-center text-center">
         <Reveal>
           <p className="eyebrow">{eyebrow}</p>
         </Reveal>
-
         <Reveal delay={0.08}>
-          <h1 className="chapter-title mt-2 max-w-4xl text-balance text-[34px] sm:text-[42px]">
-            {title}
-          </h1>
+          <h1 className="chapter-title mt-4 max-w-4xl text-balance">{title}</h1>
         </Reveal>
-
         {subtitle && (
           <Reveal delay={0.14}>
-            <p className="chapter-subtitle mt-2 max-w-3xl text-balance">
-              {subtitle}
-            </p>
+            <p className="chapter-subtitle mt-4 max-w-3xl text-balance">{subtitle}</p>
           </Reveal>
         )}
-
         {lede && (
           <Reveal delay={0.2}>
-            <p className="mx-auto mt-3 max-w-2xl text-pretty text-[16px] leading-[1.65] text-body sm:text-[17px]">
+            <p className="mx-auto mt-6 max-w-2xl text-pretty text-[17px] leading-[1.7] text-body">
               {lede}
             </p>
           </Reveal>
         )}
-
         {children && <Reveal delay={0.26}>{children}</Reveal>}
       </div>
     </section>

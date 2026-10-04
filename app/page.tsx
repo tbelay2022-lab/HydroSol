@@ -12,8 +12,8 @@ import { chapters, site } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      {/* Hero — Welcome to HydroSol */}
-      <section className="hero-droplet relative overflow-hidden pb-8 pt-36 sm:pb-10 sm:pt-44">
+      {/* Hero — Welcome to HydroSol (header hierarchy per client notes) */}
+      <section className="hero-droplet relative overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-44">
         <div className="dot-grid-light pointer-events-none absolute inset-0" aria-hidden />
         <HeroWaves />
         <HeroEmblem />
@@ -48,84 +48,69 @@ export default function HomePage() {
             priority
           />
         </div>
-
         <Prose>
           <p>
             Across much of the Global South—including Africa, South Asia, Latin America,
             the Caribbean, and underserved regions elsewhere—millions of households,
             farms, schools, clinics, workshops, and small enterprises continue to face
-            constraints that limit productivity, opportunity, and long-term prosperity.
+            persistent constraints that limit productivity, opportunity, and long-term
+            prosperity.
           </p>
-
           <p>
-            These challenges extend beyond energy alone. Limited access to reliable
-            infrastructure affects water, agriculture, healthcare, education,
-            manufacturing, enterprise, mobility, and other productive activities that
-            sustain resilient local economies. The situation becomes even more pronounced
-            beyond the <strong>&ldquo;last mile,&rdquo;</strong> where conventional
-            infrastructure is often unavailable, unreliable, or unaffordable.
+            Their challenge is not simply a lack of energy, but the absence of integrated
+            systems that support water, agriculture, healthcare, education, enterprise,
+            mobility, environmental stewardship, and resilient local economies.
           </p>
-
           <p>
-            HydroSol was conceived to help bridge this gap through a different engineering
-            approach.
+            These constraints are particularly evident beyond the{" "}
+            <strong>&ldquo;last mile,&rdquo;</strong> where infrastructure becomes
+            increasingly limited, communities become more isolated, and access to
+            reliable productive services declines.
           </p>
-
           <p>
-            HydroSol is founded on the principle of <strong>Productive Energy</strong>—energy
-            that enables communities to produce, create, and grow. Rather than serving
-            consumption alone, Productive Energy powers the activities that strengthen
-            livelihoods, improve essential services, stimulate enterprise, and create
-            lasting economic, social, and environmental value.
+            HydroSol addresses this challenge through the principle of{" "}
+            <strong>Productive Energy</strong>—energy that creates value by enabling
+            water supply, food production, healthcare, education, manufacturing,
+            enterprise, mobility, and other productive activities.
           </p>
-
           <p>
-            HydroSol is an alternative distributed productive energy platform designed
-            mainly to complement existing energy systems.
+            Unlike consumptive energy, which is used primarily for immediate household or
+            personal needs, Productive Energy generates lasting economic, social, and
+            environmental value by strengthening the systems upon which communities
+            depend.
           </p>
-
           <p>
-            Rather than replacing centralized electricity networks, HydroSol extends
-            productive capability to locations where conventional power remains unavailable,
-            unreliable, or economically impractical. Its decentralized architecture
-            delivers productive energy where people live and work while integrating
-            seamlessly with existing infrastructure whenever it is available.
+            <strong>
+              Productive Energy is energy that creates opportunity. It powers not only
+              devices, but livelihoods, institutions, enterprises, and communities.
+            </strong>
           </p>
-
           <p>
-            Designed to be modular, scalable, and circular, HydroSol can serve individual
-            households, productive enterprises, institutions, and entire regional networks.
-            Continuous servicing, resource recovery, and regeneration support long-term
-            operational sustainability, while the integrated HydroSol Ecosystem is presented
-            in the pages that follow.
+            This understanding inspired the development of the HydroSol Ecosystem—an
+            engineering framework designed to support productive communities rather than
+            simply provide energy. By integrating essential systems within a coordinated
+            operational architecture, HydroSol seeks to enable local productivity,
+            strengthen resilience, encourage environmental stewardship, and expand
+            opportunities for economic and social development.
           </p>
-
           <p>
-            <strong>HydroSol is more than an energy technology.</strong>
-          </p>
-
-          <p>
-            It is a practical engineering platform that helps communities expand productive
-            capacity, strengthen resilience, and create sustainable opportunities for
-            economic and social development. By completing existing energy systems rather
-            than competing with them, HydroSol seeks to transform interconnected challenges
-            into interconnected prosperity—enabling productive communities and prosperous
-            futures through engineering, innovation, partnership, and environmental
-            stewardship.
+            The HydroSol journey is therefore more than a technological innovation. It is
+            the pursuit of a practical engineering solution that empowers communities to
+            build productive, resilient, and sustainable futures.
           </p>
         </Prose>
 
         <Reveal>
           <div className="mx-auto mt-14 max-w-3xl rounded-2xl bg-gradient-to-r from-brand to-leaf p-px">
             <div className="rounded-[calc(1rem-1px)] bg-white px-7 py-8 text-center sm:px-10">
-              <p className="display-font text-[15px] font-bold tracking-wide text-brand">
-                HydroSol™
+              <p className="display-font text-balance text-[20px] font-bold leading-normal text-navy sm:text-[23px]">
+                {site.transforming}
               </p>
-              <p className="display-font mt-3 text-balance text-[20px] font-bold leading-normal text-navy sm:text-[23px]">
-                {site.tagline}
+              <p className="mt-3 text-[14.5px] font-medium tracking-wide text-navy">
+                {site.through}
               </p>
-              <p className="mt-4 text-[14.5px] font-medium tracking-wide text-navy">
-                Completing Existing Energy Systems Everywhere. At Any Scale.
+              <p className="mt-4 text-[13px] font-medium text-navy">
+                HydroSol™ · {site.tagline}
               </p>
             </div>
           </div>
@@ -133,16 +118,25 @@ export default function HomePage() {
 
         <Prose>
           <p>
-            The pages that follow present the HydroSol journey—from the principles of
-            Productive Energy to the engineering platform, technologies, implementation
-            model, partnerships, and integrated ecosystem that together enable productive
-            continuity and sustainable development.
+            The pages that follow present a practical journey—from understanding
+            today&rsquo;s interconnected challenges to building productive, resilient,
+            and environmentally responsible communities through engineering, innovation,
+            and partnership.
+          </p>
+          <p>
+            We invite you to discover how the HydroSol Ecosystem is transforming
+            interconnected challenges into interconnected prosperity.
           </p>
         </Prose>
       </Section>
 
       {/* The journey — one continuous story */}
       <Section tint eyebrow="One Continuous Story" title="The HydroSol Journey" center>
+        <p className="mx-auto mt-5 max-w-2xl text-center text-[16px] leading-[1.7] text-body sm:text-[17px]">
+          The journey begins by examining the global challenge—and why the future of
+          sustainable development depends on integrated productive systems rather than
+          isolated solutions.
+        </p>
         <Stagger className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {chapters.map((c) => (
             <StaggerItem key={c.href}>
@@ -184,7 +178,6 @@ export default function HomePage() {
           , which introduce the HydroSol vision, constitutional doctrine, engineering
           principles, operational framework, and long-term objectives.
         </p>
-
         <Stagger className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
           {[
             {
@@ -221,7 +214,7 @@ export default function HomePage() {
         lede="Whether your interest lies in research, investment, manufacturing, education, policy, or implementation, we welcome the opportunity to transform innovative ideas into practical solutions that deliver lasting human benefit."
       >
         <PrimaryButton href="/contact">Contact HydroSol</PrimaryButton>
-        <GhostButton href="/challenge" onDark>
+        <GhostButton href="/quest" onDark>
           Begin the Journey
         </GhostButton>
       </CtaBand>

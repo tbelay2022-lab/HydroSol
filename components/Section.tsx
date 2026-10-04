@@ -7,24 +7,16 @@ export function Section({
   children,
   tint = false,
   center = false,
-  compactTop = false,
 }: {
   eyebrow?: string;
   title?: ReactNode;
   children: ReactNode;
   tint?: boolean;
   center?: boolean;
-  compactTop?: boolean;
 }) {
   return (
     <section className={tint ? "bg-mist" : "bg-white"}>
-      <div
-        className={
-          compactTop
-            ? "container-x pb-10 pt-3 sm:pb-14 sm:pt-4"
-            : "container-x py-10 sm:py-14"
-        }
-      >
+      <div className="container-x py-10 sm:py-14">
         {(eyebrow || title) && (
           <Reveal>
             <div

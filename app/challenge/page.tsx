@@ -20,7 +20,7 @@ export default function ChallengePage() {
         lede="“Progress cannot be measured by the prosperity of the few, but by the opportunities available to everyone.”"
       />
 
-      <Section compactTop>
+      <Section>
         <div className="mx-auto mb-12 max-w-3xl">
           <FigureFrame
             src="/figures/hs2-01-global-challenge.jpg"
@@ -31,7 +31,6 @@ export default function ChallengePage() {
             priority
           />
         </div>
-
         <Prose>
           <p>
             For generations, development has been measured by extending roads,
@@ -39,25 +38,24 @@ export default function ChallengePage() {
             essential services. These achievements have transformed millions of lives and
             remain indispensable to human progress.
           </p>
-
           <p>
             Yet across much of the Global South, millions of communities continue to live
             beyond the <strong>&ldquo;last mile&rdquo;</strong>—not simply beyond
             physical infrastructure, but beyond the integrated productive systems that
             enable people to build lasting prosperity.
           </p>
-
           <p>
             The challenge is therefore not merely one of energy, infrastructure, or
-            technology. It is a challenge of <strong>integration.</strong>
+            technology. <strong>It is a challenge of connection.</strong>
           </p>
-
           <p>
             Communities prosper when productive energy, water, agriculture, education,
             healthcare, enterprise, mobility, digital connectivity, finance, governance,
-            and environmental stewardship function as an integrated productive ecosystem.
+            and environmental stewardship operate as parts of a single productive
+            ecosystem. When these systems function independently, each may deliver
+            benefits, yet together they fall short of creating the conditions for
+            sustained economic growth and community resilience.
           </p>
-
           <p>
             For decades, development initiatives have often addressed these needs one
             sector at a time. While these efforts have brought meaningful progress,
@@ -65,7 +63,6 @@ export default function ChallengePage() {
             for communities to become economically self-sustaining. Fragmented systems
             frequently lead to fragmented outcomes.
           </p>
-
           <p>HydroSol begins with a different engineering premise.</p>
         </Prose>
 
@@ -78,26 +75,23 @@ export default function ChallengePage() {
 
         <Prose>
           <p>
-            When productive energy powers water, water supports agriculture, agriculture
+            When energy powers water, water supports agriculture, agriculture
             strengthens enterprise, enterprise creates livelihoods, digital connectivity
             expands knowledge, and institutions coordinate these systems, productive
             communities emerge. Opportunity becomes self-reinforcing, resilience
             increases, and long-term prosperity becomes achievable.
           </p>
-
           <p>
             The challenge before us is therefore greater than expanding access to
-            electricity.
+            electricity. It is to engineer integrated productive ecosystems that enable
+            communities not only to consume resources, but to generate opportunity, build
+            resilience, steward their environment, and sustain prosperity for
+            generations.
           </p>
-
           <p>
-            It is to engineer integrated productive ecosystems that enable communities
-            not only to consume resources, but to generate opportunity, build resilience,
-            steward their environment, and sustain prosperity for generations.
-          </p>
-
-          <p>
-            This is the challenge that inspired the HydroSol Ecosystem.
+            <strong>
+              This is the challenge that inspired the HydroSol Ecosystem.
+            </strong>
           </p>
         </Prose>
 
@@ -111,7 +105,7 @@ export default function ChallengePage() {
 
       <NextChapter
         current="01"
-        note="Every transformative engineering solution begins not with an answer, but with a question. The next chapter explores the journey that led to HydroSol and the search for a practical engineering pathway toward productive, resilient, and sustainable communities."
+        note="Every transformative engineering solution begins not with an answer, but with a question. The next chapter explores the journey that inspired HydroSol and the search for a practical engineering pathway toward productive, resilient, and sustainable communities."
       />
     </>
   );
