@@ -77,11 +77,11 @@ export function FaqAccordion() {
                               {item.a}
                             </p>
 
-                            {"closing" in item && item.closing && (
-                              <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
-                                {item.closing}
-                              </p>
-                            )}
+                            {"closing" in item && typeof item.closing === "string" && item.closing && (
+  <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
+    {item.closing}
+  </p>
+)}
                           </div>
                         </motion.div>
                       )}
