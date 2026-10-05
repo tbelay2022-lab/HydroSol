@@ -1,152 +1,184 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { HeroEmblem } from "@/components/HeroEmblem";
-import { HeroWaves } from "@/components/HeroWaves";
-import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
-import { chapters, site } from "@/lib/site";
+
+const journey = [
+  {
+    number: "2",
+    title: "THE QUEST — WHY?",
+    text: "Understanding poverty, the poverty cycle and the interconnected constraints through which deprivation can become mutually reinforcing, particularly at the last mile.",
+    link: "/quest",
+    label: "Explore The Quest",
+  },
+  {
+    number: "3",
+    title: "HYDROSOL PLATFORM — WHAT?",
+    text: "HydroSol is a new Hydrogen-on-Demand invention developed as a Productive Energy response to the Quest. The energy capability travels to the user.",
+    link: "/platform",
+    label: "Explore the HydroSol Platform",
+  },
+  {
+    number: "4",
+    title: "SMART PRODUCTIVE KUSHET (LOCAL COMMUNITY) — PRODUCTIVE COMMUNITY",
+    text: "Where Productive Energy connects with people, skills, resources and enterprise to strengthen productive capability and local value creation.",
+    pathway: "Productive Energy → Productive Capability → Productive Community",
+    link: "/applications",
+    label: "Explore the Smart Productive Kushet",
+  },
+  {
+    number: "5",
+    title: "HYDROSOL ECOSYSTEM — SCALE",
+    text: "Connecting productive communities through distributed, RPC-supported networks that can grow through:",
+    pathway: "Replication → Clustering → Interconnection",
+    link: "/opportunity",
+    label: "Explore the HydroSol Ecosystem",
+  },
+  {
+    number: "6",
+    title: "PARTNERSHIP — SHARED ACTION",
+    text: "Connecting investment, industry, strategic partners and market-development capabilities to move HydroSol from engineering readiness toward commercialization and responsible scale.",
+    pathway: "Validate → Deploy → Commercialize → Invest → Scale",
+    link: "/partnership",
+    label: "Explore Partnership",
+  },
+];
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero-droplet relative overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-44">
-        <div
-          className="dot-grid-light pointer-events-none absolute inset-0"
-          aria-hidden
-        />
-        <HeroWaves />
-        <HeroEmblem />
-
-        <div className="container-x relative text-center">
+      {/* Authoritative HydroSol homepage visual */}
+      <section className="relative overflow-hidden bg-white pt-24 sm:pt-28">
+        <div className="mx-auto max-w-[1500px]">
           <Reveal>
-            <h1 className="display-font mx-auto max-w-4xl text-balance text-[38px] font-bold uppercase leading-[1.1] tracking-wide text-brand sm:text-5xl md:text-[56px]">
-              HydroSol
-            </h1>
-          </Reveal>
-
-          <Reveal delay={0.08}>
-            <p className="display-font mx-auto mt-6 text-[24px] font-bold leading-snug text-brand sm:text-[30px]">
-              {site.motto}
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.14}>
-            <p className="display-font mx-auto mt-3 text-[19px] font-bold leading-snug text-brand sm:text-[22px]">
-              {site.secondary}
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.2}>
-            <p className="mx-auto mt-7 max-w-2xl text-[16px] leading-relaxed text-body">
-              {site.tagline}
-            </p>
+            <Image
+              src="/figures/hydrosol-innovative-energy-ecosystem.jpg"
+              alt="Welcome to HydroSol — An Innovative Energy Ecosystem"
+              width={975}
+              height={591}
+              priority
+              className="h-auto w-full"
+            />
           </Reveal>
         </div>
       </section>
 
-      <Section
-        eyebrow="The HydroSol Journey"
-        title="From Interconnected Challenges to Productive Opportunity"
-        center
-      >
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[16px] leading-relaxed text-body">
-            HydroSol is a new Hydrogen-on-Demand invention developed into a
-            distributed Productive Energy platform.
-          </p>
+      {/* 1. The Challenge */}
+      <Section>
+        <Reveal>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="display-font text-2xl font-bold text-navy sm:text-3xl">
+              1. THE CHALLENGE
+            </h2>
 
-          <p className="mt-5 text-[16px] leading-relaxed text-body">
-            Its purpose extends beyond energy itself: to bring productive-energy
-            capability closer to where people live and work, helping connect
-            people, skills, resources, enterprise and opportunity.
-          </p>
+            <div className="mt-6 space-y-5 text-[15.5px] leading-relaxed text-body sm:text-[16px]">
+              <p>
+                Across much of the Global South—including Africa, South Asia,
+                Latin America, the Caribbean and underserved regions
+                elsewhere—millions of households, farms, schools, clinics,
+                workshops and small enterprises face interconnected constraints
+                that limit{" "}
+                <strong>
+                  productivity, opportunity and long-term prosperity
+                </strong>
+                .
+              </p>
 
-          <p className="display-font mt-7 text-[19px] font-bold text-navy">
-            Energy is not the destination. Productive capability is.
-          </p>
-        </div>
+              <p>
+                These challenges extend beyond energy.{" "}
+                <strong>
+                  Water, agriculture, healthcare, education, infrastructure,
+                  enterprise and mobility
+                </strong>{" "}
+                are interconnected, particularly at the last mile, where
+                conventional systems may be unavailable, unreliable or
+                unaffordable.
+              </p>
+            </div>
+          </div>
+        </Reveal>
       </Section>
 
-      <Section
-        tint
-        eyebrow="Explore HydroSol"
-        title="One Integrated Story"
-        center
-      >
-        <Stagger className="mx-auto grid max-w-5xl gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {chapters.map((chapter) => (
-            <StaggerItem key={chapter.number}>
-              <Link
-                href={chapter.href}
-                className="hairline-card group flex h-full flex-col p-6 transition hover:-translate-y-1 hover:border-brand/40"
-              >
-                <span className="display-font text-[13px] font-bold text-brand">
-                  {chapter.number}
-                </span>
+      {/* HydroSol Journey */}
+      <Section tint>
+        <Reveal>
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="display-font text-2xl font-bold text-navy sm:text-3xl">
+              THE HYDROSOL JOURNEY
+            </h2>
 
-                <h2 className="display-font mt-3 text-[19px] font-bold text-navy">
-                  {chapter.label}
+            <p className="mt-6 text-[14px] font-semibold leading-relaxed text-brand sm:text-[16px]">
+              THE QUEST → HYDROSOL PLATFORM → SMART PRODUCTIVE KUSHET →
+              HYDROSOL ECOSYSTEM → PARTNERSHIP → HYDROSOL TODAY
+            </p>
+          </div>
+        </Reveal>
+      </Section>
+
+      {/* Journey gateway */}
+      <Section>
+        <div className="mx-auto max-w-4xl">
+          {journey.map((item, index) => (
+            <Reveal key={item.title} delay={index * 0.04}>
+              <article
+                className={`py-9 ${
+                  index > 0 ? "border-t border-line" : ""
+                }`}
+              >
+                <h2 className="display-font text-xl font-bold text-navy sm:text-2xl">
+                  {item.number}. {item.title}
                 </h2>
 
-                <p className="mt-3 flex-1 text-[14.5px] leading-relaxed text-body">
-                  {chapter.blurb}
+                <p className="mt-4 text-[15.5px] leading-relaxed text-body">
+                  {item.text}
                 </p>
 
-                <span className="mt-5 inline-flex items-center gap-2 text-[14px] font-semibold text-brand">
-                  Explore
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Link>
-            </StaggerItem>
+                {item.pathway && (
+                  <p className="mt-4 font-semibold leading-relaxed text-brand">
+                    {item.pathway}
+                  </p>
+                )}
+
+                <Link
+                  href={item.link}
+                  className="mt-5 inline-flex items-center gap-2 font-semibold text-brand transition-colors hover:text-leaf-deep"
+                >
+                  {item.label}
+                  <ArrowRight className="size-4" />
+                </Link>
+              </article>
+            </Reveal>
           ))}
-        </Stagger>
-      </Section>
 
-      <Section
-        eyebrow="HydroSol Today"
-        title="From Vision to Evidence"
-        center
-      >
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[16px] leading-relaxed text-body">
-            Follow HydroSol's continuing progress from engineering development
-            toward prototype, pilot deployment, validation, learning and
-            responsible scale.
-          </p>
+          <Reveal>
+            <article className="border-t border-line py-9">
+              <h2 className="display-font text-xl font-bold text-navy sm:text-2xl">
+                HYDROSOL TODAY — EVIDENCE &amp; PROGRESS
+              </h2>
 
-          <Link
-            href="/today"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand px-6 py-3 text-[14.5px] font-semibold text-white transition hover:-translate-y-0.5"
-          >
-            HydroSol Today
-            <ArrowRight className="size-4" />
-          </Link>
-        </div>
-      </Section>
+              <p className="mt-4 text-[15.5px] leading-relaxed text-body">
+                The living public record of what HydroSol is demonstrating,
+                measuring, validating, learning and achieving.
+              </p>
 
-      <Section tint>
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="display-font text-[22px] font-bold leading-snug text-navy">
-            {site.transforming}
-          </p>
+              <p className="mt-4 font-semibold leading-relaxed text-brand">
+                Show what is happening → Distinguish progress from evidence →
+                Record what is learned
+              </p>
 
-          <p className="mt-4 text-[15px] font-medium text-body">
-            {site.engineering}
-          </p>
-
-          <p className="mt-7 text-[16px] leading-relaxed text-body">
-            {site.closing}
-          </p>
-
-          <Link
-            href="/contact"
-            className="mt-7 inline-flex items-center gap-2 text-[15px] font-semibold text-brand"
-          >
-            Contact the HydroSol Development Team
-            <ArrowRight className="size-4" />
-          </Link>
+              <Link
+                href="/today"
+                className="mt-5 inline-flex items-center gap-2 font-semibold text-brand transition-colors hover:text-leaf-deep"
+              >
+                Explore HydroSol Today
+                <ArrowRight className="size-4" />
+              </Link>
+            </article>
+          </Reveal>
         </div>
       </Section>
     </>
   );
 }
+
