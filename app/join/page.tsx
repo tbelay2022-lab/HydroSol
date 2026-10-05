@@ -183,24 +183,22 @@ export default function JoinPage() {
         </Reveal>
         <Stagger className="mx-auto mt-6 grid max-w-3xl gap-4 sm:grid-cols-2">
           {site.emails.map((email) => (
-            <StaggerItem key={email}>
-              <a
-                href={`mailto:${email}`}
-                className="hairline-card group flex h-full items-center gap-4 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(18,59,109,0.1)]"
-              >
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
-                  <Mail className="size-5" />
-                </span>
-                <span>
-                  <span className="block text-[12.5px] font-medium uppercase tracking-wide text-body/60">
-                    {emailRoles[email]}
-                  </span>
-                  <span className="text-[14.5px] font-semibold text-navy">{email}</span>
-                </span>
-              </a>
-            </StaggerItem>
-          ))}
-        </Stagger>
+            <StaggerItem key={email.address}>
+  <a
+    href={`mailto:${email.address}`}
+    className="hairline-card group flex h-full items-center gap-4 p-5 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_14px_36px_rgba(18,59,109,0.1)]"
+  >
+    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+      <Mail className="size-5" />
+    </span>
+    <span>
+      <span className="block text-[12.5px] font-medium uppercase tracking-wide text-body/60">
+        {email.label}
+      </span>
+      <span className="text-[14.5px] font-semibold text-navy">{email.address}</span>
+    </span>
+  </a>
+</StaggerItem>
         <p className="mx-auto mt-6 text-center text-[14.5px] text-body">
           Website:{" "}
           <span className="font-semibold text-brand">www.hydrosol.energy</span>
