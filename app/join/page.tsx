@@ -197,10 +197,12 @@ export default function JoinPage() {
       </span>
       <span className="text-[14.5px] font-semibold text-navy">{email.address}</span>
     </span>
-  </a>
+ </a>
 </StaggerItem>
-        <p className="mx-auto mt-6 text-center text-[14.5px] text-body">
-          Website:{" "}
+          ))}
+        </Stagger>
+
+        <p className="mx-auto mt-6 text-center text-[14.5px] text-body">          Website:{" "}
           <span className="font-semibold text-brand">www.hydrosol.energy</span>
         </p>
       </Section>
