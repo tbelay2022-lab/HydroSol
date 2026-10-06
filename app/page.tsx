@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
@@ -49,11 +49,11 @@ export default function HomePage() {
   return (
     <>
       {/* Authoritative HydroSol homepage visual */}
-      <section className="relative overflow-hidden bg-white pt-24 sm:pt-28">
-        <div className="mx-auto max-w-[1500px]">
+      <section className="relative overflow-hidden bg-white pt-28 sm:pt-32">
+        <div className="mx-auto max-w-[680px]">
           <Reveal>
             <Image
-              src="/figures/hydrosol-innovative-energy-ecosystem.jpg"
+              src="/figures/current-homepage.jpeg"
               alt="Welcome to HydroSol — An Innovative Energy Ecosystem"
               width={975}
               height={591}
@@ -181,4 +181,8 @@ export default function HomePage() {
     </>
   );
 }
+
+
+
+
 

@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { ChapterBody } from "@/components/ChapterBody";
 import { chapterContent } from "@/lib/chapterContent";
 
 const c = chapterContent[3];
 export const metadata: Metadata = { title: c.title, description: c.subtitle };
-export default function Page() { return <><PageHero eyebrow="Chapter 3" title={c.title} subtitle={c.subtitle} /><ChapterBody lines={[...c.lines]} /></>; }
+export default function Page() { return <><PageHero eyebrow="Chapter 3" title={c.title} subtitle={c.subtitle} /><ChapterBody lines={[...c.lines]} figure="/figures/current-kushet.jpeg" figureAlt="Smart Productive Kushet" noOverlap /></>; }
+
+
